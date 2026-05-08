@@ -11,11 +11,11 @@
   --blue:#0087b7;--blue-light:#38b0d0;--blue-pale:#f0f9fd;
   --prune:#87223a;--prune-light:#b02f49;
   --yellow:#f5be45;
-  --dark:#1a1a1a;--gray:#f1f2f2;--white:#fff;
+  --dark:#1a1a1a;--gray:#f1f2f2;
 }
 body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 
-/* ── HEADER ── */
+/* HEADER */
 .header{background:var(--blue);padding:2.5rem 2rem 2rem;display:flex;align-items:center;justify-content:space-between;position:relative;overflow:hidden}
 .header::before{content:'';position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,0.07)}
 .header::after{content:'';position:absolute;right:120px;bottom:-100px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.05)}
@@ -29,7 +29,7 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .cat-label{font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;opacity:0.65;font-weight:600}
 .cat-year{font-size:1rem;font-weight:700;opacity:0.9}
 
-/* ── NAV ── */
+/* NAV */
 .nav{background:white;border-bottom:1px solid #e8e8e8;display:flex;align-items:center;padding:0 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06);gap:0;overflow-x:auto}
 .nav-btn{padding:1rem 1rem;font-size:0.68rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;color:#aaa;border-bottom:3px solid transparent;transition:all 0.2s;white-space:nowrap;border-top:none;border-left:none;border-right:none;background:none;font-family:'Raleway',sans-serif;flex-shrink:0}
 .nav-btn.active{color:var(--blue);border-bottom:3px solid var(--blue)}
@@ -38,21 +38,21 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .search{border:1.5px solid #e0e0e0;border-radius:24px;padding:7px 16px;font-size:0.78rem;font-family:'Raleway',sans-serif;outline:none;width:180px;transition:border-color 0.2s}
 .search:focus{border-color:var(--blue)}
 
-/* ── SECTION ── */
+/* SECTION */
 .sec-header{padding:2rem 2rem 0.5rem;display:flex;align-items:flex-end;gap:1.5rem}
 .sec-num{font-size:4.5rem;font-weight:800;color:var(--blue);opacity:0.1;line-height:1;font-family:'Playfair Display',serif}
 .sec-name{font-size:1.4rem;font-weight:800;color:var(--dark);letter-spacing:-0.5px}
 .sec-count{font-size:0.7rem;color:#999;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-top:3px}
 .divider{height:3px;background:linear-gradient(90deg,var(--blue),var(--blue-light),transparent);margin:0.75rem 2rem 1.5rem}
 
-/* ── GRID ── */
+/* GRID */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;padding:0 2rem 3rem}
 
-/* ── CARD ── */
+/* CARD */
 .card{background:white;border-radius:14px;overflow:hidden;border:1px solid #ebebeb;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,135,183,0.13)}
 
-/* ── GALLERY ── */
+/* GALLERY */
 .gallery{position:relative;height:210px;background:#f5f8fa;overflow:hidden;flex-shrink:0}
 .gallery-slides{display:flex;height:100%;transition:transform 0.35s ease}
 .gallery-slide{min-width:100%;display:flex;align-items:center;justify-content:center;padding:12px}
@@ -61,19 +61,18 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .gallery-nav{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2}
 .gallery-dot{width:6px;height:6px;border-radius:50%;background:rgba(0,135,183,0.25);cursor:pointer;transition:background 0.2s;border:none;padding:0}
 .gallery-dot.active{background:var(--blue)}
-.g-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);border:none;border-radius:50%;width:26px;height:26px;font-size:14px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.12);transition:opacity 0.2s;padding:0;line-height:1}
-.g-arrow:hover{background:white}
+.g-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);border:none;border-radius:50%;width:26px;height:26px;font-size:14px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.12);padding:0;line-height:1}
 .g-arrow.prev{left:8px}.g-arrow.next{right:8px}
 .g-arrow.hidden{opacity:0;pointer-events:none}
 
-/* ── CARD BODY ── */
+/* CARD BODY */
 .card-body{padding:1rem 1rem 0;flex:1}
 .card-ref{font-size:0.62rem;font-weight:700;color:var(--blue);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px}
 .card-name{font-size:0.88rem;font-weight:800;color:var(--dark);margin-bottom:6px;line-height:1.3}
 .card-desc{font-size:0.74rem;color:#777;line-height:1.6;margin-bottom:7px}
 .card-size{display:inline-flex;align-items:center;gap:4px;font-size:0.66rem;color:#999;font-weight:600;background:#f5f5f5;padding:3px 9px;border-radius:20px}
 
-/* ── CARD ACTIONS ── */
+/* CARD ACTIONS */
 .card-actions{padding:0.8rem 1rem 1rem;display:flex;gap:8px;align-items:center}
 .qty-wrap{display:flex;align-items:center;border:1.5px solid #e0e0e0;border-radius:8px;overflow:hidden;flex-shrink:0}
 .qty-btn{background:none;border:none;width:28px;height:32px;font-size:1rem;cursor:pointer;color:#888;transition:background 0.15s;font-family:'Raleway',sans-serif;line-height:1;padding:0}
@@ -83,7 +82,7 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .btn-add:hover{background:#006a92}
 .btn-add.added{background:#22a05a}
 
-/* ── MODAL ── */
+/* MODAL */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:1000;align-items:center;justify-content:center}
 .modal-bg.open{display:flex}
 .modal{background:white;border-radius:18px;max-width:580px;width:94%;overflow:hidden;max-height:92vh;overflow-y:auto}
@@ -94,39 +93,39 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .modal-nav{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2}
 .modal-dot{width:7px;height:7px;border-radius:50%;background:rgba(0,135,183,0.25);cursor:pointer;border:none;transition:background 0.2s;padding:0}
 .modal-dot.active{background:var(--blue)}
-.m-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);border:none;border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);padding:0;line-height:1}
+.m-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);border:none;border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.15);padding:0}
 .m-arrow.prev{left:10px}.m-arrow.next{right:10px}
 .m-arrow.hidden{opacity:0;pointer-events:none}
 .modal-body{padding:1.5rem}
-.modal-close{float:right;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#bbb;margin:-0.25rem -0.25rem 0 0;line-height:1}
+.modal-close{float:right;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#bbb;margin:-0.25rem -0.25rem 0 0}
 .modal-ref{font-size:0.68rem;color:var(--blue);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:5px}
 .modal-name{font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:0.75rem;line-height:1.25}
 .modal-desc{font-size:0.84rem;color:#555;line-height:1.75;margin-bottom:1rem}
 .modal-size{font-size:0.78rem;font-weight:700;padding:7px 13px;background:#f5f5f5;border-radius:8px;display:inline-block;margin-bottom:1.25rem}
 .modal-cta-row{display:flex;gap:10px;align-items:center}
 .modal-qty-wrap{display:flex;align-items:center;border:1.5px solid #e0e0e0;border-radius:10px;overflow:hidden;flex-shrink:0}
-.modal-qty-btn{background:none;border:none;width:36px;height:44px;font-size:1.2rem;cursor:pointer;color:#888;font-family:'Raleway',sans-serif;padding:0;line-height:1;transition:background 0.15s}
+.modal-qty-btn{background:none;border:none;width:36px;height:44px;font-size:1.2rem;cursor:pointer;color:#888;font-family:'Raleway',sans-serif;padding:0;transition:background 0.15s}
 .modal-qty-btn:hover{background:#f0f0f0;color:var(--blue)}
 .modal-qty-val{width:38px;height:44px;text-align:center;font-size:0.92rem;font-weight:700;color:var(--dark);border:none;border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0;background:white;pointer-events:none;line-height:44px;font-family:'Raleway',sans-serif}
 .modal-cta{flex:1;background:var(--blue);color:white;border:none;border-radius:10px;padding:14px;font-size:0.82rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;letter-spacing:0.8px;text-transform:uppercase;transition:all 0.2s}
 .modal-cta:hover{background:#006a92}
 .modal-cta.added{background:#22a05a}
 
-/* ── PANIER FLOTTANT ── */
+/* PANIER FLOTTANT */
 .cart-bubble{position:fixed;bottom:28px;right:28px;z-index:500}
 .cart-btn{background:var(--blue);color:white;border:none;border-radius:50px;padding:13px 20px;font-size:0.76rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 6px 24px rgba(0,135,183,0.35);display:flex;align-items:center;gap:10px;transition:transform 0.2s,box-shadow 0.2s;white-space:nowrap}
 .cart-btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,135,183,0.45)}
 .cart-count{background:var(--yellow);color:var(--dark);border-radius:50px;padding:2px 8px;font-size:0.68rem;font-weight:800;min-width:20px;text-align:center}
 .cart-bubble.hidden{display:none}
 
-/* ── DRAWER PANIER ── */
+/* DRAWER */
 .cart-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:600}
 .cart-overlay.open{display:block}
 .cart-drawer{position:fixed;bottom:0;right:0;width:420px;max-width:100vw;max-height:80vh;background:white;border-radius:20px 20px 0 0;z-index:700;display:flex;flex-direction:column;transform:translateY(100%);transition:transform 0.35s cubic-bezier(.4,0,.2,1);box-shadow:0 -8px 40px rgba(0,0,0,0.15)}
 .cart-drawer.open{transform:translateY(0)}
 .cart-header{padding:1.25rem 1.5rem 1rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f0f0f0;flex-shrink:0}
 .cart-title{font-size:1rem;font-weight:800;color:var(--dark)}
-.cart-close{background:none;border:none;font-size:1.3rem;cursor:pointer;color:#bbb;line-height:1}
+.cart-close{background:none;border:none;font-size:1.3rem;cursor:pointer;color:#bbb}
 .cart-items{flex:1;overflow-y:auto;padding:0.75rem 1.5rem}
 .cart-empty{text-align:center;padding:2.5rem;color:#bbb;font-size:0.85rem}
 .cart-item{display:flex;align-items:center;gap:12px;padding:0.75rem 0;border-bottom:1px solid #f5f5f5}
@@ -137,20 +136,22 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 .cart-item-ref{font-size:0.6rem;color:var(--blue);font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
 .cart-item-name{font-size:0.8rem;font-weight:700;color:var(--dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cart-item-qty{font-size:0.72rem;color:#888;margin-top:2px}
-.cart-item-del{background:none;border:none;color:#ccc;cursor:pointer;font-size:1rem;flex-shrink:0;padding:4px;border-radius:4px;transition:color 0.15s;line-height:1}
+.cart-item-del{background:none;border:none;color:#ccc;cursor:pointer;font-size:1rem;flex-shrink:0;padding:4px;border-radius:4px;transition:color 0.15s}
 .cart-item-del:hover{color:var(--prune)}
 .cart-footer{padding:1rem 1.5rem 1.75rem;border-top:1px solid #f0f0f0;flex-shrink:0}
 .cart-summary{font-size:0.78rem;color:#888;margin-bottom:1rem;text-align:center}
-.btn-whatsapp{width:100%;background:#25D366;color:white;border:none;border-radius:12px;padding:15px;font-size:0.84rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.2s;letter-spacing:0.3px}
+.btn-whatsapp{width:100%;background:#25D366;color:white;border:none;border-radius:12px;padding:15px;font-size:0.84rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.2s}
 .btn-whatsapp:hover{background:#1ebe5a}
 .btn-clear{width:100%;background:none;border:none;color:#bbb;font-size:0.72rem;cursor:pointer;margin-top:10px;font-family:'Raleway',sans-serif;padding:4px;transition:color 0.15s}
 .btn-clear:hover{color:var(--prune)}
 
-/* ── LOADING ── */
-#loading{text-align:center;padding:4rem 2rem;color:#aaa;font-size:0.9rem}
+/* LOADING */
+.loading{text-align:center;padding:5rem 2rem;color:#aaa}
+.loading-spinner{width:40px;height:40px;border:3px solid #e0e0e0;border-top-color:var(--blue);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 1rem}
+@keyframes spin{to{transform:rotate(360deg)}}
 #no-results{display:none;text-align:center;padding:4rem 2rem;color:#bbb;font-size:0.9rem}
 
-/* ── FOOTER ── */
+/* FOOTER */
 .footer{background:#1a1a1a;color:white;padding:2rem;text-align:center}
 .footer-logo{font-size:1.4rem;font-weight:800;margin-bottom:8px}
 .footer-dots{display:flex;justify-content:center;gap:7px;margin-bottom:1rem}
@@ -159,14 +160,11 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 </head>
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <div class="logo-area">
     <div class="logo-text">Bar À Textile</div>
     <div class="logo-dots">
-      <span class="dot dot-p"></span>
-      <span class="dot dot-y"></span>
-      <span class="dot dot-b"></span>
+      <span class="dot dot-p"></span><span class="dot dot-y"></span><span class="dot dot-b"></span>
     </div>
     <div class="tagline">Votre Partenaire Textile</div>
   </div>
@@ -176,17 +174,19 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
   </div>
 </div>
 
-<!-- NAV -->
 <nav class="nav" id="nav">
   <button class="nav-btn active" onclick="filterCat('all',this)">Tous</button>
-  <!-- Les catégories se génèrent dynamiquement -->
   <div class="search-wrap">
-    <input class="search" type="text" placeholder="Rechercher..." oninput="filterSearch(this.value)" id="search-input">
+    <input class="search" type="text" placeholder="Rechercher..." oninput="filterSearch(this.value)">
   </div>
 </nav>
 
-<!-- CATALOGUE -->
-<div id="catalogue"></div>
+<div id="catalogue">
+  <div class="loading">
+    <div class="loading-spinner"></div>
+    Chargement du catalogue...
+  </div>
+</div>
 <div id="no-results">Aucun produit trouvé.</div>
 
 <!-- MODAL -->
@@ -216,7 +216,7 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
   </div>
 </div>
 
-<!-- PANIER FLOTTANT -->
+<!-- PANIER -->
 <div class="cart-bubble hidden" id="cart-bubble" onclick="openCart()">
   <button class="cart-btn">
     <span>🛒</span>
@@ -224,17 +224,13 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
     <span class="cart-count" id="cart-count">0</span>
   </button>
 </div>
-
-<!-- DRAWER -->
 <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
 <div class="cart-drawer" id="cart-drawer">
   <div class="cart-header">
     <div class="cart-title">🛒 Ma demande de devis</div>
     <button class="cart-close" onclick="closeCart()">✕</button>
   </div>
-  <div class="cart-items" id="cart-items">
-    <div class="cart-empty">Aucun article ajouté</div>
-  </div>
+  <div class="cart-items" id="cart-items"><div class="cart-empty">Aucun article ajouté</div></div>
   <div class="cart-footer">
     <div class="cart-summary" id="cart-summary"></div>
     <button class="btn-whatsapp" onclick="sendWhatsApp()">
@@ -245,13 +241,10 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-logo">Bar À Textile</div>
   <div class="footer-dots">
-    <span class="dot dot-p"></span>
-    <span class="dot dot-y"></span>
-    <span class="dot dot-b"></span>
+    <span class="dot dot-p"></span><span class="dot dot-y"></span><span class="dot dot-b"></span>
   </div>
   <div class="footer-contact">
     PERSONNALISATION TEXTILES · PROFESSIONNELS · CRÉATEURS · PARTICULIERS<br>
@@ -261,78 +254,78 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark)}
 </footer>
 
 <script>
-// ── ÉTAT GLOBAL ──
+const SUPABASE_URL = 'https://prfzjiruivbhaqvnrczk.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
+
+function imgUrl(filename) {
+  return `${SUPABASE_URL}/storage/v1/object/public/images/${filename}`;
+}
+
+async function fetchProducts() {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/produits?select=*&order=categorie_num,ordre,ref`, {
+    headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+  });
+  return await res.json();
+}
+
 let allProducts = [];
 let currentCat = 'all';
 let currentSearch = '';
-let modalIdx = 0;
-let modalPhotos = [];
-let currentProduct = null;
-let modalQty = 1;
+let modalIdx = 0, modalPhotos = [], currentProduct = null, modalQty = 1;
 const cart = {};
 
-// ── CHARGEMENT PRODUITS ──
-async function loadProducts() {
+async function init() {
   try {
-    const r = await fetch('produits.json');
-    allProducts = await r.json();
+    allProducts = await fetchProducts();
     buildNav();
     renderAll();
   } catch(e) {
     document.getElementById('catalogue').innerHTML =
-      '<div style="text-align:center;padding:4rem;color:#aaa">Chargement en cours...</div>';
+      '<div class="loading">Erreur de chargement. Veuillez réessayer.</div>';
   }
 }
 
-// ── NAV DYNAMIQUE ──
 function buildNav() {
   const cats = {};
   allProducts.forEach(p => {
-    if(!cats[p.categorie]) cats[p.categorie] = {label: p.categorie_label || p.categorie, num: p.categorie_num || ''};
+    if(!cats[p.categorie]) cats[p.categorie] = { label: p.categorie_label, num: p.categorie_num };
   });
   const nav = document.getElementById('nav');
   const searchWrap = nav.querySelector('.search-wrap');
-  // Remove existing dynamic buttons
   nav.querySelectorAll('.nav-btn.dyn').forEach(b => b.remove());
-  Object.entries(cats).forEach(([key, {label, num}]) => {
+  // Trier par numéro de catégorie
+  Object.entries(cats).sort((a,b) => (a[1].num||'').localeCompare(b[1].num||'')).forEach(([key, {label}]) => {
     const btn = document.createElement('button');
     btn.className = 'nav-btn dyn';
     btn.textContent = label;
-    btn.onclick = () => { filterCat(key, btn); };
+    btn.onclick = () => filterCat(key, btn);
     nav.insertBefore(btn, searchWrap);
   });
 }
 
-// ── GALLERY ──
 function makeGallery(photos, tag, uid) {
   const wrap = document.createElement('div');
   wrap.className = 'gallery';
-
   const slides = document.createElement('div');
   slides.className = 'gallery-slides';
   slides.id = 'gs-'+uid;
-
   photos.forEach(src => {
     const s = document.createElement('div');
     s.className = 'gallery-slide';
     const img = document.createElement('img');
-    img.src = src;
-    img.loading = 'lazy';
-    img.onerror = () => { img.src = 'image/placeholder.jpg'; };
+    img.src = src; img.loading = 'lazy';
+    img.onerror = () => img.style.display = 'none';
     s.appendChild(img);
     slides.appendChild(s);
   });
   wrap.appendChild(slides);
-
   const tagEl = document.createElement('div');
   tagEl.className = 'gallery-tag';
   tagEl.textContent = tag;
   wrap.appendChild(tagEl);
-
   if(photos.length > 1) {
     const nav = document.createElement('div');
-    nav.className = 'gallery-nav';
-    nav.id = 'gn-'+uid;
+    nav.className = 'gallery-nav'; nav.id = 'gn-'+uid;
     photos.forEach((_,i) => {
       const d = document.createElement('button');
       d.className = 'gallery-dot'+(i===0?' active':'');
@@ -340,12 +333,11 @@ function makeGallery(photos, tag, uid) {
       nav.appendChild(d);
     });
     wrap.appendChild(nav);
-
     ['prev','next'].forEach(dir => {
       const btn = document.createElement('button');
       btn.className = 'g-arrow '+dir+(dir==='prev'?' hidden':'');
       btn.id = 'ga-'+dir+'-'+uid;
-      btn.innerHTML = dir==='prev' ? '&#8249;' : '&#8250;';
+      btn.innerHTML = dir==='prev'?'&#8249;':'&#8250;';
       btn.onclick = e => { e.stopPropagation(); gSlide(uid, gCur(uid)+(dir==='prev'?-1:1)); };
       wrap.appendChild(btn);
     });
@@ -356,8 +348,8 @@ function makeGallery(photos, tag, uid) {
 function gCur(uid) {
   const el = document.getElementById('gs-'+uid);
   if(!el) return 0;
-  const m = (el.style.transform||'').match(/-?(\d+(?:\.\d+)?)/);
-  return m ? Math.round(parseFloat(m[1])/100) : 0;
+  const m = (el.style.transform||'').match(/\d+/);
+  return m ? Math.round(parseInt(m[0])/100) : 0;
 }
 
 function gSlide(uid, idx) {
@@ -374,7 +366,6 @@ function gSlide(uid, idx) {
   if(next) next.classList.toggle('hidden', idx===total-1);
 }
 
-// ── RENDU CARTES ──
 function renderAll() {
   let filtered = allProducts;
   if(currentCat !== 'all') filtered = filtered.filter(p => p.categorie === currentCat);
@@ -383,23 +374,17 @@ function renderAll() {
     (p.ref||'').toLowerCase().includes(currentSearch) ||
     (p.description||'').toLowerCase().includes(currentSearch)
   );
-
   const catEl = document.getElementById('catalogue');
   catEl.innerHTML = '';
   document.getElementById('no-results').style.display = filtered.length ? 'none' : 'block';
-
-  // Grouper par catégorie
   const groups = {};
   filtered.forEach(p => {
     if(!groups[p.categorie]) groups[p.categorie] = [];
     groups[p.categorie].push(p);
   });
-
   Object.entries(groups).forEach(([cat, items]) => {
     const first = items[0];
     const sec = document.createElement('div');
-    sec.id = 'sec-'+cat;
-
     sec.innerHTML = `
       <div class="sec-header">
         <div class="sec-num">${first.categorie_num||''}</div>
@@ -409,33 +394,27 @@ function renderAll() {
         </div>
       </div>
       <div class="divider"></div>`;
-
     const grid = document.createElement('div');
     grid.className = 'grid';
-
     items.forEach(p => {
-      const photos = (p.photos||[]).map(f => 'image/'+f);
-      const uid = p.ref.replace(/[^a-z0-9]/gi,'_');
+      const photos = (p.photos||[]).map(f => imgUrl(f));
+      const uid = (p.ref||'').replace(/[^a-z0-9]/gi,'_');
       const card = document.createElement('div');
       card.className = 'card';
       card.onclick = () => openModal(p);
-
       card.appendChild(makeGallery(photos, first.categorie_label||cat, uid));
-
       const body = document.createElement('div');
       body.className = 'card-body';
-      const desc = (p.description||'');
+      const desc = p.description||'';
       body.innerHTML = `
         <div class="card-ref">${p.ref}</div>
         <div class="card-name">${p.nom}</div>
         <div class="card-desc">${desc.length>95?desc.substring(0,95)+'…':desc}</div>
         ${p.dimensions?`<div class="card-size">📐 ${p.dimensions}</div>`:''}`;
       card.appendChild(body);
-
       const actions = document.createElement('div');
       actions.className = 'card-actions';
-      const qtyId = 'cqty-'+uid;
-      const btnId = 'cbtn-'+uid;
+      const qtyId = 'cqty-'+uid, btnId = 'cbtn-'+uid;
       actions.innerHTML = `
         <div class="qty-wrap">
           <button class="qty-btn" onclick="event.stopPropagation();cQty('${qtyId}',-1)">−</button>
@@ -446,7 +425,6 @@ function renderAll() {
       card.appendChild(actions);
       grid.appendChild(card);
     });
-
     sec.appendChild(grid);
     catEl.appendChild(sec);
   });
@@ -465,38 +443,24 @@ function addCard(ref, qtyId, btnId) {
   if(btn){ btn.textContent='✓ Ajouté !'; btn.classList.add('added'); setTimeout(()=>{ btn.textContent='+ Ajouter au devis'; btn.classList.remove('added'); },1500); }
 }
 
-// ── MODAL ──
 function openModal(p) {
-  currentProduct = p;
-  modalQty = 1;
+  currentProduct = p; modalQty = 1;
   document.getElementById('m-qty').textContent = 1;
   const cta = document.getElementById('m-cta');
-  cta.textContent = '+ Ajouter au devis';
-  cta.classList.remove('added');
-
-  const photos = (p.photos||[]).map(f => 'image/'+f);
-  modalPhotos = photos;
-  modalIdx = 0;
-
+  cta.textContent = '+ Ajouter au devis'; cta.classList.remove('added');
+  const photos = (p.photos||[]).map(f => imgUrl(f));
+  modalPhotos = photos; modalIdx = 0;
   const slidesEl = document.getElementById('m-slides');
   const navEl = document.getElementById('m-nav');
-  slidesEl.innerHTML = '';
-  navEl.innerHTML = '';
-
+  slidesEl.innerHTML = ''; navEl.innerHTML = '';
   photos.forEach((src,i) => {
-    const s = document.createElement('div');
-    s.className = 'modal-slide';
-    const img = document.createElement('img');
-    img.src = src;
-    img.onerror = () => { img.src = 'image/placeholder.jpg'; };
-    s.appendChild(img);
-    slidesEl.appendChild(s);
+    const s = document.createElement('div'); s.className = 'modal-slide';
+    const img = document.createElement('img'); img.src = src;
+    s.appendChild(img); slidesEl.appendChild(s);
     const d = document.createElement('button');
     d.className = 'modal-dot'+(i===0?' active':'');
-    d.onclick = () => gotoModal(i);
-    navEl.appendChild(d);
+    d.onclick = () => gotoModal(i); navEl.appendChild(d);
   });
-
   document.getElementById('m-prev').classList.toggle('hidden', photos.length<=1);
   document.getElementById('m-next').classList.toggle('hidden', photos.length<=1);
   document.getElementById('m-ref').textContent = p.ref;
@@ -520,60 +484,36 @@ function gotoModal(idx) {
 
 function slideModal(dir) { gotoModal(modalIdx+dir); }
 function closeModal() { document.getElementById('modal').classList.remove('open'); }
-
-function changeModalQty(dir) {
-  modalQty = Math.max(1, modalQty+dir);
-  document.getElementById('m-qty').textContent = modalQty;
-}
-
+function changeModalQty(dir) { modalQty = Math.max(1,modalQty+dir); document.getElementById('m-qty').textContent = modalQty; }
 function addFromModal() {
   if(!currentProduct) return;
   addToCart(currentProduct, modalQty);
   const btn = document.getElementById('m-cta');
-  btn.textContent = '✓ Ajouté !';
-  btn.classList.add('added');
+  btn.textContent = '✓ Ajouté !'; btn.classList.add('added');
   setTimeout(()=>{ btn.textContent='+ Ajouter au devis'; btn.classList.remove('added'); }, 1500);
 }
 
-// ── PANIER ──
 function addToCart(p, qty) {
   if(cart[p.ref]) cart[p.ref].qty += qty;
   else cart[p.ref] = {product:p, qty};
   updateCartUI();
 }
-
-function removeFromCart(ref) {
-  delete cart[ref];
-  updateCartUI();
-}
-
-function clearCart() {
-  Object.keys(cart).forEach(k=>delete cart[k]);
-  updateCartUI();
-}
+function removeFromCart(ref) { delete cart[ref]; updateCartUI(); }
+function clearCart() { Object.keys(cart).forEach(k=>delete cart[k]); updateCartUI(); }
 
 function updateCartUI() {
   const total = Object.values(cart).reduce((s,i)=>s+i.qty,0);
   const count = Object.keys(cart).length;
-  const bubble = document.getElementById('cart-bubble');
-  bubble.classList.toggle('hidden', total===0);
+  document.getElementById('cart-bubble').classList.toggle('hidden', total===0);
   document.getElementById('cart-count').textContent = total;
-  document.getElementById('cart-label').textContent =
-    count > 0 ? `${count} article${count>1?'s':''} sélectionné${count>1?'s':''}` : 'Ma demande de devis';
-
+  document.getElementById('cart-label').textContent = count>0 ? `${count} article${count>1?'s':''} sélectionné${count>1?'s':''}` : 'Ma demande de devis';
   const itemsEl = document.getElementById('cart-items');
   const summaryEl = document.getElementById('cart-summary');
-
-  if(count===0) {
-    itemsEl.innerHTML = '<div class="cart-empty">Aucun article ajouté</div>';
-    summaryEl.textContent = '';
-    return;
-  }
+  if(count===0) { itemsEl.innerHTML='<div class="cart-empty">Aucun article ajouté</div>'; summaryEl.textContent=''; return; }
   itemsEl.innerHTML = '';
   Object.values(cart).forEach(({product:p, qty}) => {
-    const photos = (p.photos||[]).map(f=>'image/'+f);
-    const div = document.createElement('div');
-    div.className = 'cart-item';
+    const photos = (p.photos||[]).map(f=>imgUrl(f));
+    const div = document.createElement('div'); div.className = 'cart-item';
     div.innerHTML = `
       <div class="cart-item-thumb">${photos.length?`<img src="${photos[0]}" alt="">`:''}</div>
       <div class="cart-item-info">
@@ -587,15 +527,8 @@ function updateCartUI() {
   summaryEl.textContent = `${count} référence${count>1?'s':''} · ${total} unité${total>1?'s':''}`;
 }
 
-function openCart() {
-  document.getElementById('cart-overlay').classList.add('open');
-  document.getElementById('cart-drawer').classList.add('open');
-}
-
-function closeCart() {
-  document.getElementById('cart-overlay').classList.remove('open');
-  document.getElementById('cart-drawer').classList.remove('open');
-}
+function openCart() { document.getElementById('cart-overlay').classList.add('open'); document.getElementById('cart-drawer').classList.add('open'); }
+function closeCart() { document.getElementById('cart-overlay').classList.remove('open'); document.getElementById('cart-drawer').classList.remove('open'); }
 
 function sendWhatsApp() {
   const items = Object.values(cart);
@@ -610,21 +543,15 @@ function sendWhatsApp() {
   window.open(`https://wa.me/212661219190?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-// ── FILTRES ──
 function filterCat(cat, btn) {
   currentCat = cat;
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   renderAll();
 }
+function filterSearch(val) { currentSearch = val.toLowerCase(); renderAll(); }
 
-function filterSearch(val) {
-  currentSearch = val.toLowerCase();
-  renderAll();
-}
-
-// ── INIT ──
-loadProducts();
+init();
 </script>
 </body>
 </html>
