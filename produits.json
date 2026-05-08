@@ -1,0 +1,399 @@
+[
+  {
+    "ref": "25-32",
+    "nom": "Coffret Zellij 3 Pcs",
+    "description": "Bloc-notes A5 avec classeur. Stylo Premium en métal. Porte-clés en métal et simili cuir. Motif Zellij marocain.",
+    "dimensions": "26 × 26 × 5,5 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-32_1_vert.jpg",
+      "25-32_2_bleu.jpg",
+      "25-32_3_beige.jpg",
+      "25-32_4_noir.jpg",
+      "25-32_5_rouge.jpg",
+      "25-32_6_ouvert_beige.jpg",
+      "25-32_7_interieur_rouge.jpg"
+    ]
+  },
+  {
+    "ref": "25-33",
+    "nom": "Coffret VIP 3 Volets 5 Pcs",
+    "description": "Bloc-notes A5 2 volets. Clé USB en métal 32 Go. Stylo Premium en métal. Porte-cartes magnétique. Mug thermos isotherme.",
+    "dimensions": "27,5 × 22 × 11 cm — Mug 500 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-33_1_ouvert.jpg",
+      "25-33_2_pose.jpg",
+      "25-33_3_composants.jpg"
+    ]
+  },
+  {
+    "ref": "25-36",
+    "nom": "Coffret Premium 4 Pcs",
+    "description": "Bloc-notes A5 2 volets en simili cuir. Stylo Premium en simili cuir et métal. Porte-cartes de visite en simili cuir et métal. Porte-clés en simili cuir et métal.",
+    "dimensions": "32 × 26,5 × 4 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-36_1_beige_etale.jpg",
+      "25-36_2_bleu_boite.jpg",
+      "25-36_3_beige_boite.jpg",
+      "25-36_4_noir_boite.jpg",
+      "25-36_5_bleu_ouvert.jpg",
+      "25-36_6_beige_ouvert.jpg",
+      "25-36_7_noir_ouvert.jpg",
+      "25-36_8_interieur.jpg"
+    ]
+  },
+  {
+    "ref": "25-31",
+    "nom": "Coffret Classique 4 Pcs",
+    "description": "Bloc-notes A5 avec élastique en simili cuir. Stylo Premium en métal. Porte-cartes de visite en simili cuir et métal. Porte-clés en simili cuir et métal.",
+    "dimensions": "29 × 25 × 3 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-31_1_gris_boite.jpg",
+      "25-31_2_gris_ouvert.jpg",
+      "25-31_3_noir_boite.jpg",
+      "25-31_4_noir_ouvert.jpg",
+      "25-31_5_bleu_boite.jpg",
+      "25-31_6_bleu_ouvert.jpg"
+    ]
+  },
+  {
+    "ref": "25-35",
+    "nom": "Coffret Classique 3 Pcs",
+    "description": "Bloc-notes A5 en simili cuir. Stylo Premium en métal. Porte-clés en simili cuir et métal. Disponible en 5 coloris.",
+    "dimensions": "25,5 × 25,5 × 3,8 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-35_1_bleu_principal.jpg",
+      "25-35_2_noir_boite.jpg",
+      "25-35_3_gris_boite.jpg",
+      "25-35_4_vert_boite.jpg",
+      "25-35_5_rouge_boite.jpg",
+      "25-35_6_noir_ouvert.jpg",
+      "25-35_7_vert_ouvert.jpg",
+      "25-35_8_bleu_ouvert.jpg",
+      "25-35_9_gris_ouvert.jpg",
+      "25-35_10_rouge_ouvert.jpg",
+      "25-35_11_bleu2_ouvert.jpg"
+    ]
+  },
+  {
+    "ref": "25-28",
+    "nom": "Coffret Éco Chic 3 Pcs",
+    "description": "Bloc-notes A5 en simili cuir et bois. Stylo en aluminium et bois. Mug en métal avec support en bois.",
+    "dimensions": "30 × 22,5 × 9,5 cm — Mug 360 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-28_1_noir_ouvert.jpg",
+      "25-28_2_bleu_mug.jpg",
+      "25-28_3_bleu_boite.jpg",
+      "25-28_4_vert_ouvert.jpg",
+      "25-28_5_vert_boite.jpg"
+    ]
+  },
+  {
+    "ref": "25-34",
+    "nom": "Coffret Sobre 3 Pcs",
+    "description": "Bloc-notes A5 en simili cuir. Stylo Premium en métal. Bouteille en métal isotherme, intérieur inox SUS 304.",
+    "dimensions": "26,5 × 25,5 × 8,3 cm — 500 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-34_1_ouvert.jpg",
+      "25-34_2_etale.jpg",
+      "25-34_3_boite.jpg"
+    ]
+  },
+  {
+    "ref": "40189",
+    "nom": "Coffret 3 Pcs en Bois",
+    "description": "Bloc-notes en bois A5 avec élastique. Thermos isotherme en bois, intérieur inox SUS 304. Stylo en bois.",
+    "dimensions": "30 × 27,5 × 7,5 cm — 500 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40189_1_boite.jpg",
+      "40189_2_thermos_detail.jpg",
+      "40189_3_bloc_ouvert.jpg"
+    ]
+  },
+  {
+    "ref": "40184",
+    "nom": "Coffret VIP 5 Pcs",
+    "description": "Bloc-notes classeur avec pochette de couverture. Clé USB en simili cuir 32 Go. Stylo en métal VIP. Porte-clés en métal. Porte-cartes de visite en simili cuir.",
+    "dimensions": "34 × 28 × 5,7 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40184_1_ouvert.jpg",
+      "40184_2_composants.jpg"
+    ]
+  },
+  {
+    "ref": "40161",
+    "nom": "Coffret Bloc-notes Powerbank Wireless",
+    "description": "Bloc-notes en simili cuir Premium avec logo lumineux LED. Chargeur Wireless MagSafe pour téléphone. Stylo en métal.",
+    "dimensions": "22,5 × 17 × 4 cm — 5000 mAh",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40161_1_boite.jpg",
+      "40161_2_ouvert_tel.jpg"
+    ]
+  },
+  {
+    "ref": "40167",
+    "nom": "Coffret Full Black 3 Pcs",
+    "description": "Powerbank en PVC, double port USB et Type C. Clé USB 32 Go en métal double tête avec Type C. Stylo en métal premium.",
+    "dimensions": "17 × 17 × 3,5 cm — 5000 mAh",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40167_1_boite.jpg",
+      "40167_2_composants.jpg",
+      "40167_3_detail.jpg"
+    ]
+  },
+  {
+    "ref": "40183",
+    "nom": "Coffret Moderne 3 Pcs",
+    "description": "Bloc-notes A5 avec pochette. Clé USB en métal 32 Go. Stylo en métal premium.",
+    "dimensions": "23 × 23 × 2,5 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40183_1_boite.jpg",
+      "40183_2_composants.jpg"
+    ]
+  },
+  {
+    "ref": "25-30",
+    "nom": "Coffret Classique 2 Pcs",
+    "description": "Bloc-notes A5 avec élastique en simili cuir. Stylo Premium en métal. Disponible en 5 coloris.",
+    "dimensions": "23,5 × 18,5 × 2 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-30_1_bleu_boite.jpg",
+      "25-30_2_noir_boite.jpg",
+      "25-30_3_gris_boite.jpg",
+      "25-30_4_vert_boite.jpg",
+      "25-30_5_rouge_boite.jpg",
+      "25-30_6_noir_ouvert.jpg",
+      "25-30_7_vert_ouvert.jpg",
+      "25-30_8_bleu_ouvert.jpg",
+      "25-30_9_gris_ouvert.jpg",
+      "25-30_10_rouge_ouvert.jpg"
+    ]
+  },
+  {
+    "ref": "40188",
+    "nom": "Coffret en R-PET 2 Pcs",
+    "description": "Bloc-notes A5 avec élastique en matière recyclée R-PET. Stylo en métal de luxe.",
+    "dimensions": "26 × 26 × 5,5 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40188_1_boite.jpg",
+      "40188_2_etale.jpg"
+    ]
+  },
+  {
+    "ref": "40185",
+    "nom": "Coffret en Liège 3 Pcs",
+    "description": "Bloc-notes A5 en liège. Porte-clés en liège avec plaque métallique. Stylo en liège et métal de luxe.",
+    "dimensions": "26 × 26 × 5,5 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40185_1_boite.jpg",
+      "40185_2_etale.jpg"
+    ]
+  },
+  {
+    "ref": "40186",
+    "nom": "Coffret Rayé 3 Pcs",
+    "description": "Bloc-notes A5 en simili cuir rayé. Porte-clés en métal et simili cuir. Stylo en métal et simili cuir premium.",
+    "dimensions": "26 × 26 × 5,5 cm",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40186_1_boite.jpg",
+      "40186_2_etale.jpg",
+      "40186_3_detail.jpg"
+    ]
+  },
+  {
+    "ref": "40187",
+    "nom": "Coffret Thermos et Tasses",
+    "description": "Ensemble de bouteille thermos et 3 tasses en acier inoxydable. Sac en papier cartonné inclus.",
+    "dimensions": "26 × 18,5 × 7 cm — Thermos 420 ml · Tasses 140 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40187_1_etale.jpg",
+      "40187_2_thermos.jpg",
+      "40187_3_tasses.jpg",
+      "40187_4_boite_sac.jpg",
+      "40187_5_boite.jpg"
+    ]
+  },
+  {
+    "ref": "6677",
+    "nom": "Coffret d'Hiver 3 Pcs",
+    "description": "Bouteille isotherme en métal avec socle en liège, intérieur inox SUS 304. Mug en céramique et liège. Sous-tasse en similicuir et liège.",
+    "dimensions": "Thermos 500 ml · Mug 300 ml",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "6677_1_rouge_etale.jpg"
+    ]
+  },
+  {
+    "ref": "25-26",
+    "nom": "Coffret Éco R-PET 2 Pcs",
+    "description": "Bloc-notes A5 avec support de téléphone en matière recyclée R-PET. Stylo en aluminium et bambou.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-26_1_boite.jpg",
+      "25-26_2_telephone.jpg"
+    ]
+  },
+  {
+    "ref": "25-27",
+    "nom": "Coffret Éco Nature 2 Pcs",
+    "description": "Bloc-notes A5 en liège et coton avec élastique. Stylo en bambou.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "25-27_1_boite.jpg",
+      "25-27_2_ouvert.jpg"
+    ]
+  },
+  {
+    "ref": "40179",
+    "nom": "Coffret Prestige 3 Pcs",
+    "description": "Porte-cartes de visite en simili cuir. Porte-clés en métal. Stylo de luxe en métal et simili cuir.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "40179_1_bleu_boite.jpg",
+      "40179_2_beige_etale.jpg"
+    ]
+  },
+  {
+    "ref": "80101",
+    "nom": "Coffret Bleu 3 Pcs",
+    "description": "Stylo en aluminium brillant. Porte-clés en métal et simili cuir. Clé USB twist 16 Go.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80101_1_boite.jpg",
+      "80101_2_stylo.jpg",
+      "80101_3_usb_cle.jpg",
+      "80101_4_detail.jpg"
+    ]
+  },
+  {
+    "ref": "80102",
+    "nom": "Coffret Chromé 3 Pcs",
+    "description": "Stylo en aluminium brillant. Porte-clés en métal. Clé USB métal 16 Go.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80102_1_boite.jpg",
+      "80102_2_stylo.jpg",
+      "80102_3_cle_cles.jpg"
+    ]
+  },
+  {
+    "ref": "80103",
+    "nom": "Coffret Noir 3 Pcs",
+    "description": "Stylo en aluminium soft touch. Porte-clés en métal et simili cuir. Clé USB twist 16 Go.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80103_1_boite.jpg",
+      "80103_2_composants.jpg"
+    ]
+  },
+  {
+    "ref": "80104",
+    "nom": "Coffret Liège 2 Pcs",
+    "description": "Stylo en métal et liège de luxe. Porte-clés en métal et liège.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80104_1_boite.jpg",
+      "80104_2_composants.jpg"
+    ]
+  },
+  {
+    "ref": "80105",
+    "nom": "Coffret Chromé 2 Pcs",
+    "description": "Stylo en aluminium brillant. Porte-clés en métal.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80105_1_boite.jpg",
+      "80105_2_composants.jpg"
+    ]
+  },
+  {
+    "ref": "80106",
+    "nom": "Coffret Blanc 2 Pcs",
+    "description": "Stylo en aluminium Soft-touch. Clé USB twist 16 Go.",
+    "dimensions": "",
+    "categorie": "coffrets",
+    "categorie_label": "Coffrets",
+    "categorie_num": "01",
+    "photos": [
+      "80106_1_boite.jpg",
+      "80106_2_composants.jpg",
+      "80106_3_usb.jpg"
+    ]
+  }
+]
