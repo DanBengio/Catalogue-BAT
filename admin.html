@@ -343,12 +343,16 @@ function buildFilters(){
 }
 function buildCatCheckboxes(cats,selected){
   const el=document.getElementById('cats-checkboxes');
-  el.innerHTML=cats.map(c=>`
-    <label class="cat-checkbox-item${selected.includes(c)?' checked':''}" id="cblabel-${c}">
-      <input type="checkbox" value="${c}" ${selected.includes(c)?'checked':''}
-        onchange="onCatCheckChange()">
-      ${catMeta[c]?.num?'<span style='color:#aaa;font-size:.7rem'>'+catMeta[c].num+'</span> ':''}${catMeta[c]?.label||c}
-    </label>`).join('');
+  if(!el)return;
+  el.innerHTML=cats.map(c=>{
+    const numSpan=catMeta[c]?.num?`<span style="color:#aaa;font-size:.7rem">${catMeta[c].num}</span> `:'';
+    const label=catMeta[c]?.label||c;
+    const isChecked=selected.includes(c);
+    return `<label class="cat-checkbox-item${isChecked?' checked':''}" id="cblabel-${c}">
+      <input type="checkbox" value="${c}" ${isChecked?'checked':''} onchange="onCatCheckChange()">
+      ${numSpan}${label}
+    </label>`;
+  }).join('');
 }
 function onCatCheckChange(){
   // Mettre à jour les classes checked
