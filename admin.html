@@ -48,6 +48,11 @@ body{font-family:'Raleway',sans-serif;background:#f0f2f5;color:var(--dark)}
 .row-ref{font-size:0.7rem;font-weight:700;color:var(--blue);letter-spacing:1px}
 .row-name{font-size:0.82rem;font-weight:700;color:var(--dark);line-height:1.3}
 .badge-cat{display:inline-block;background:#f0f8fc;color:var(--blue);border-radius:20px;padding:3px 10px;font-size:0.65rem;font-weight:700}
+.cats-checkboxes{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.cat-checkbox-item{display:flex;align-items:center;gap:5px;background:#f5f5f5;border-radius:8px;padding:5px 10px;cursor:pointer;font-size:0.78rem;border:1.5px solid transparent;transition:all .15s}
+.cat-checkbox-item:hover{background:#e8f4fb;border-color:var(--blue)}
+.cat-checkbox-item input{accent-color:var(--blue);width:14px;height:14px;cursor:pointer}
+.cat-checkbox-item.checked{background:#e8f4fb;border-color:var(--blue);font-weight:700}
 .badge-bs{display:inline-block;background:#fff3cd;color:#856404;border-radius:20px;padding:2px 8px;font-size:0.62px;font-weight:700;margin-left:4px;font-size:0.62rem}
 /* TOGGLE */
 .toggle{position:relative;display:inline-block;width:40px;height:22px;flex-shrink:0;cursor:pointer}
@@ -214,10 +219,13 @@ textarea.form-input{resize:vertical;min-height:80px}
         <div class="form-group"><label class="form-label">Dimensions</label><input class="form-input" id="edit-dims" placeholder="ex: 26 × 26 × 5,5 cm"></div>
         <div class="form-group"><label class="form-label">Ordre d'affichage</label><input class="form-input" id="edit-ordre" type="number" value="0" min="0"></div>
       </div>
-      <div class="form-row three">
-        <div class="form-group"><label class="form-label">Catégorie (clé)</label><input class="form-input" id="edit-cat" placeholder="ex: coffrets"></div>
-        <div class="form-group"><label class="form-label">Catégorie (label)</label><input class="form-input" id="edit-cat-label" placeholder="ex: Coffrets"></div>
-        <div class="form-group"><label class="form-label">N° catégorie</label><input class="form-input" id="edit-cat-num" placeholder="ex: 01"></div>
+      <div class="form-group" style="margin:0 0 12px 0">
+        <label class="form-label">Catégories <span style="font-weight:400;color:#aaa">(cocher une ou plusieurs)</span></label>
+        <div class="cats-checkboxes" id="cats-checkboxes"></div>
+        <input type="hidden" id="edit-cat">
+        <input type="hidden" id="edit-cat-label">
+        <input type="hidden" id="edit-cat-num">
+        <input type="hidden" id="edit-cat-select">
       </div>
       <div class="imgs-section">
         <div class="imgs-label">Photos — Glisser pour réordonner</div>
@@ -247,7 +255,7 @@ textarea.form-input{resize:vertical;min-height:80px}
 <script>
 const SUPABASE_URL='https://prfzjiruivbhaqvnrczk.supabase.co';
 const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
-let authToken=null,allProducts=[],editPhotos=[],dragSrcIdx=null;
+let authToken=null,authEmail=null,authPwd=null,allProducts=[],editPhotos=[],dragSrcIdx=null;
 
 async function doLogin(){
   const email=document.getElementById('login-email').value;
@@ -257,14 +265,31 @@ async function doLogin(){
   try{
     const res=await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`,{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_KEY},body:JSON.stringify({email,password:pwd})});
     const data=await res.json();
-    if(data.access_token){authToken=data.access_token;document.getElementById('login-screen').style.display='none';document.getElementById('app').style.display='block';loadProducts();}
+    if(data.access_token){authToken=data.access_token;authEmail=email;authPwd=pwd;document.getElementById('login-screen').style.display='none';document.getElementById('app').style.display='block';loadProducts();}
     else err.style.display='block';
   }catch(e){err.style.display='block';}
 }
 function doLogout(){authToken=null;document.getElementById('login-screen').style.display='flex';document.getElementById('app').style.display='none';}
 
+async function refreshToken(){
+  if(!authEmail||!authPwd)return false;
+  try{
+    const res=await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`,{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_KEY},body:JSON.stringify({email:authEmail,password:authPwd})});
+    const data=await res.json();
+    if(data.access_token){authToken=data.access_token;return true;}
+  }catch(e){}
+  return false;
+}
 async function api(method,path,body){
-  const res=await fetch(`${SUPABASE_URL}/rest/v1/${path}`,{method,headers:{'Content-Type':'application/json','apikey':SUPABASE_KEY,'Authorization':`Bearer ${authToken||SUPABASE_KEY}`,'Prefer':method==='POST'?'return=representation':'return=minimal'},body:body?JSON.stringify(body):undefined});
+  const doFetch=()=>fetch(`${SUPABASE_URL}/rest/v1/${path}`,{method,headers:{'Content-Type':'application/json','apikey':SUPABASE_KEY,'Authorization':`Bearer ${authToken||SUPABASE_KEY}`,'Prefer':method==='POST'?'return=representation':'return=minimal'},body:body?JSON.stringify(body):undefined});
+  let res=await doFetch();
+  // Auto-refresh si token expiré
+  if(res.status===401){
+    const ok=await refreshToken();
+    if(ok)res=await doFetch();
+    else{showToast('Session expirée, reconnectez-vous','error');doLogout();return null;}
+  }
+  if(res.status===409){showToast('Cette référence existe déjà en base','error');return null;}
   if(res.status===204)return null;
   return await res.json();
 }
@@ -293,18 +318,60 @@ function updateStats(){
   document.getElementById('stat-cats').textContent=new Set(allProducts.map(p=>p.categorie)).size;
   document.getElementById('stat-photos').textContent=allProducts.reduce((s,p)=>s+(p.photos||[]).length,0);
 }
+// catMeta: map clé→{label,num} pour retrouver infos d'une catégorie
+let catMeta={};
 function buildFilters(){
   const sel=document.getElementById('cat-filter');
-  const cats=[...new Set(allProducts.map(p=>p.categorie))].filter(Boolean);
+  // Collecter toutes les catégories depuis categories[] ET categorie
+  const allCats=new Set();
+  allProducts.forEach(p=>{
+    if(p.categories&&p.categories.length)p.categories.forEach(c=>allCats.add(c));
+    else if(p.categorie)allCats.add(p.categorie);
+  });
+  const cats=[...allCats].filter(Boolean).sort();
+  // Construire catMeta
+  catMeta={};
+  cats.forEach(c=>{
+    const p=allProducts.find(x=>(x.categories||[x.categorie]).includes(c));
+    catMeta[c]={label:p?.categorie_label||c,num:p?.categorie_num||''};
+  });
+  // Filtre toolbar
   sel.innerHTML='<option value="">Toutes les catégories</option>';
-  cats.forEach(c=>{const label=allProducts.find(p=>p.categorie===c)?.categorie_label||c;sel.innerHTML+=`<option value="${c}">${label}</option>`;});
+  cats.forEach(c=>sel.innerHTML+=`<option value="${c}">${catMeta[c].num?catMeta[c].num+' — ':''}${catMeta[c].label}</option>`);
+  // Checkboxes dans la modale
+  buildCatCheckboxes(cats,[]);
+}
+function buildCatCheckboxes(cats,selected){
+  const el=document.getElementById('cats-checkboxes');
+  el.innerHTML=cats.map(c=>`
+    <label class="cat-checkbox-item${selected.includes(c)?' checked':''}" id="cblabel-${c}">
+      <input type="checkbox" value="${c}" ${selected.includes(c)?'checked':''}
+        onchange="onCatCheckChange()">
+      ${catMeta[c]?.num?'<span style='color:#aaa;font-size:.7rem'>'+catMeta[c].num+'</span> ':''}${catMeta[c]?.label||c}
+    </label>`).join('');
+}
+function onCatCheckChange(){
+  // Mettre à jour les classes checked
+  document.querySelectorAll('.cat-checkbox-item').forEach(lbl=>{
+    const cb=lbl.querySelector('input');
+    lbl.classList.toggle('checked',cb.checked);
+  });
+  // Mettre à jour edit-cat (première catégorie cochée = catégorie principale)
+  const checked=getCheckedCats();
+  const first=checked[0]||'';
+  document.getElementById('edit-cat').value=first;
+  document.getElementById('edit-cat-label').value=catMeta[first]?.label||'';
+  document.getElementById('edit-cat-num').value=catMeta[first]?.num||'';
+}
+function getCheckedCats(){
+  return [...document.querySelectorAll('#cats-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
 }
 function filterTable(search){
   const q=(typeof search==='string'?search:document.querySelector('.toolbar-search').value).toLowerCase();
   const cat=document.getElementById('cat-filter').value;
   const status=document.getElementById('status-filter').value;
   let f=allProducts;
-  if(cat)f=f.filter(p=>p.categorie===cat);
+  if(cat)f=f.filter(p=>(p.categories&&p.categories.includes(cat))||(p.categorie===cat&&!(p.categories||[]).length));
   if(status==='actif')f=f.filter(p=>p.actif!==false);
   if(status==='inactif')f=f.filter(p=>p.actif===false);
   if(status==='bestseller')f=f.filter(p=>p.bestseller);
@@ -322,7 +389,7 @@ function renderTable(products){
       <div class="row-thumb">${thumb}</div>
       <div class="row-ref">${p.ref||'—'}</div>
       <div><div class="row-name">${p.nom||'—'}${isBs?' <span class="badge-bs">⭐ Bestseller</span>':''}</div><div style="font-size:0.7rem;color:#aaa;margin-top:2px">${p.dimensions||''}</div></div>
-      <div><span class="badge-cat">${p.categorie_label||p.categorie||'—'}</span></div>
+      <div>${((p.categories&&p.categories.length)?p.categories:p.categorie?[p.categorie]:[]).map(c=>`<span class="badge-cat" style="margin:1px">${catMeta[c]?.label||c}</span>`).join('')||'<span class="badge-cat">—</span>'}</div>
       <div style="font-size:0.78rem;color:#888;font-weight:700">${(p.photos||[]).length}</div>
       <div class="toggle-group">
         <div class="toggle-wrap">
@@ -351,6 +418,7 @@ async function toggleField(id,field,value){
 function openAddModal(){
   document.getElementById('edit-title').textContent='Nouveau produit';
   ['edit-id','edit-ref','edit-nom','edit-desc','edit-dims','edit-cat','edit-cat-label','edit-cat-num'].forEach(id=>document.getElementById(id).value='');
+  buildCatCheckboxes(Object.keys(catMeta),[]);
   document.getElementById('edit-ordre').value='0';
   document.getElementById('edit-actif').checked=true;
   document.getElementById('edit-bestseller').checked=false;
@@ -366,9 +434,11 @@ function openEditModal(p){
   document.getElementById('edit-desc').value=p.description||'';
   document.getElementById('edit-dims').value=p.dimensions||'';
   document.getElementById('edit-ordre').value=p.ordre||0;
-  document.getElementById('edit-cat').value=p.categorie||'';
-  document.getElementById('edit-cat-label').value=p.categorie_label||'';
-  document.getElementById('edit-cat-num').value=p.categorie_num||'';
+  const selCats=p.categories&&p.categories.length?p.categories:(p.categorie?[p.categorie]:[]);
+  document.getElementById('edit-cat').value=selCats[0]||'';
+  document.getElementById('edit-cat-label').value=catMeta[selCats[0]]?.label||p.categorie_label||'';
+  document.getElementById('edit-cat-num').value=catMeta[selCats[0]]?.num||p.categorie_num||'';
+  buildCatCheckboxes(Object.keys(catMeta),selCats);
   document.getElementById('edit-actif').checked=p.actif!==false;
   document.getElementById('edit-bestseller').checked=!!p.bestseller;
   document.getElementById('delete-btn').style.display='inline-flex';
@@ -443,7 +513,9 @@ async function uploadFiles(files){
 
 async function saveProduct(){
   const id=document.getElementById('edit-id').value;
-  const data={ref:document.getElementById('edit-ref').value.trim(),nom:document.getElementById('edit-nom').value.trim(),description:document.getElementById('edit-desc').value.trim(),dimensions:document.getElementById('edit-dims').value.trim(),ordre:parseInt(document.getElementById('edit-ordre').value)||0,categorie:document.getElementById('edit-cat').value.trim(),categorie_label:document.getElementById('edit-cat-label').value.trim(),categorie_num:document.getElementById('edit-cat-num').value.trim(),actif:document.getElementById('edit-actif').checked,bestseller:document.getElementById('edit-bestseller').checked,photos:editPhotos};
+  const checkedCats=getCheckedCats();
+  const primaryCat=checkedCats[0]||'';
+  const data={ref:document.getElementById('edit-ref').value.trim(),nom:document.getElementById('edit-nom').value.trim(),description:document.getElementById('edit-desc').value.trim(),dimensions:document.getElementById('edit-dims').value.trim(),ordre:parseInt(document.getElementById('edit-ordre').value)||0,categorie:primaryCat,categorie_label:catMeta[primaryCat]?.label||document.getElementById('edit-cat-label').value.trim(),categorie_num:catMeta[primaryCat]?.num||document.getElementById('edit-cat-num').value.trim(),categories:checkedCats,actif:document.getElementById('edit-actif').checked,bestseller:document.getElementById('edit-bestseller').checked,photos:editPhotos};
   if(!data.ref||!data.nom){showToast('Référence et nom requis','error');return;}
   try{
     if(id)await api('PATCH',`produits?id=eq.${id}`,data);
@@ -465,7 +537,8 @@ async function handleJsonImport(input){
     if(!Array.isArray(products))throw new Error();
     if(!confirm(`Importer ${products.length} produits ?`))return;
     let ok=0;
-    for(const p of products){try{const existing=allProducts.find(x=>x.ref===p.ref);if(existing)await api('PATCH',`produits?id=eq.${existing.id}`,p);else await api('POST','produits',p);ok++;}catch(e){}}
+    for(const p of products){try{const existing=allProducts.find(x=>x.ref===p.ref);if(!p.categories||!p.categories.length)p.categories=p.categorie?[p.categorie]:[];
+        if(existing)await api('PATCH',`produits?id=eq.${existing.id}`,p);else await api('POST','produits',p);ok++;}catch(e){}}
     showToast(`${ok}/${products.length} produits importés ✅`,'success');loadProducts();
   }catch(e){showToast('Fichier JSON invalide','error');}
   input.value='';
