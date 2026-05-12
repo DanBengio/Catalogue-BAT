@@ -226,7 +226,7 @@ textarea.form-input{resize:vertical;min-height:80px}
           ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleFileDrop(event)">
           <input type="file" id="file-input" multiple accept="image/*" onchange="handleFileSelect(this)">
           <div class="drop-zone-icon">📸</div>
-          <div class="drop-zone-text"><strong>Glisser-déposer</strong> des images ici<br>ou cliquer pour sélectionner<br><span style="font-size:0.7rem;opacity:0.6">JPG, PNG — max 5MB</span></div>
+          <div class="drop-zone-text"><strong>Glisser-déposer</strong> des images ici<br>ou cliquer pour sélectionner<br>ou <strong>Ctrl+V</strong> pour coller un screenshot<br><span style="font-size:0.7rem;opacity:0.6">JPG, PNG — max 5MB</span></div>
         </div>
         <div class="upload-progress" id="upload-progress">
           <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
@@ -388,6 +388,28 @@ function handleDragLeave(e){document.getElementById('drop-zone').classList.remov
 function handleFileDrop(e){e.preventDefault();document.getElementById('drop-zone').classList.remove('dragover');uploadFiles([...e.dataTransfer.files]);}
 function handleFileSelect(input){uploadFiles([...input.files]);input.value='';}
 
+// ── Ctrl+V paste depuis clipboard ──
+document.addEventListener('paste', function(e){
+  const modal = document.getElementById('edit-modal');
+  if(!modal.classList.contains('open')) return; // uniquement si la modal est ouverte
+  const items = e.clipboardData && e.clipboardData.items;
+  if(!items) return;
+  const imageFiles = [];
+  for(let i=0; i<items.length; i++){
+    if(items[i].type.startsWith('image/')){
+      const file = items[i].getAsFile();
+      if(file) imageFiles.push(file);
+    }
+  }
+  if(!imageFiles.length) return;
+  e.preventDefault();
+  // Flash visuel sur la drop zone
+  const dz = document.getElementById('drop-zone');
+  dz.classList.add('dragover');
+  setTimeout(()=>dz.classList.remove('dragover'), 600);
+  uploadFiles(imageFiles);
+});
+
 async function uploadFiles(files){
   const ref=document.getElementById('edit-ref').value.trim();
   if(!ref){showToast('Renseignez d\'abord la référence','error');return;}
@@ -399,7 +421,7 @@ async function uploadFiles(files){
   progress.style.display='block';
   for(let i=0;i<valid.length;i++){
     const file=valid[i];
-    const ext=file.name.split('.').pop().toLowerCase();
+    const ext = file.name && file.name !== 'image.png' ? file.name.split('.').pop().toLowerCase() : (file.type === 'image/jpeg' ? 'jpg' : 'png');
     const fn=`${ref.replace(/[^a-z0-9]/gi,'_')}_${Date.now()}_${i}.${ext}`;
     text.textContent=`Upload ${i+1}/${valid.length} : ${file.name}`;
     fill.style.width=`${(i/valid.length)*100}%`;
