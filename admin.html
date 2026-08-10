@@ -350,9 +350,13 @@ async function loadProducts(){
   allProducts=await api('GET','produits?select=*&order=categorie_num,ordre,ref')||[];
   updateStats();
   buildFilters();          // construit catMeta : doit passer AVANT le rendu
+  // Purge du cache de rendu : setView() repart de lastFiltered, qui contient les
+  // anciens objets produits. Sans ca, une modification enregistree ne s'affiche
+  // qu'apres un rechargement complet de la page.
+  lastFiltered=null;
   let saved=null;try{saved=localStorage.getItem('bat-admin-view');}catch(e){}
   if(saved==='grid'||saved==='rows')setView(saved);
-  else renderTable(allProducts);
+  filterTable();           // rend les donnees fraiches en conservant les filtres actifs
 }
 function updateStats(){
   document.getElementById('stat-total').textContent=allProducts.length;
