@@ -256,7 +256,7 @@ const SUPABASE_URL='https://prfzjiruivbhaqvnrczk.supabase.co';
 const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
 function imgUrl(f){return`${SUPABASE_URL}/storage/v1/object/public/images/${f}`;}
 
-let allProducts=[],currentCat='all',currentSearch='';
+let allProducts=[],currentCat='all',currentSearch='',catMeta={};
 let modalIdx=0,modalPhotos=[],currentProduct=null;
 const cart={};
 let cartOpen=false;
@@ -269,15 +269,35 @@ async function init(){
   }catch(e){document.getElementById('catalogue').innerHTML='<div class="loading">Erreur de chargement.</div>';}
 }
 
+// Toutes les categories d'un produit (categories[] si presente, sinon categorie)
+function catsOf(p){
+  return (p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
+}
+
+function buildCatMeta(){
+  catMeta={};
+  // 1er passage : le libelle fiable vient du produit dont c'est la categorie principale
+  allProducts.forEach(p=>{
+    if(p.categorie&&!catMeta[p.categorie])catMeta[p.categorie]={label:p.categorie_label||p.categorie,num:p.categorie_num||''};
+  });
+  // 2e passage : categories secondaires sans libelle connu
+  allProducts.forEach(p=>{
+    catsOf(p).forEach(c=>{if(!catMeta[c])catMeta[c]={label:c,num:''};});
+  });
+}
+
+function sortedCats(){
+  return Object.keys(catMeta).sort((a,b)=>(catMeta[a].num||'zz').localeCompare(catMeta[b].num||'zz'));
+}
+
 function buildNav(){
-  const cats={};
-  allProducts.forEach(p=>{if(!cats[p.categorie])cats[p.categorie]={label:p.categorie_label,num:p.categorie_num};});
+  buildCatMeta();
   const nav=document.getElementById('nav');
   const sw=nav.querySelector('.search-wrap');
   nav.querySelectorAll('.nav-btn.dyn').forEach(b=>b.remove());
-  Object.entries(cats).sort((a,b)=>(a[1].num||'').localeCompare(b[1].num||'')).forEach(([key,{label}])=>{
+  sortedCats().forEach(key=>{
     const btn=document.createElement('button');
-    btn.className='nav-btn dyn';btn.textContent=label;
+    btn.className='nav-btn dyn';btn.textContent=catMeta[key].label;
     btn.onclick=()=>filterCat(key,btn);
     nav.insertBefore(btn,sw);
   });
@@ -321,21 +341,32 @@ function gSlide(uid,idx){
 
 function renderAll(){
   let filtered=allProducts;
-  if(currentCat!=='all')filtered=filtered.filter(p=>p.categorie===currentCat);
+  if(currentCat!=='all')filtered=filtered.filter(p=>catsOf(p).includes(currentCat));
   if(currentSearch)filtered=filtered.filter(p=>(p.nom||'').toLowerCase().includes(currentSearch)||(p.ref||'').toLowerCase().includes(currentSearch)||(p.description||'').toLowerCase().includes(currentSearch));
   const catEl=document.getElementById('catalogue');catEl.innerHTML='';
   document.getElementById('no-results').style.display=filtered.length?'none':'block';
-  const groups={};filtered.forEach(p=>{if(!groups[p.categorie])groups[p.categorie]=[];groups[p.categorie].push(p);});
-  Object.entries(groups).forEach(([cat,items])=>{
-    const first=items[0];
+  // Un produit multi-categories apparait dans chaque section concernee
+  const groups={};
+  filtered.forEach(p=>{
+    catsOf(p).forEach(c=>{
+      if(currentCat!=='all'&&c!==currentCat)return;
+      if(!groups[c])groups[c]=[];
+      groups[c].push(p);
+    });
+  });
+  sortedCats().filter(cat=>groups[cat]&&groups[cat].length).forEach(cat=>{
+    const items=groups[cat];
+    const meta=catMeta[cat]||{label:cat,num:''};
     const sec=document.createElement('div');
-    sec.innerHTML=`<div class="sec-header"><div class="sec-num">${first.categorie_num||''}</div><div><div class="sec-name">${first.categorie_label||cat}</div><div class="sec-count">${items.length} produit${items.length>1?'s':''} · Personnalisation disponible</div></div></div><div class="divider"></div>`;
+    sec.innerHTML=`<div class="sec-header"><div class="sec-num">${meta.num||''}</div><div><div class="sec-name">${meta.label}</div><div class="sec-count">${items.length} produit${items.length>1?'s':''} · Personnalisation disponible</div></div></div><div class="divider"></div>`;
     const grid=document.createElement('div');grid.className='grid';
     items.forEach(p=>{
       const photos=(p.photos||[]).map(f=>imgUrl(f));
-      const uid=(p.ref||'').replace(/[^a-z0-9]/gi,'_');
+      // uid prefixe par la categorie : un produit multi-categories est rendu plusieurs
+      // fois, des ids identiques casseraient carrousel et champ quantite
+      const uid=(cat+'_'+(p.ref||'')).replace(/[^a-z0-9]/gi,'_');
       const card=document.createElement('div');card.className='card';card.onclick=()=>openModal(p);
-      card.appendChild(makeGallery(photos,first.categorie_label||cat,uid,!!p.bestseller));
+      card.appendChild(makeGallery(photos,meta.label,uid,!!p.bestseller));
       const body=document.createElement('div');body.className='card-body';
       const desc=p.description||'';
       body.innerHTML=`<div class="card-ref">${p.ref}</div><div class="card-name">${p.nom}</div><div class="card-desc">${desc.length>95?desc.substring(0,95)+'…':desc}</div>${p.dimensions?`<div class="card-size">📐 ${p.dimensions}</div>`:''}`;

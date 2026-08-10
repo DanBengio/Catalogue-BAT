@@ -53,6 +53,31 @@ body{font-family:'Raleway',sans-serif;background:#f0f2f5;color:var(--dark)}
 .cat-checkbox-item:hover{background:#e8f4fb;border-color:var(--blue)}
 .cat-checkbox-item input{accent-color:var(--blue);width:14px;height:14px;cursor:pointer}
 .cat-checkbox-item.checked{background:#e8f4fb;border-color:var(--blue);font-weight:700}
+/* BASCULE DE VUE */
+.view-toggle{display:flex;background:#f0f2f5;border-radius:8px;padding:3px;gap:2px}
+.view-btn{border:none;background:transparent;border-radius:6px;padding:7px 11px;font-size:0.75rem;font-weight:700;font-family:'Raleway',sans-serif;color:#999;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .15s}
+.view-btn:hover{color:var(--blue)}
+.view-btn.active{background:white;color:var(--blue);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+/* VUE BLOC */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:1.15rem;padding:1.25rem}
+.pcard{background:white;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .18s,border-color .18s,transform .18s}
+.pcard:hover{border-color:var(--blue);box-shadow:0 6px 20px rgba(0,135,183,.13);transform:translateY(-2px)}
+.pcard.inactive{opacity:.5;background:#fafafa}
+.pcard.inactive .pcard-img img{filter:grayscale(1)}
+.pcard-img{height:168px;background:#f5f8fa;display:flex;align-items:center;justify-content:center;position:relative;cursor:pointer}
+.pcard-img img{width:100%;height:100%;object-fit:contain;padding:10px}
+.pcard-noimg{font-size:1.7rem;opacity:.22}
+.pcard-flag{position:absolute;top:8px;font-size:.58rem;font-weight:800;padding:3px 8px;border-radius:20px;letter-spacing:.5px}
+.pcard-flag.bs{left:8px;background:var(--yellow);color:#5a4300}
+.pcard-flag.hid{right:8px;background:var(--prune);color:white}
+.pcard-nb{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.55);color:white;font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:20px}
+.pcard-body{padding:.75rem .85rem;flex:1;display:flex;flex-direction:column;gap:4px}
+.pcard-ref{font-size:.64rem;font-weight:800;color:var(--blue);letter-spacing:1px}
+.pcard-name{font-size:.8rem;font-weight:700;line-height:1.32}
+.pcard-dims{font-size:.67rem;color:#b0b0b0}
+.pcard-cats{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
+.pcard-foot{border-top:1px solid #f2f2f2;padding:.55rem .85rem;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.pcard-toggles{display:flex;gap:9px;align-items:center}
 .badge-bs{display:inline-block;background:#fff3cd;color:#856404;border-radius:20px;padding:2px 8px;font-size:0.62px;font-weight:700;margin-left:4px;font-size:0.62rem}
 /* TOGGLE */
 .toggle{position:relative;display:inline-block;width:40px;height:22px;flex-shrink:0;cursor:pointer}
@@ -164,12 +189,16 @@ textarea.form-input{resize:vertical;min-height:80px}
         <option value="inactif">Masqués</option>
         <option value="bestseller">⭐ Bestsellers</option>
       </select>
+      <div class="view-toggle">
+        <button class="view-btn active" id="view-rows" onclick="setView('rows')" title="Vue liste">☰ Liste</button>
+        <button class="view-btn" id="view-grid" onclick="setView('grid')" title="Vue blocs">▦ Blocs</button>
+      </div>
       <button class="btn btn-success" onclick="importJson()">📥 Importer JSON</button>
       <input type="file" id="json-import" accept=".json" style="display:none" onchange="handleJsonImport(this)">
     </div>
 
     <div class="table-wrap">
-      <div class="table-head">
+      <div class="table-head" id="table-head">
         <div>Photo</div><div>Réf.</div><div>Nom produit</div><div>Catégorie</div><div>📸</div><div>Statut</div><div>Actions</div>
       </div>
       <div id="product-table"><div class="spinner"></div></div>
@@ -256,6 +285,7 @@ textarea.form-input{resize:vertical;min-height:80px}
 const SUPABASE_URL='https://prfzjiruivbhaqvnrczk.supabase.co';
 const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
 let authToken=null,authEmail=null,authPwd=null,allProducts=[],editPhotos=[],dragSrcIdx=null;
+let currentView='rows',lastFiltered=null;
 
 async function doLogin(){
   const email=document.getElementById('login-email').value;
@@ -308,7 +338,11 @@ function imgUrl(f){return`${SUPABASE_URL}/storage/v1/object/public/images/${f}`;
 
 async function loadProducts(){
   allProducts=await api('GET','produits?select=*&order=categorie_num,ordre,ref')||[];
-  updateStats();renderTable(allProducts);buildFilters();
+  updateStats();
+  buildFilters();          // construit catMeta : doit passer AVANT le rendu
+  let saved=null;try{saved=localStorage.getItem('bat-admin-view');}catch(e){}
+  if(saved==='grid'||saved==='rows')setView(saved);
+  else renderTable(allProducts);
 }
 function updateStats(){
   document.getElementById('stat-total').textContent=allProducts.length;
@@ -382,10 +416,70 @@ function filterTable(search){
   if(q)f=f.filter(p=>(p.nom||'').toLowerCase().includes(q)||(p.ref||'').toLowerCase().includes(q));
   renderTable(f);
 }
+// ── Bascule liste / blocs ──
+function setView(v){
+  currentView=v;
+  document.getElementById('view-rows').classList.toggle('active',v==='rows');
+  document.getElementById('view-grid').classList.toggle('active',v==='grid');
+  document.getElementById('table-head').style.display=(v==='grid')?'none':'grid';
+  try{localStorage.setItem('bat-admin-view',v);}catch(e){}
+  renderTable(lastFiltered||allProducts);
+}
+
+// Badges de categories, partages par les deux vues
+function catBadges(p){
+  const cats=(p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
+  if(!cats.length)return '<span class="badge-cat">—</span>';
+  return cats.map(function(k){
+    return '<span class="badge-cat" style="margin:1px">'+((catMeta[k]&&catMeta[k].label)||k)+'</span>';
+  }).join('');
+}
+
+function openEditById(id){
+  const p=allProducts.find(function(x){return String(x.id)===String(id);});
+  if(p)openEditModal(p);
+}
+
 function renderTable(products){
+  lastFiltered=products;
   const el=document.getElementById('product-table');
   if(!products.length){el.innerHTML='<div class="empty-state"><div class="empty-icon">📦</div>Aucun produit trouvé</div>';return;}
-  el.innerHTML=products.map(p=>{
+  el.innerHTML=(currentView==='grid')?renderCards(products):renderRows(products);
+}
+
+function renderCards(products){
+  return '<div class="card-grid">'+products.map(function(p){
+    const isActif=p.actif!==false, isBs=!!p.bestseller;
+    const photos=p.photos||[];
+    const visuel=photos.length
+      ? '<img src="'+imgUrl(photos[0])+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+      : '<div class="pcard-noimg">📦</div>';
+    return '<div class="pcard'+(isActif?'':' inactive')+'">'
+      +'<div class="pcard-img" onclick="openEditById(\''+p.id+'\')" title="Modifier">'
+        +visuel
+        +(isBs?'<span class="pcard-flag bs">⭐ Bestseller</span>':'')
+        +(isActif?'':'<span class="pcard-flag hid">Masqué</span>')
+        +(photos.length?'<span class="pcard-nb">📸 '+photos.length+'</span>':'')
+      +'</div>'
+      +'<div class="pcard-body">'
+        +'<div class="pcard-ref">'+(p.ref||'—')+'</div>'
+        +'<div class="pcard-name">'+(p.nom||'—')+'</div>'
+        +(p.dimensions?'<div class="pcard-dims">📐 '+p.dimensions+'</div>':'')
+        +'<div class="pcard-cats">'+catBadges(p)+'</div>'
+      +'</div>'
+      +'<div class="pcard-foot">'
+        +'<div class="pcard-toggles">'
+          +'<label class="toggle" title="'+(isActif?'Masquer':'Activer')+'"><input type="checkbox" '+(isActif?'checked':'')+' onchange="toggleField(\''+p.id+'\',\'actif\',this.checked)"><span class="toggle-slider"></span></label>'
+          +'<label class="toggle bs" title="Bestseller"><input type="checkbox" '+(isBs?'checked':'')+' onchange="toggleField(\''+p.id+'\',\'bestseller\',this.checked)"><span class="toggle-slider"></span></label>'
+        +'</div>'
+        +'<button class="btn btn-ghost btn-sm" onclick="openEditById(\''+p.id+'\')">✏️ Modifier</button>'
+      +'</div>'
+    +'</div>';
+  }).join('')+'</div>';
+}
+
+function renderRows(products){
+  return products.map(p=>{
     const thumb=(p.photos||[])[0]?`<img src="${imgUrl(p.photos[0])}" alt="">`:'';
     const isActif=p.actif!==false;
     const isBs=!!p.bestseller;
@@ -393,7 +487,7 @@ function renderTable(products){
       <div class="row-thumb">${thumb}</div>
       <div class="row-ref">${p.ref||'—'}</div>
       <div><div class="row-name">${p.nom||'—'}${isBs?' <span class="badge-bs">⭐ Bestseller</span>':''}</div><div style="font-size:0.7rem;color:#aaa;margin-top:2px">${p.dimensions||''}</div></div>
-      <div>${((p.categories&&p.categories.length)?p.categories:p.categorie?[p.categorie]:[]).map(c=>`<span class="badge-cat" style="margin:1px">${catMeta[c]?.label||c}</span>`).join('')||'<span class="badge-cat">—</span>'}</div>
+      <div>${catBadges(p)}</div>
       <div style="font-size:0.78rem;color:#888;font-weight:700">${(p.photos||[]).length}</div>
       <div class="toggle-group">
         <div class="toggle-wrap">
@@ -405,7 +499,7 @@ function renderTable(products){
           <span class="toggle-lbl">⭐ Best</span>
         </div>
       </div>
-      <div class="row-actions"><button class="btn btn-ghost btn-sm" onclick='openEditModal(${JSON.stringify(p).replace(/'/g,"&#39;")})'>✏️ Modifier</button></div>
+      <div class="row-actions"><button class="btn btn-ghost btn-sm" onclick="openEditById('${p.id}')">✏️ Modifier</button></div>
     </div>`;
   }).join('');
 }
@@ -415,7 +509,7 @@ async function toggleField(id,field,value){
   const p=allProducts.find(x=>x.id===id);
   if(p)p[field]=value;
   updateStats();
-  renderTable(allProducts);
+  filterTable();
   showToast(field==='actif'?(value?'Produit activé ✅':'Produit masqué'):(value?'⭐ Bestseller activé':'Bestseller retiré'),'success');
 }
 
