@@ -376,7 +376,10 @@ function buildFilters(){
   // Construire catMeta
   catMeta={};
   cats.forEach(c=>{
-    const p=allProducts.find(x=>(x.categories||[x.categorie]).includes(c));
+    // Le label et le numero ne se lisent QUE sur un produit dont c est la categorie
+    // principale. Sinon un produit multi-categories transmet le label de sa categorie
+    // principale a toutes ses categories secondaires (ex: mugs_gourdes affiche "Coffrets").
+    const p=allProducts.find(x=>x.categorie===c);
     catMeta[c]={label:p?.categorie_label||c,num:p?.categorie_num||''};
   });
   // Filtre toolbar
