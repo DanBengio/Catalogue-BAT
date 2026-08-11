@@ -53,6 +53,30 @@ body{font-family:'Raleway',sans-serif;background:#f0f2f5;color:var(--dark)}
 .cat-checkbox-item:hover{background:#e8f4fb;border-color:var(--blue)}
 .cat-checkbox-item input{accent-color:var(--blue);width:14px;height:14px;cursor:pointer}
 .cat-checkbox-item.checked{background:#e8f4fb;border-color:var(--blue);font-weight:700}
+/* GESTIONNAIRE DE CATEGORIES */
+.cats-modal{background:white;border-radius:18px;width:100%;max-width:620px;overflow:hidden;margin:auto}
+.cat-line{display:grid;grid-template-columns:66px 1fr 150px 78px 34px;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #f3f3f3}
+.cat-line:last-child{border-bottom:none}
+.cat-line input{border:1.5px solid #e0e0e0;border-radius:8px;padding:8px 10px;font-size:0.82rem;font-family:'Raleway',sans-serif;outline:none;width:100%}
+.cat-line input:focus{border-color:var(--blue)}
+.cat-line input.locked{background:#f7f7f7;color:#999;border-style:dashed;cursor:not-allowed}
+.cat-count{font-size:0.7rem;color:#999;font-weight:700;text-align:center}
+.cat-del{background:none;border:none;color:#ccc;font-size:0.95rem;cursor:pointer;padding:4px}
+.cat-del:hover{color:var(--prune)}
+.cat-del:disabled{opacity:0.25;cursor:not-allowed}
+.cat-head{display:grid;grid-template-columns:66px 1fr 150px 78px 34px;gap:8px;font-size:0.62rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#aaa;padding-bottom:6px;border-bottom:1px solid #eee}
+.cat-newbox{background:#f8f9fa;border-radius:10px;padding:12px;margin-top:14px}
+.cat-newbox-title{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#666;margin-bottom:8px}
+.cat-newrow{display:grid;grid-template-columns:76px 1fr 118px;gap:8px}
+.cat-newrow input{border:1.5px solid #e0e0e0;border-radius:8px;padding:9px 11px;font-size:0.82rem;font-family:'Raleway',sans-serif;outline:none;width:100%}
+.cat-newrow input:focus{border-color:var(--blue)}
+.cat-hint{font-size:0.7rem;color:#aaa;margin-top:10px;line-height:1.5}
+/* FOURNISSEUR */
+.badge-four{display:inline-block;background:#f3ecf0;color:var(--prune);border-radius:5px;padding:1px 6px;font-size:0.6rem;font-weight:800;letter-spacing:.5px;margin-right:5px}
+select.form-input.unknown{border-color:var(--prune);background:#fdf4f6}
+.ref-warning{font-size:0.72rem;color:var(--prune);font-weight:700;margin-top:5px;display:none}
+.ref-warning.show{display:block}
+.import-recap{font-size:0.82rem;line-height:1.6}
 /* BASCULE DE VUE */
 .view-toggle{display:flex;background:#f0f2f5;border-radius:8px;padding:3px;gap:2px}
 .view-btn{border:none;background:transparent;border-radius:6px;padding:7px 11px;font-size:0.75rem;font-weight:700;font-family:'Raleway',sans-serif;color:#999;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .15s}
@@ -175,6 +199,7 @@ textarea.form-input{resize:vertical;min-height:80px}
     </div>
     <div class="topbar-actions">
       <a href="index.html" target="_blank"><button class="btn btn-ghost">👁 Voir le catalogue</button></a>
+      <button class="btn btn-ghost" onclick="openCatsModal()">🏷 Catégories</button>
       <button class="btn btn-primary" onclick="openAddModal()">+ Nouveau produit</button>
       <button class="btn btn-ghost btn-sm" onclick="doLogout()">Déconnexion</button>
     </div>
@@ -192,6 +217,7 @@ textarea.form-input{resize:vertical;min-height:80px}
 
     <div class="toolbar">
       <input class="toolbar-search" type="text" placeholder="Rechercher..." oninput="filterTable(this.value)">
+      <select class="toolbar-select" id="four-filter" onchange="filterTable()"><option value="">Tous les fournisseurs</option></select>
       <select class="toolbar-select" id="cat-filter" onchange="filterTable()"><option value="">Toutes les catégories</option></select>
       <select class="toolbar-select" id="status-filter" onchange="filterTable()">
         <option value="">Tous les statuts</option>
@@ -248,8 +274,11 @@ textarea.form-input{resize:vertical;min-height:80px}
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label class="form-label">Référence *</label><input class="form-input" id="edit-ref" placeholder="ex: 25-32"></div>
-        <div class="form-group"><label class="form-label">Nom *</label><input class="form-input" id="edit-nom" placeholder="Nom du produit"></div>
+        <div class="form-group"><label class="form-label">Fournisseur *</label><select class="form-input" id="edit-fournisseur" onchange="onFournChange()"></select></div>
+        <div class="form-group"><label class="form-label">Référence *</label><input class="form-input" id="edit-ref" placeholder="ex: 25-32" onblur="checkRefDuplicate()"></div>
+      </div>
+      <div class="form-row full">
+        <div class="form-group"><label class="form-label">Nom *</label><input class="form-input" id="edit-nom" placeholder="Nom du produit"><div id="ref-warning" class="ref-warning"></div></div>
       </div>
       <div class="form-row full">
         <div class="form-group"><label class="form-label">Description</label><textarea class="form-input" id="edit-desc" placeholder="Description..."></textarea></div>
@@ -289,13 +318,68 @@ textarea.form-input{resize:vertical;min-height:80px}
   </div>
 </div>
 
+<!-- MODAL CATEGORIES -->
+<div class="modal-bg" id="cats-modal" onclick="if(event.target===this)closeCatsModal()">
+  <div class="cats-modal">
+    <div class="edit-header">
+      <div class="edit-title">🏷 Gérer les catégories</div>
+      <button class="edit-close" onclick="closeCatsModal()">✕</button>
+    </div>
+    <div class="edit-body">
+      <div class="cat-head"><div>N°</div><div>Libellé affiché</div><div>Clé technique</div><div>Produits</div><div></div></div>
+      <div id="cats-list"></div>
+      <div class="cat-newbox">
+        <div class="cat-newbox-title">➕ Nouvelle catégorie</div>
+        <div class="cat-newrow">
+          <input id="newcat-num" placeholder="09" maxlength="4">
+          <input id="newcat-label" placeholder="Libellé — ex : Mugs &amp; Gourdes" onkeydown="if(event.key==='Enter')createCategory()">
+          <input id="newcat-cle" placeholder="clé auto" readonly class="locked">
+        </div>
+        <div style="display:flex;justify-content:flex-end;margin-top:10px">
+          <button class="btn btn-primary btn-sm" onclick="createCategory()">Créer la catégorie</button>
+        </div>
+      </div>
+      <div class="cat-hint">
+        La <strong>clé technique</strong> est générée depuis le libellé et n'est plus modifiable ensuite : elle est stockée dans chaque fiche produit.<br>
+        Modifier le <strong>libellé</strong> ou le <strong>numéro</strong> répercute le changement sur tous les produits de la catégorie.<br>
+        Une catégorie ne peut être supprimée que si aucun produit ne l'utilise.
+      </div>
+    </div>
+    <div class="edit-footer">
+      <button class="btn btn-ghost" onclick="closeCatsModal()">Fermer</button>
+      <button class="btn btn-success" onclick="saveCategories()">💾 Enregistrer les modifications</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
 const SUPABASE_URL='https://prfzjiruivbhaqvnrczk.supabase.co';
 const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
+
+// ═══════════════════════════════════════════════════════════════════
+//  FOURNISSEURS — LISTE FERMEE
+//  Source de verite. Le fichier PROCESS_CATALOGUE_3.md en est la copie.
+//  Pour ajouter un fournisseur : ajouter la ligne ici, pousser sur GitHub,
+//  PUIS reporter dans le MD. Jamais l'inverse.
+//  - cle  : valeur stockee dans produits.fournisseur (ne jamais modifier)
+//  - nom  : libelle affiche dans l'admin
+//  - code : prefixe des noms de fichiers images (ex: MI_1233_1_vue.jpg)
+//           Codes INTERNES Bar A Textile, volontairement non derives des noms.
+//           BM = Maroc Business Company, MI = Imagia. Ne pas "corriger".
+// ═══════════════════════════════════════════════════════════════════
+const FOURNISSEURS=[
+  {cle:'maroc_business_company', nom:'Maroc Business Company', code:'BM'},
+  {cle:'imagia',                 nom:'Imagia',                 code:'MI'}
+];
+function fourMeta(cle){return FOURNISSEURS.find(f=>f.cle===cle)||null;}
+function fourNom(cle){const f=fourMeta(cle);return f?f.nom:(cle||'—');}
+function fourCode(cle){const f=fourMeta(cle);return f?f.code:'??';}
+
 let authToken=null,authEmail=null,authPwd=null,allProducts=[],editPhotos=[],dragSrcIdx=null;
 let currentView='rows',lastFiltered=null;
+let dbCats=[];   // lignes de la table "categories" (source de verite des categories)
 
 async function doLogin(){
   const email=document.getElementById('login-email').value;
@@ -346,10 +430,22 @@ async function uploadImage(file,filename){
 }
 function imgUrl(f){return`${SUPABASE_URL}/storage/v1/object/public/images/${f}`;}
 
+// Charge la table "categories". Si la table n'existe pas encore (migration SQL non
+// jouee), dbCats reste vide et buildFilters retombe sur les categories deduites des
+// produits : l'admin continue de fonctionner exactement comme avant.
+async function loadCategories(){
+  try{
+    const rows=await api('GET','categories?select=*&order=num,label');
+    dbCats=Array.isArray(rows)?rows:[];
+  }catch(e){dbCats=[];}
+}
+
 async function loadProducts(){
+  await loadCategories();
   allProducts=await api('GET','produits?select=*&order=categorie_num,ordre,ref')||[];
+  buildFilters();          // construit catMeta : doit passer AVANT les stats et le rendu
+  buildFournFilter();
   updateStats();
-  buildFilters();          // construit catMeta : doit passer AVANT le rendu
   // Purge du cache de rendu : setView() repart de lastFiltered, qui contient les
   // anciens objets produits. Sans ca, une modification enregistree ne s'affiche
   // qu'apres un rechargement complet de la page.
@@ -363,34 +459,53 @@ function updateStats(){
   document.getElementById('stat-actifs').textContent=allProducts.filter(p=>p.actif!==false).length;
   document.getElementById('stat-inactifs').textContent=allProducts.filter(p=>p.actif===false).length;
   document.getElementById('stat-bs').textContent=allProducts.filter(p=>p.bestseller).length;
-  document.getElementById('stat-cats').textContent=new Set(allProducts.map(p=>p.categorie)).size;
+  document.getElementById('stat-cats').textContent=Object.keys(catMeta).length||new Set(allProducts.map(p=>p.categorie)).size;
   document.getElementById('stat-photos').textContent=allProducts.reduce((s,p)=>s+(p.photos||[]).length,0);
 }
 // catMeta: map clé→{label,num} pour retrouver infos d'une catégorie
 let catMeta={};
 function buildFilters(){
   const sel=document.getElementById('cat-filter');
-  // Collecter toutes les catégories depuis categories[] ET categorie
-  const allCats=new Set();
-  allProducts.forEach(p=>{
-    if(p.categories&&p.categories.length)p.categories.forEach(c=>allCats.add(c));
-    else if(p.categorie)allCats.add(p.categorie);
-  });
-  const cats=[...allCats].filter(Boolean).sort();
-  // Construire catMeta
+  const prev=sel.value;
   catMeta={};
-  cats.forEach(c=>{
-    // Le label et le numero ne se lisent QUE sur un produit dont c est la categorie
-    // principale. Sinon un produit multi-categories transmet le label de sa categorie
-    // principale a toutes ses categories secondaires (ex: mugs_gourdes affiche "Coffrets").
-    const p=allProducts.find(x=>x.categorie===c);
-    catMeta[c]={label:p?.categorie_label||c,num:p?.categorie_num||''};
+  // 1. Source de verite : la table "categories". Une categorie peut donc exister
+  //    sans aucun produit — c'est ce qui permet de la creer avant de la remplir.
+  dbCats.forEach(c=>{if(c.cle)catMeta[c.cle]={label:c.label||c.cle,num:c.num||''};});
+  // 2. Repli : categories presentes sur des produits mais absentes de la table.
+  //    Le label et le numero ne se lisent QUE sur un produit dont c est la categorie
+  //    principale. Sinon un produit multi-categories transmet le label de sa categorie
+  //    principale a toutes ses categories secondaires (ex: mugs_gourdes affiche "Coffrets").
+  allProducts.forEach(p=>{
+    const list=(p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
+    list.forEach(k=>{
+      if(!k||catMeta[k])return;
+      const owner=allProducts.find(x=>x.categorie===k);
+      catMeta[k]={label:(owner&&owner.categorie_label)||k,num:(owner&&owner.categorie_num)||''};
+    });
   });
-  // Filtre toolbar
+  const cats=sortedCatKeys();
+  // Filtre toolbar, avec le nombre de produits par categorie
   sel.innerHTML='<option value="">Toutes les catégories</option>';
-  cats.forEach(c=>sel.innerHTML+=`<option value="${c}">${catMeta[c].num?catMeta[c].num+' — ':''}${catMeta[c].label}</option>`);
-  // Checkboxes dans la modale
-  buildCatCheckboxes(cats,[]);
+  cats.forEach(c=>sel.innerHTML+=`<option value="${c}">${catMeta[c].num?catMeta[c].num+' — ':''}${catMeta[c].label} (${catCount(c)})</option>`);
+  if(prev&&catMeta[prev])sel.value=prev;
+  // Checkboxes dans la modale — on preserve la selection si la modale est ouverte
+  const keep=document.getElementById('edit-modal').classList.contains('open')?getCheckedCats():[];
+  buildCatCheckboxes(cats,keep);
+}
+// Tri : par numero (01, 02...), les categories sans numero en fin de liste
+function sortedCatKeys(){
+  return Object.keys(catMeta).sort((a,b)=>{
+    const na=catMeta[a].num||'zzz', nb=catMeta[b].num||'zzz';
+    if(na!==nb)return na.localeCompare(nb);
+    return (catMeta[a].label||a).localeCompare(catMeta[b].label||b);
+  });
+}
+// Nombre de produits rattaches a une categorie (principale ou secondaire)
+function catCount(cle){
+  return allProducts.filter(p=>{
+    const list=(p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
+    return list.includes(cle);
+  }).length;
 }
 function buildCatCheckboxes(cats,selected){
   const el=document.getElementById('cats-checkboxes');
@@ -403,13 +518,15 @@ function buildCatCheckboxes(cats,selected){
       <input type="checkbox" value="${c}" ${isChecked?'checked':''} onchange="onCatCheckChange()">
       ${numSpan}${label}
     </label>`;
-  }).join('');
+  }).join('')
+  +`<button type="button" class="cat-checkbox-item" style="border-style:dashed;border-color:#ccc;color:#888;background:white"
+      onclick="openCatsModal()" title="Créer ou renommer une catégorie">➕ Nouvelle catégorie</button>`;
 }
 function onCatCheckChange(){
   // Mettre à jour les classes checked
   document.querySelectorAll('.cat-checkbox-item').forEach(lbl=>{
     const cb=lbl.querySelector('input');
-    lbl.classList.toggle('checked',cb.checked);
+    if(cb)lbl.classList.toggle('checked',cb.checked);
   });
   // Mettre à jour edit-cat (première catégorie cochée = catégorie principale)
   const checked=getCheckedCats();
@@ -421,11 +538,184 @@ function onCatCheckChange(){
 function getCheckedCats(){
   return [...document.querySelectorAll('#cats-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
 }
+
+// ══════════════════════════════════════════════════════════════════
+//  FOURNISSEUR — selecteur ferme
+// ══════════════════════════════════════════════════════════════════
+// Garde-fou : si la fiche porte une valeur absente de FOURNISSEURS (import
+// ancien, correction SQL manuelle), on l'affiche telle quelle et on la signale.
+// Sans ca, le select retomberait sur la premiere option et un simple
+// enregistrement reattribuerait le produit au mauvais fournisseur, en silence.
+function buildFournSelect(current){
+  const sel=document.getElementById('edit-fournisseur');
+  const known=!current||FOURNISSEURS.some(f=>f.cle===current);
+  let html='<option value="">— Choisir un fournisseur —</option>';
+  if(!known)html+=`<option value="${current}">⚠ Valeur inconnue : ${current}</option>`;
+  html+=FOURNISSEURS.map(f=>`<option value="${f.cle}">${f.code} — ${f.nom}</option>`).join('');
+  sel.innerHTML=html;
+  sel.value=current||'';
+  onFournChange();
+}
+function onFournChange(){
+  const sel=document.getElementById('edit-fournisseur');
+  const v=sel.value;
+  sel.classList.toggle('unknown',!!v&&!fourMeta(v));
+  checkRefDuplicate();
+}
+// Alerte doublon en direct : evite de decouvrir le conflit apres avoir
+// saisi la fiche ET uploade les photos.
+function checkRefDuplicate(){
+  const w=document.getElementById('ref-warning');
+  if(!w)return;
+  const ref=document.getElementById('edit-ref').value.trim();
+  const four=document.getElementById('edit-fournisseur').value;
+  const id=document.getElementById('edit-id').value;
+  if(!ref||!four){w.classList.remove('show');return;}
+  const clash=allProducts.find(p=>p.ref===ref&&(p.fournisseur||'')===four&&String(p.id)!==String(id));
+  if(clash){
+    w.textContent=`⚠ La réf. ${ref} existe déjà chez ${fourNom(four)} : « ${clash.nom} ». Enregistrer créera un conflit.`;
+    w.classList.add('show');
+  }else w.classList.remove('show');
+}
+function buildFournFilter(){
+  const sel=document.getElementById('four-filter');
+  const prev=sel.value;
+  const used=new Set(allProducts.map(p=>p.fournisseur).filter(Boolean));
+  FOURNISSEURS.forEach(f=>used.add(f.cle));
+  let html='<option value="">Tous les fournisseurs</option>';
+  [...used].forEach(c=>{
+    const n=allProducts.filter(p=>(p.fournisseur||'')===c).length;
+    const lbl=fourMeta(c)?`${fourCode(c)} — ${fourNom(c)}`:`⚠ ${c}`;
+    html+=`<option value="${c}">${lbl} (${n})</option>`;
+  });
+  const orphelins=allProducts.filter(p=>!p.fournisseur).length;
+  if(orphelins)html+=`<option value="__none__">⚠ Sans fournisseur (${orphelins})</option>`;
+  sel.innerHTML=html;
+  if(prev)sel.value=prev;
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  GESTIONNAIRE DE CATEGORIES
+// ══════════════════════════════════════════════════════════════════
+// Genere la cle technique a partir du libelle : "Mugs & Gourdes" -> "mugs_gourdes"
+function slugify(s){
+  return (s||'').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'_')
+    .replace(/^_+|_+$/g,'')
+    .slice(0,40);
+}
+
+function openCatsModal(){
+  renderCatsList();
+  document.getElementById('newcat-num').value=suggestNextNum();
+  document.getElementById('newcat-label').value='';
+  document.getElementById('newcat-cle').value='';
+  document.getElementById('cats-modal').classList.add('open');
+  setTimeout(()=>document.getElementById('newcat-label').focus(),80);
+}
+function closeCatsModal(){document.getElementById('cats-modal').classList.remove('open');}
+
+// Propose le numero suivant : 08 existe -> 09
+function suggestNextNum(){
+  const nums=Object.keys(catMeta).map(k=>parseInt(catMeta[k].num,10)).filter(n=>!isNaN(n));
+  const next=(nums.length?Math.max(...nums):0)+1;
+  return next<10?'0'+next:String(next);
+}
+
+function renderCatsList(){
+  const el=document.getElementById('cats-list');
+  const keys=sortedCatKeys();
+  if(!keys.length){el.innerHTML='<div style="padding:1.5rem 0;color:#bbb;font-size:.85rem;text-align:center">Aucune catégorie pour l\'instant</div>';return;}
+  el.innerHTML=keys.map(k=>{
+    const n=catCount(k);
+    const inTable=dbCats.some(c=>c.cle===k);
+    return `<div class="cat-line" data-cle="${k}">
+      <input class="catf-num" value="${catMeta[k].num||''}" maxlength="4" placeholder="—">
+      <input class="catf-label" value="${(catMeta[k].label||'').replace(/"/g,'&quot;')}">
+      <input class="locked" value="${k}" readonly title="${inTable?'Clé technique — non modifiable':'Catégorie déduite des produits, sera enregistrée dans la table'}">
+      <div class="cat-count">${n}</div>
+      <button class="cat-del" onclick="deleteCategory('${k}')" ${n?'disabled title="Catégorie utilisée par '+n+' produit(s)"':'title="Supprimer"'}>🗑</button>
+    </div>`;
+  }).join('');
+}
+
+async function createCategory(){
+  const label=document.getElementById('newcat-label').value.trim();
+  const num=document.getElementById('newcat-num').value.trim();
+  if(!label){showToast('Renseignez un libellé','error');return;}
+  const cle=slugify(label);
+  if(!cle){showToast('Libellé invalide','error');return;}
+  if(catMeta[cle]){showToast('Cette catégorie existe déjà','error');return;}
+  await api('POST','categories',{cle,label,num});
+  await loadProducts();
+  renderCatsList();
+  if(!dbCats.some(c=>c.cle===cle)){
+    showToast('Échec — table "categories" absente ou RLS bloquant (voir console)','error');
+    return;
+  }
+  showToast('Catégorie créée ✅','success');
+  document.getElementById('newcat-label').value='';
+  document.getElementById('newcat-cle').value='';
+  document.getElementById('newcat-num').value=suggestNextNum();
+}
+
+async function deleteCategory(cle){
+  if(catCount(cle)){showToast('Catégorie utilisée par des produits','error');return;}
+  if(!confirm('Supprimer la catégorie "'+(catMeta[cle].label||cle)+'" ?'))return;
+  await api('DELETE',`categories?cle=eq.${encodeURIComponent(cle)}`);
+  showToast('Catégorie supprimée','success');
+  await loadProducts();
+  renderCatsList();
+}
+
+// Enregistre les libelles / numeros modifies, et repercute sur les produits.
+// La cle n'est jamais modifiee : elle est stockee dans produits.categorie et
+// produits.categories[], la renommer casserait tous les rattachements.
+async function saveCategories(){
+  const lines=[...document.querySelectorAll('#cats-list .cat-line')];
+  let changed=0, touchedProducts=0;
+  for(const line of lines){
+    const cle=line.dataset.cle;
+    const label=line.querySelector('.catf-label').value.trim();
+    const num=line.querySelector('.catf-num').value.trim();
+    if(!label){showToast('Un libellé est vide','error');return;}
+    const before=catMeta[cle]||{};
+    const inTable=dbCats.some(c=>c.cle===cle);
+    const diff=(label!==before.label)||(num!==(before.num||''));
+    if(!diff&&inTable)continue;
+    if(inTable)await api('PATCH',`categories?cle=eq.${encodeURIComponent(cle)}`,{label,num});
+    else await api('POST','categories',{cle,label,num});
+    if(diff){
+      changed++;
+      // Repercussion sur les fiches produits dont c'est la categorie principale :
+      // categorie_label / categorie_num y sont denormalises et servent au catalogue public.
+      const n=catCount(cle);
+      if(n){
+        await api('PATCH',`produits?categorie=eq.${encodeURIComponent(cle)}`,{categorie_label:label,categorie_num:num});
+        touchedProducts+=n;
+      }
+    }
+  }
+  await loadProducts();
+  renderCatsList();
+  showToast(changed?`${changed} catégorie(s) mise(s) à jour ✅`:'Catégories synchronisées ✅','success');
+}
+
+// Apercu de la cle en direct pendant la saisie du libelle
+document.addEventListener('input',function(e){
+  if(e.target&&e.target.id==='newcat-label'){
+    document.getElementById('newcat-cle').value=slugify(e.target.value);
+  }
+});
 function filterTable(search){
   const q=(typeof search==='string'?search:document.querySelector('.toolbar-search').value).toLowerCase();
   const cat=document.getElementById('cat-filter').value;
+  const four=document.getElementById('four-filter').value;
   const status=document.getElementById('status-filter').value;
   let f=allProducts;
+  if(four==='__none__')f=f.filter(p=>!p.fournisseur);
+  else if(four)f=f.filter(p=>(p.fournisseur||'')===four);
   if(cat)f=f.filter(p=>(p.categories&&p.categories.includes(cat))||(p.categorie===cat&&!(p.categories||[]).length));
   if(status==='actif')f=f.filter(p=>p.actif!==false);
   if(status==='inactif')f=f.filter(p=>p.actif===false);
@@ -514,7 +804,7 @@ function renderCards(products){
         +(photos.length?'<span class="pcard-nb">📸 '+photos.length+'</span>':'')
       +'</div>'
       +'<div class="pcard-body">'
-        +'<div class="pcard-ref">'+(p.ref||'—')+'</div>'
+        +'<div class="pcard-ref">'+(p.fournisseur?'<span class="badge-four">'+fourCode(p.fournisseur)+'</span>':'')+(p.ref||'—')+'</div>'
         +'<div class="pcard-name">'+(p.nom||'—')+'</div>'
         +(p.dimensions?'<div class="pcard-dims">📐 '+p.dimensions+'</div>':'')
         +'<div class="pcard-cats">'+catBadges(p)+'</div>'
@@ -537,7 +827,7 @@ function renderRows(products){
     const isBs=!!p.bestseller;
     return`<div class="table-row ${isActif?'':'inactive'}">
       <div class="row-thumb">${thumb}</div>
-      <div class="row-ref">${p.ref||'—'}</div>
+      <div class="row-ref">${p.fournisseur?`<span class="badge-four">${fourCode(p.fournisseur)}</span>`:''}${p.ref||'—'}</div>
       <div><div class="row-name">${p.nom||'—'}${isBs?' <span class="badge-bs">⭐ Bestseller</span>':''}</div><div style="font-size:0.7rem;color:#aaa;margin-top:2px">${p.dimensions||''}</div></div>
       <div>${catBadges(p)}</div>
       <div style="font-size:0.78rem;color:#888;font-weight:700">${(p.photos||[]).length}</div>
@@ -568,7 +858,10 @@ async function toggleField(id,field,value){
 function openAddModal(){
   document.getElementById('edit-title').textContent='Nouveau produit';
   ['edit-id','edit-ref','edit-nom','edit-desc','edit-dims','edit-cat','edit-cat-label','edit-cat-num'].forEach(id=>document.getElementById(id).value='');
-  buildCatCheckboxes(Object.keys(catMeta),[]);
+  buildCatCheckboxes(sortedCatKeys(),[]);
+  // Pre-selection : si un fournisseur est filtre dans la toolbar, on le reprend
+  buildFournSelect(document.getElementById('four-filter').value.replace('__none__',''));
+  document.getElementById('ref-warning').classList.remove('show');
   document.getElementById('edit-ordre').value='0';
   document.getElementById('edit-actif').checked=true;
   document.getElementById('edit-bestseller').checked=false;
@@ -588,7 +881,8 @@ function openEditModal(p){
   document.getElementById('edit-cat').value=selCats[0]||'';
   document.getElementById('edit-cat-label').value=catMeta[selCats[0]]?.label||p.categorie_label||'';
   document.getElementById('edit-cat-num').value=catMeta[selCats[0]]?.num||p.categorie_num||'';
-  buildCatCheckboxes(Object.keys(catMeta),selCats);
+  buildCatCheckboxes(sortedCatKeys(),selCats);
+  buildFournSelect(p.fournisseur||'');
   document.getElementById('edit-actif').checked=p.actif!==false;
   document.getElementById('edit-bestseller').checked=!!p.bestseller;
   document.getElementById('delete-btn').style.display='inline-flex';
@@ -640,6 +934,7 @@ document.addEventListener('paste', function(e){
 async function uploadFiles(files){
   const ref=document.getElementById('edit-ref').value.trim();
   if(!ref){showToast('Renseignez d\'abord la référence','error');return;}
+  if(!document.getElementById('edit-fournisseur').value){showToast('Sélectionnez d\'abord le fournisseur','error');return;}
   const valid=files.filter(f=>f.type.startsWith('image/')&&f.size<5*1024*1024);
   if(!valid.length){showToast('Images invalides ou trop lourdes','error');return;}
   const progress=document.getElementById('upload-progress');
@@ -649,7 +944,7 @@ async function uploadFiles(files){
   for(let i=0;i<valid.length;i++){
     const file=valid[i];
     const ext = file.name && file.name !== 'image.png' ? file.name.split('.').pop().toLowerCase() : (file.type === 'image/jpeg' ? 'jpg' : 'png');
-    const fn=`${ref.replace(/[^a-z0-9]/gi,'_')}_${Date.now()}_${i}.${ext}`;
+    const fn=`${fourCode(document.getElementById('edit-fournisseur').value)}_${ref.replace(/[^a-z0-9]/gi,'_')}_${Date.now()}_${i}.${ext}`;
     text.textContent=`Upload ${i+1}/${valid.length} : ${file.name}`;
     fill.style.width=`${(i/valid.length)*100}%`;
     const ok=await uploadImage(file,fn);
@@ -665,8 +960,10 @@ async function saveProduct(){
   const id=document.getElementById('edit-id').value;
   const checkedCats=getCheckedCats();
   const primaryCat=checkedCats[0]||'';
-  const data={ref:document.getElementById('edit-ref').value.trim(),nom:document.getElementById('edit-nom').value.trim(),description:document.getElementById('edit-desc').value.trim(),dimensions:document.getElementById('edit-dims').value.trim(),ordre:parseInt(document.getElementById('edit-ordre').value)||0,categorie:primaryCat,categorie_label:catMeta[primaryCat]?.label||document.getElementById('edit-cat-label').value.trim(),categorie_num:catMeta[primaryCat]?.num||document.getElementById('edit-cat-num').value.trim(),categories:checkedCats,actif:document.getElementById('edit-actif').checked,bestseller:document.getElementById('edit-bestseller').checked,photos:editPhotos};
+  const four=document.getElementById('edit-fournisseur').value;
+  const data={fournisseur:four,ref:document.getElementById('edit-ref').value.trim(),nom:document.getElementById('edit-nom').value.trim(),description:document.getElementById('edit-desc').value.trim(),dimensions:document.getElementById('edit-dims').value.trim(),ordre:parseInt(document.getElementById('edit-ordre').value)||0,categorie:primaryCat,categorie_label:catMeta[primaryCat]?.label||document.getElementById('edit-cat-label').value.trim(),categorie_num:catMeta[primaryCat]?.num||document.getElementById('edit-cat-num').value.trim(),categories:checkedCats,actif:document.getElementById('edit-actif').checked,bestseller:document.getElementById('edit-bestseller').checked,photos:editPhotos};
   if(!data.ref||!data.nom){showToast('Référence et nom requis','error');return;}
+  if(!data.fournisseur){showToast('Sélectionnez un fournisseur','error');return;}
   try{
     if(id)await api('PATCH',`produits?id=eq.${id}`,data);
     else await api('POST','produits',data);
@@ -685,10 +982,55 @@ async function handleJsonImport(input){
   try{
     const text=await file.text();const products=JSON.parse(text);
     if(!Array.isArray(products))throw new Error();
-    if(!confirm(`Importer ${products.length} produits ?`))return;
-    let ok=0;
-    for(const p of products){try{const existing=allProducts.find(x=>x.ref===p.ref);if(!p.categories||!p.categories.length)p.categories=p.categorie?[p.categorie]:[];
-        if(existing)await api('PATCH',`produits?id=eq.${existing.id}`,p);else await api('POST','produits',p);ok++;}catch(e){}}
+
+    // ── 1. Controle du fournisseur AVANT toute ecriture ──
+    // Sans fournisseur, le rapprochement se ferait sur la ref seule et un
+    // produit d'un autre fournisseur portant la meme ref serait ecrase.
+    const sansFour=products.filter(p=>!p.fournisseur);
+    if(sansFour.length){
+      alert(`Import annulé.\n\n${sansFour.length} produit(s) sans champ "fournisseur" `
+        +`(ex: réf. ${sansFour.slice(0,3).map(p=>p.ref).join(', ')}).\n\n`
+        +`Chaque produit doit porter une clé fournisseur parmi :\n`
+        +FOURNISSEURS.map(f=>`  • ${f.cle}`).join('\n'));
+      input.value='';return;
+    }
+    const inconnus=[...new Set(products.map(p=>p.fournisseur).filter(c=>!fourMeta(c)))];
+    if(inconnus.length){
+      alert(`Import annulé.\n\nFournisseur(s) inconnu(s) dans le JSON : ${inconnus.join(', ')}\n\n`
+        +`Clés autorisées :\n`+FOURNISSEURS.map(f=>`  • ${f.cle}`).join('\n')
+        +`\n\nSoit le JSON est à corriger, soit le fournisseur doit être ajouté `
+        +`à la constante FOURNISSEURS dans admin.html.`);
+      input.value='';return;
+    }
+
+    // ── 2. Recapitulatif : ce qui sera cree, ce qui sera ECRASE ──
+    const creations=[],maj=[];
+    products.forEach(p=>{
+      const ex=allProducts.find(x=>x.ref===p.ref&&(x.fournisseur||'')===p.fournisseur);
+      (ex?maj:creations).push({p,ex});
+    });
+    let msg=`Import depuis ${[...new Set(products.map(p=>fourNom(p.fournisseur)))].join(', ')}\n\n`
+      +`✅ ${creations.length} produit(s) à créer\n`;
+    if(maj.length){
+      msg+=`\n⚠ ${maj.length} fiche(s) EXISTANTE(S) seront écrasées :\n`
+        +maj.slice(0,15).map(m=>`   ${m.p.ref} — ${m.ex.nom}`).join('\n')
+        +(maj.length>15?`\n   … et ${maj.length-15} autre(s)`:'')
+        +`\n\nLeurs photos, nom et description seront remplacés.`;
+    }
+    msg+='\n\nContinuer ?';
+    if(!confirm(msg)){input.value='';return;}
+
+    // ── 3. Ecriture ──
+    let ok=0;const echecs=[];
+    for(const {p,ex} of [...creations,...maj]){
+      try{
+        if(!p.categories||!p.categories.length)p.categories=p.categorie?[p.categorie]:[];
+        if(ex)await api('PATCH',`produits?id=eq.${ex.id}`,p);
+        else await api('POST','produits',p);
+        ok++;
+      }catch(e){echecs.push(p.ref);}
+    }
+    if(echecs.length)alert(`${echecs.length} produit(s) en échec :\n${echecs.join(', ')}`);
     showToast(`${ok}/${products.length} produits importés ✅`,'success');loadProducts();
   }catch(e){showToast('Fichier JSON invalide','error');}
   input.value='';
