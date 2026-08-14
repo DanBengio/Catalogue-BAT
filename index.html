@@ -51,6 +51,9 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .gallery-slides{display:flex;height:100%;transition:transform 0.35s ease}
 .gallery-slide{min-width:100%;display:flex;align-items:center;justify-content:center;padding:12px}
 .gallery-slide img{max-height:186px;max-width:100%;object-fit:contain}
+.img-ko{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:100%;height:100%;color:#c5c5c5;font-size:0.68rem;font-weight:700;cursor:pointer;text-align:center;transition:color 0.15s}
+.img-ko span{font-size:1.5rem;line-height:1}
+.img-ko:hover{color:var(--blue)}
 .gallery-tag{position:absolute;top:10px;left:10px;background:var(--blue);color:white;font-size:0.56rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:20px;z-index:2}
 .badge-bestseller{position:absolute;top:10px;right:10px;background:var(--yellow);color:var(--dark);font-size:0.6rem;font-weight:800;padding:4px 10px;border-radius:20px;z-index:2;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(245,190,69,0.4)}
 .gallery-nav{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2}
@@ -256,6 +259,35 @@ const SUPABASE_URL='https://prfzjiruivbhaqvnrczk.supabase.co';
 const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
 function imgUrl(f){return`${SUPABASE_URL}/storage/v1/object/public/images/${f}`;}
 
+// ── CHARGEMENT D'IMAGE RESILIENT ──
+// Avant : une image qui echouait (429 Supabase quand toute une section part en
+// parallele, micro-coupure reseau, timeout sur un fichier lourd) etait masquee
+// DEFINITIVEMENT. D'ou les cartes vides qui reapparaissent apres un F5.
+// Maintenant : 3 nouvelles tentatives espacees, puis un placeholder cliquable.
+const IMG_RETRY=[600,1800,4500];
+function setImg(img,src){
+  let tries=0;
+  img.onerror=function(){
+    if(tries>=IMG_RETRY.length){img.replaceWith(imgPlaceholder(src));return;}
+    const wait=IMG_RETRY[tries++];
+    setTimeout(function(){img.src=src+(src.indexOf('?')>-1?'&':'?')+'retry='+tries;},wait);
+  };
+  img.src=src;
+}
+function imgPlaceholder(src){
+  const d=document.createElement('div');
+  d.className='img-ko';
+  d.innerHTML='<span>\u27F3</span>Recharger l\'image';
+  d.onclick=function(e){
+    e.stopPropagation();
+    const i=document.createElement('img');
+    i.loading='lazy';i.decoding='async';
+    d.replaceWith(i);
+    setImg(i,src);
+  };
+  return d;
+}
+
 let allProducts=[],currentCat='all',currentSearch='',catMeta={};
 let modalIdx=0,modalPhotos=[],currentProduct=null;
 const cart={};
@@ -308,7 +340,7 @@ function makeGallery(photos,tag,uid,isBs){
   const slides=document.createElement('div');slides.className='gallery-slides';slides.id='gs-'+uid;
   photos.forEach(src=>{
     const s=document.createElement('div');s.className='gallery-slide';
-    const img=document.createElement('img');img.src=src;img.loading='lazy';img.onerror=()=>img.style.display='none';
+    const img=document.createElement('img');img.loading='lazy';img.decoding='async';setImg(img,src);
     s.appendChild(img);slides.appendChild(s);
   });
   wrap.appendChild(slides);
@@ -408,7 +440,7 @@ function openModal(p){
   slidesEl.innerHTML='';navEl.innerHTML='';
   photos.forEach((src,i)=>{
     const s=document.createElement('div');s.className='modal-slide';
-    const img=document.createElement('img');img.src=src;img.onerror=()=>img.style.display='none';
+    const img=document.createElement('img');img.decoding='async';setImg(img,src);
     s.appendChild(img);slidesEl.appendChild(s);
     const d=document.createElement('button');d.className='modal-dot'+(i===0?' active':'');d.onclick=()=>gotoModal(i);navEl.appendChild(d);
   });
