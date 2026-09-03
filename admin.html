@@ -371,7 +371,8 @@ const SUPABASE_KEY='sb_publishable_KsGL4Hc72Zlo0nyICNVlSw_7lXcsLLJ';
 // ═══════════════════════════════════════════════════════════════════
 const FOURNISSEURS=[
   {cle:'maroc_business_company', nom:'Maroc Business Company', code:'BM'},
-  {cle:'imagia',                 nom:'Imagia',                 code:'MI'}
+  {cle:'imagia',                 nom:'Imagia',                 code:'MI'},
+  {cle:'bar_a_textile',          nom:'Bar À Textile',          code:'BT'}
 ];
 function fourMeta(cle){return FOURNISSEURS.find(f=>f.cle===cle)||null;}
 function fourNom(cle){const f=fourMeta(cle);return f?f.nom:(cle||'—');}
