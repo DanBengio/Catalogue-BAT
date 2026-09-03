@@ -1,0 +1,61 @@
+name: Sauvegarde Supabase (produits, categories, images)
+
+# Ce workflow ne touche jamais au catalogue en ligne : il ne fait que LIRE
+# Supabase et deposer une copie dans la branche "backups", separee de
+# main/dev. Voir PROCES~1.MD §4.2 pour le risque que ca couvre.
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # tous les jours a 02:00 UTC
+  workflow_dispatch: {}    # permet de le lancer a la main depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Export des tables et des photos vers un dossier temporaire
+        env:
+          SUPABASE_URL: https://prfzjiruivbhaqvnrczk.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/backup_supabase.py /tmp/backup_output
+
+      - name: Bascule sur la branche backups (la cree si absente)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin
+          if git ls-remote --exit-code --heads origin backups > /dev/null 2>&1; then
+            git checkout backups
+          else
+            git checkout --orphan backups
+            git rm -rf . > /dev/null 2>&1 || true
+          fi
+
+      - name: Copie de l'export a la place des anciens fichiers
+        run: |
+          mkdir -p images
+          cp /tmp/backup_output/produits.json .
+          cp /tmp/backup_output/categories.json .
+          cp /tmp/backup_output/last_backup.txt .
+          rsync -a --delete /tmp/backup_output/images/ images/
+
+      - name: Commit + push si quelque chose a change
+        run: |
+          git add produits.json categories.json images last_backup.txt
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau depuis hier."
+          else
+            git commit -m "Sauvegarde $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push origin backups
+          fi
