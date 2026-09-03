@@ -17,6 +17,7 @@ import json
 import os
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
@@ -107,7 +108,12 @@ def list_bucket_files():
 
 def download_file(name, dest_path):
     # Le bucket est public en lecture : pas besoin d'auth pour le telechargement.
-    url = f"{SUPABASE_URL}/storage/v1/object/public/{BUCKET}/{name}"
+    # Le nom de fichier doit etre encode pour l'URL : certains fichiers du
+    # bucket contiennent des espaces ou des parentheses (doublons crees par
+    # un re-upload sous un nom deja pris), qu'une URL ne peut pas contenir
+    # tels quels.
+    encoded_name = urllib.parse.quote(name, safe="/")
+    url = f"{SUPABASE_URL}/storage/v1/object/public/{BUCKET}/{encoded_name}"
     with urllib.request.urlopen(url, timeout=TIMEOUT) as resp:
         data = resp.read()
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
