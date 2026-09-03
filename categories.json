@@ -1,0 +1,93 @@
+[
+  {
+    "id": "21f1795f-9f98-4a14-b704-0fa1ef418395",
+    "cle": "bloc-notes",
+    "label": "Bloc-notes",
+    "num": "02",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "2ac771c8-e8ed-403b-8797-f5d0437eab49",
+    "cle": "autres_objets",
+    "label": "Autres Objets Publicitaires",
+    "num": "12",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "2cedf72c-57d5-4df7-8b6b-f2be6e798ace",
+    "cle": "cartables",
+    "label": "Cartables & Porte-documents",
+    "num": "03",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "58c8eba2-2b05-4211-8f2a-17ab6862d88c",
+    "cle": "coffrets",
+    "label": "Coffrets",
+    "num": "01",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "5b68aa02-adec-4b82-84d7-65a8dc0b9f2a",
+    "cle": "cles_usb",
+    "label": "Clés USB",
+    "num": "05",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "7189e495-8256-49e2-9ef2-f9868d57a53e",
+    "cle": "hightech",
+    "label": "High-Tech",
+    "num": "04",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "7925dacf-b24a-4c58-9571-6af4c1c8efa3",
+    "cle": "trophees_medailles",
+    "label": "Trophées & Médailles",
+    "num": "11",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "a6b3a587-9748-4fb5-b3a6-52e1408bf75e",
+    "cle": "mugs_gourdes",
+    "label": "Mugs & Gourdes",
+    "num": "07",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "b053c015-2cab-4fa2-90cf-d863bff32acf",
+    "cle": "ecriture",
+    "label": "Écriture",
+    "num": "08",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "b69187fc-06c3-4555-b89f-43ec37471b56",
+    "cle": "porte_cles",
+    "label": "Porte-clés",
+    "num": "09",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "c03c2deb-1364-4325-b069-6640ff71688b",
+    "cle": "evenements",
+    "label": "Événements, Été & Loisirs",
+    "num": "10",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "e854e99a-740d-4f1b-8bce-f9321399913e",
+    "cle": "bureau",
+    "label": "Bureau",
+    "num": "06",
+    "created_at": "2026-08-11T13:00:24.235022+00:00"
+  },
+  {
+    "id": "f19f7045-403b-4336-aaeb-ceb0c89c8895",
+    "cle": "ecologique",
+    "label": "Ecologique",
+    "num": "13",
+    "created_at": "2026-08-11T14:13:11.723749+00:00"
+  }
+]

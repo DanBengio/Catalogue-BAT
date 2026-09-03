@@ -1,0 +1,332 @@
+[
+  {
+    "ref": "40209",
+    "nom": "Bloc-notes Premium avec Organiseur",
+    "description": "Matière en simili cuir, intérieur classeur avec espace de rangement pour cartes et documents. 100 feuilles / Papier 100 Gr.",
+    "dimensions": "23 × 17,5 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40209_1_noir.jpg", "40209_2_coloris.jpg"]
+  },
+  {
+    "ref": "40138",
+    "nom": "Bloc-notes Premium avec Organiseur",
+    "description": "Matière en simili cuir, intérieur classeur avec espace de rangement pour cartes et documents. 100 feuilles / Papier 100 Gr.",
+    "dimensions": "23 × 17,5 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40138_1_bleu.jpg", "40138_2_interieur.jpg"]
+  },
+  {
+    "ref": "40137",
+    "nom": "Bloc-notes de Luxe avec Organiseur",
+    "description": "Matière en simili cuir, intérieur classeur avec espace de rangement pour cartes et documents. 100 feuilles / Papier 100 Gr.",
+    "dimensions": "23 × 17,5 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40137_1_bleu_ouvert.jpg", "40137_2_bleu_ferme.jpg"]
+  },
+  {
+    "ref": "40206",
+    "nom": "Bloc-notes 2 Volets Premium",
+    "description": "Matière en simili cuir avec porte stylo.",
+    "dimensions": "21,5 × 16 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40206_1_beige.jpg", "40206_2_noir.jpg"]
+  },
+  {
+    "ref": "25-37",
+    "nom": "Bloc-notes Prestige en Motifs à Rayures",
+    "description": "Matière en simili cuir avec porte stylo.",
+    "dimensions": "21,5 × 16 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-37_1_beige.jpg", "25-37_2_bleu.jpg", "25-37_3_noir.jpg"]
+  },
+  {
+    "ref": "25-38",
+    "nom": "Bloc-notes A5 Hexagone",
+    "description": "Matière en simili cuir avec porte stylo.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-38_1_gris.jpg", "25-38_2_coloris.jpg", "25-38_3_bleu.jpg", "25-38_4_rouge.jpg", "25-38_5_vert.jpg"]
+  },
+  {
+    "ref": "25-39",
+    "nom": "Bloc-notes A5 Texturé",
+    "description": "Matière en simili cuir avec motifs en gaufrage à chaud et porte stylo.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-39_1_vert.jpg", "25-39_2_rouge.jpg", "25-39_3_bleu.jpg", "25-39_4_noir.jpg", "25-39_5_gris.jpg"]
+  },
+  {
+    "ref": "25-39&25-02",
+    "nom": "Bloc-notes A5 Texturé avec Stylo",
+    "description": "Matière en simili cuir avec motifs en gaufrage à chaud et porte stylo.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-39-25-02_1_bleu.jpg", "25-39-25-02_2_gris.jpg", "25-39-25-02_3_noir.jpg", "25-39-25-02_4_rouge.jpg", "25-39-25-02_5_vert.jpg"]
+  },
+  {
+    "ref": "40207",
+    "nom": "Bloc-notes A5 Plaque Colorée",
+    "description": "Matière en simili cuir avec porte stylos.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40207_1_bleu.jpg", "40207_2_gris.jpg", "40207_3_noir.jpg"]
+  },
+  {
+    "ref": "40208",
+    "nom": "Bloc-notes A5 Motifs à Rayures",
+    "description": "Matière en simili cuir avec porte stylos.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40208_1_gris.jpg", "40208_2_vert.jpg", "40208_3_marine.jpg", "40208_4_rouge.jpg"]
+  },
+  {
+    "ref": "40136",
+    "nom": "Bloc-notes A5 Designo",
+    "description": "Matière en simili cuir avec motifs corpo.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40136_1_bleu.jpg"]
+  },
+  {
+    "ref": "40130",
+    "nom": "Bloc-notes A5 avec Bande",
+    "description": "Matière en simili cuir avec effet jean.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40130_1_bleu.jpg"]
+  },
+  {
+    "ref": "25-25",
+    "nom": "Bloc-notes A5 avec Élastique",
+    "description": "Matière en simili cuir avec porte stylos.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-25_1_bleu.jpg", "25-25_2_orange.jpg", "25-25_3_rouge.jpg", "25-25_4_gris.jpg", "25-25_5_vert.jpg", "25-25_6_blanc.jpg"]
+  },
+  {
+    "ref": "25-25&25-03",
+    "nom": "Bloc-notes A5 Élastique avec Stylo",
+    "description": "Matière en simili cuir. Stylo en aluminium tactile.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-25-25-03_1_rouge.jpg", "25-25-25-03_2_bleu.jpg", "25-25-25-03_3_blanc.jpg", "25-25-25-03_4_orange.jpg", "25-25-25-03_5_noir.jpg", "25-25-25-03_6_gris.jpg", "25-25-25-03_7_vert.jpg"]
+  },
+  {
+    "ref": "25-24",
+    "nom": "Bloc-notes A5 Laser",
+    "description": "Matière en simili cuir laserable en argenté. Stylo en aluminium soft touch tactile.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-24_1_noir.jpg"]
+  },
+  {
+    "ref": "40205",
+    "nom": "Bloc-notes A5 Bi-couleur avec Elastique",
+    "description": "Matière en simili cuir avec porte stylos.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40205_1_noir_blanc.jpg"]
+  },
+  {
+    "ref": "24590",
+    "nom": "Bloc-notes A5 Linéa",
+    "description": "Matière en simili cuir avec élastique.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["24590_1_rayures.jpg"]
+  },
+  {
+    "ref": "20946",
+    "nom": "Bloc-notes A5 Sublimation",
+    "description": "Matière en tissu R-PET blanc avec élastique. Impression quadri sur les deux faces.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["20946_1_multicolore.jpg", "20946_2_blanc.jpg"]
+  },
+  {
+    "ref": "25094",
+    "nom": "Bloc-notes A5 avec Élastique",
+    "description": "Matière en simili cuir.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25094_1_multi.jpg"]
+  },
+  {
+    "ref": "40134",
+    "nom": "Bloc-notes A6 avec Élastique",
+    "description": "Matière en simili cuir.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40134_1_blanc.jpg", "40134_2_noir.jpg", "40134_3_bleu.jpg"]
+  },
+  {
+    "ref": "25-23",
+    "nom": "Bloc-notes A6 Post-it avec Stylo",
+    "description": "Matière en simili cuir soft touch avec post-it et stylo en plastique soft touch.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-23_1_bleu.jpg", "25-23_2_coloris.jpg"]
+  },
+  {
+    "ref": "25-30",
+    "nom": "Coffret Classique 2 Pcs",
+    "description": "Bloc-notes A5 avec élastique. Stylo Premium en métal.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-30_1_bleu.jpg", "25-30_2_coloris.jpg"]
+  },
+  {
+    "ref": "40188",
+    "nom": "Coffret en R-PET 2 Pcs",
+    "description": "Bloc-notes A5 avec élastique. Stylo en métal de luxe.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40188_1_noir.jpg", "40188_2_ouvert.jpg"]
+  },
+  {
+    "ref": "25-26",
+    "nom": "Coffret Éco R-PET 2 Pcs",
+    "description": "Bloc-notes A5 avec support de téléphone. Stylo en aluminium et bambou.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-26_1_noir.jpg"]
+  },
+  {
+    "ref": "25-27",
+    "nom": "Coffret Éco Nature 2 Pcs",
+    "description": "Bloc-notes A5 avec élastique en liège et coton. Stylo en bambou.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["25-27_1_liege.jpg"]
+  },
+  {
+    "ref": "40203",
+    "nom": "Bloc-notes A5 Liège avec Stylo",
+    "description": "Matière en liège et simili cuir avec élastique. Stylo en liège.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40203_1_liege.jpg", "40203_2_bleu.jpg", "40203_3_vert.jpg", "40203_4_blanc.jpg"]
+  },
+  {
+    "ref": "40202",
+    "nom": "Bloc-notes A5 Multifonctions Ecologique",
+    "description": "50 Feuilles lignées Recto. Stylo en carton / Gomme blanche / Taille crayon. 2 Crayons en bois / Règle en bois et Règle en PVC.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40202_1_kraft.jpg", "40202_2_ouvert.jpg"]
+  },
+  {
+    "ref": "40300",
+    "nom": "Bloc-notes A5 en Papier avec Stylo",
+    "description": "Matière en papier recyclé. Stylo en papier.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40300_1_kraft.jpg"]
+  },
+  {
+    "ref": "20646",
+    "nom": "Bloc-notes A5 Écologique Spirale Effet Bois",
+    "description": "Matière en papier effet bois avec post-it. Stylo en papier.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["20646_1_bois_bleu.jpg", "20646_2_vert.jpg", "20646_3_rouge.jpg", "20646_4_coloris.jpg"]
+  },
+  {
+    "ref": "40201",
+    "nom": "Bloc-notes A6 Post-it avec Stylo",
+    "description": "Post-it en couleurs. Stylo en papier.",
+    "dimensions": "15 × 11 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40201_1_kraft.jpg", "40201_2_pages.jpg", "40201_3_coloris.jpg"]
+  },
+  {
+    "ref": "40204",
+    "nom": "Bloc-notes A6 de Poche en Bambou",
+    "description": "Matière en bambou et simili cuir avec élastique et porte stylo.",
+    "dimensions": "",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40204_1_bambou.jpg", "40204_2_vert.jpg", "40204_3_bleu.jpg"]
+  },
+  {
+    "ref": "40146",
+    "nom": "Bloc-notes A6 Éco Spiral en Carton",
+    "description": "Matière en carton. Couverture avec pochette de rangement. Stylo en papier.",
+    "dimensions": "18 × 14 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40146_1_carton.jpg", "40146_2_coloris.jpg"]
+  },
+  {
+    "ref": "40301",
+    "nom": "Bloc-notes Spirale avec Stylo",
+    "description": "Matière en papier cartonné blanc. Stylo en plastique.",
+    "dimensions": "18 × 14 cm",
+    "categorie": "bloc-notes",
+    "categorie_label": "Bloc-notes",
+    "categorie_num": "02",
+    "photos": ["40301_1_blanc.jpg", "40301_2_coloris.jpg"]
+  }
+]

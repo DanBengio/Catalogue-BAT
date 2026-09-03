@@ -1,0 +1,292 @@
+[
+  {
+    "ref": "20268",
+    "nom": "Earbuds et Speaker 2 en 1 Bluetooth",
+    "description": "Kit 2 en 1 en bambou : earbuds bluetooth avec bouton de commande intégré et speaker bluetooth. Base de charge assortie avec voyant LED d'état de charge. Puissance sonore 3W. Speaker 30 mAh / Écouteurs 300 mAh.",
+    "dimensions": "10,5 × 2,5 × 5 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "20268_1_vue_principale.jpg",
+      "20268_2_vue_earbuds_ouverte.jpg",
+      "20268_3_vue_earbuds_fermee.jpg",
+      "20268_4_detail_earbuds.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "6132",
+    "nom": "Speaker Bluetooth Logo Lumineux LED",
+    "description": "Speaker bluetooth avec logo lumineux LED personnalisable. Rechargeable via câble USB. Puissance sonore 3W. Batterie 400 mAh.",
+    "dimensions": "5,9 × 7,2 × 5,9 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "6132_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": true
+  },
+  {
+    "ref": "9294",
+    "nom": "Support Téléphone avec Chargeur Wireless",
+    "description": "Support téléphone fabriqué en bois avec port USB Type C. Chargeur wireless sans fil 15W intégré.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "9294_1_vue_principale.jpg",
+      "9294_2_vignette_detail.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "20259",
+    "nom": "Multi Câble Bambou",
+    "description": "Câble chargeur avec mousqueton en fibre de blé et bambou. Connexions multiples : Micro USB et Type C.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "20259_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "9295",
+    "nom": "Lampe LED Multi-Couleurs",
+    "description": "Lampe LED avec éclairage réglable multi-couleurs et commande tactile.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "9295_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "9296",
+    "nom": "Pot à Stylos Multi-Fonctions",
+    "description": "Pot à stylos multifonctions fabriqué en bambou. Intègre un support téléphone avec chargeur wireless et un HUB USB et Type C.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "9296_1_vue_principale.jpg",
+      "9296_2_detail_hub.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "1255",
+    "nom": "Tapis de Souris en Liège",
+    "description": "Tapis de souris écologique en liège naturel.",
+    "dimensions": "20 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "1255_1_vue_principale.jpg",
+      "1255_2_petit_pad.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "40163",
+    "nom": "Organiseur avec Chargeur Wireless",
+    "description": "Organiseur de bureau fabriqué en bambou avec chargeur sans fil 5W intégré et espace de rangement multifonctions.",
+    "dimensions": "27 × 14,9 × 1,6 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40163_1_vue_principale.jpg",
+      "40163_2_vue_angle.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "40166",
+    "nom": "Powerbank PVC",
+    "description": "Powerbank en PVC avec double port USB et Type C. Câble Type C inclus. Capacité 5000 mAh.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40166_1_vue_principale.jpg",
+      "40166_2_vignette_coloris.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "1211",
+    "nom": "Powerbank Chargeur Wireless Logo Lumineux",
+    "description": "Powerbank en matière PVC soft touch avec logo lumineux personnalisable, 2 ports USB et Type C. Capacité 8000 mAh.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "1211_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": true
+  },
+  {
+    "ref": "0057",
+    "nom": "Powerbank 3 en 1 Soft Touch",
+    "description": "Powerbank 3 en 1 en PVC soft touch avec port USB et Type C, chargeur montre et earbuds. Câble multi-têtes inclus. Capacité 10000 mAh.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "0057_1_vue_principale.jpg",
+      "0057_2_cable.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "0056",
+    "nom": "Powerbank Wireless en Liège",
+    "description": "Powerbank wireless en liège naturel avec port USB et Type C. Câble multi-têtes inclus. Capacité 10000 mAh.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "0056_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "40167",
+    "nom": "Coffret Full Black 3 Pcs",
+    "description": "Coffret noir 3 pièces : Powerbank PVC 5000 mAh double port USB et Type C, Clé USB 32 Go en métal double tête avec Type C, Stylo en métal premium.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40167_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": true
+  },
+  {
+    "ref": "40161",
+    "nom": "Coffret Bloc-notes Powerbank Wireless",
+    "description": "Coffret premium : Bloc-notes avec logo lumineux en LED, Chargeur Wireless MagSafe pour téléphone 5000 mAh, Stylo en métal premium.",
+    "dimensions": "22,5 × 17 × 4 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40161_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": true
+  },
+  {
+    "ref": "40164",
+    "nom": "Tapis de Souris avec HUB USB 4 Ports",
+    "description": "Tapis de souris multifonctions avec 4 ports USB et Type C intégrés et porte-téléphone.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40164_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "40200",
+    "nom": "Tapis de Souris Multifonctions 8 en 1 en Simili Cuir",
+    "description": "Tapis de souris 8 en 1 en simili cuir : Chargeur Wireless, écran prise de note effaçable, stylus, HUB USB, porte-stylo, porte-téléphone et logo lumineux LED.",
+    "dimensions": "34,8 × 28 × 1 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "40200_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "20592",
+    "nom": "Lampe LED en PVC",
+    "description": "Lampe LED en PVC flexible et pliable, connexion USB.",
+    "dimensions": "17 × 2 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "20592_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "094",
+    "nom": "Souris Optique Sans Fil",
+    "description": "Souris optique sans fil en PVC soft touch, technologie 2.4G. Disponible en plusieurs coloris.",
+    "dimensions": "10 × 6,5 × 3 cm",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "094_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "21695",
+    "nom": "Support Téléphone MagSafe",
+    "description": "Support pliable pour smartphones avec fixation magnétique MagSafe et position ajustable.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "21695_1_vue_principale.jpg",
+      "21695_2_vue_repliee.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  },
+  {
+    "ref": "3366",
+    "nom": "Lampe de Bureau Multifonctions",
+    "description": "Lampe LED de bureau multifonctions avec chargeur Wireless sans fil intégré, horloge digitale et porte-stylos.",
+    "dimensions": "",
+    "categorie": "hightech",
+    "categorie_label": "High-Tech",
+    "categorie_num": "04",
+    "photos": [
+      "3366_1_vue_principale.jpg"
+    ],
+    "actif": true,
+    "bestseller": false
+  }
+]
