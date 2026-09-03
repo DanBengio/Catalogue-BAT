@@ -16,11 +16,14 @@ Variables d'environnement requises :
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
-SERVICE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+# .strip() : un copier-coller depuis un dashboard ajoute parfois un retour a
+# la ligne invisible en fin de valeur, ce qui suffit a invalider la cle.
+SERVICE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"].strip()
 BUCKET = "images"
 
 OUT_DIR = sys.argv[1] if len(sys.argv) > 1 else "backup_output"
@@ -40,8 +43,15 @@ HEADERS = {
 def http_request(url, method="GET", data=None, headers=None):
     body = json.dumps(data).encode("utf-8") if data is not None else None
     req = urllib.request.Request(url, data=body, method=method, headers=headers or HEADERS)
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return resp.read()
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return resp.read()
+    except urllib.error.HTTPError as e:
+        # Supabase renvoie un message JSON utile (ex: "Invalid API key") dans
+        # le corps de la reponse d'erreur -- urllib ne l'affiche pas par
+        # defaut, on va le chercher explicitement pour un vrai diagnostic.
+        detail = e.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {e.code} sur {url}\nReponse de Supabase : {detail}") from None
 
 
 def fetch_table(table):
@@ -97,6 +107,11 @@ def download_file(name, dest_path):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     os.makedirs(IMAGES_DIR, exist_ok=True)
+
+    # Diagnostic sans danger : juste de quoi verifier la forme de la cle,
+    # jamais la cle entiere.
+    prefix = SERVICE_KEY[:11] if SERVICE_KEY else "(VIDE)"
+    print(f"Cle recue : {prefix}... (longueur {len(SERVICE_KEY)})")
 
     print("Export table produits...")
     produits = fetch_table("produits")
