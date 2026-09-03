@@ -20,6 +20,17 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
+# GitHub Actions ne connecte pas un vrai terminal a la sortie standard :
+# Python bascule alors sur un tampon par blocs et n'affiche rien avant que ce
+# tampon soit plein (ou que le script se termine). Sans cette ligne, un run
+# qui prend plusieurs minutes semble ne rien afficher, meme s'il avance bien.
+sys.stdout.reconfigure(line_buffering=True)
+
+# Delai max par requete. 60s etait trop permissif pour un telechargement qui
+# se repete 440 fois : un seul fichier capricieux pouvait faire perdre une
+# minute en silence avant de passer au suivant.
+TIMEOUT = 20
+
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 # .strip() : un copier-coller depuis un dashboard ajoute parfois un retour a
 # la ligne invisible en fin de valeur, ce qui suffit a invalider la cle.
@@ -44,7 +55,7 @@ def http_request(url, method="GET", data=None, headers=None):
     body = json.dumps(data).encode("utf-8") if data is not None else None
     req = urllib.request.Request(url, data=body, method=method, headers=headers or HEADERS)
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
             return resp.read()
     except urllib.error.HTTPError as e:
         # Supabase renvoie un message JSON utile (ex: "Invalid API key") dans
@@ -97,7 +108,7 @@ def list_bucket_files():
 def download_file(name, dest_path):
     # Le bucket est public en lecture : pas besoin d'auth pour le telechargement.
     url = f"{SUPABASE_URL}/storage/v1/object/public/{BUCKET}/{name}"
-    with urllib.request.urlopen(url, timeout=60) as resp:
+    with urllib.request.urlopen(url, timeout=TIMEOUT) as resp:
         data = resp.read()
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
     with open(dest_path, "wb") as f:
@@ -137,7 +148,8 @@ def main():
             download_file(name, dest)
         except Exception as exc:
             errors.append((name, str(exc)))
-        if i % 50 == 0:
+            print(f"  echec sur {name} : {exc}")
+        if i % 20 == 0:
             print(f"  ... {i}/{len(files)}")
 
     with open(os.path.join(OUT_DIR, "last_backup.txt"), "w", encoding="utf-8") as f:
