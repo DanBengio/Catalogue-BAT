@@ -77,6 +77,37 @@ select.form-input.unknown{border-color:var(--prune);background:#fdf4f6}
 .ref-warning{font-size:0.72rem;color:var(--prune);font-weight:700;margin-top:5px;display:none}
 .ref-warning.show{display:block}
 .import-recap{font-size:0.82rem;line-height:1.6}
+/* COLLECTIONS */
+.coll-head{display:grid;grid-template-columns:56px 1fr 130px 100px 70px 70px 34px;gap:8px;font-size:0.62rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#aaa;padding-bottom:6px;border-bottom:1px solid #eee}
+.coll-line{display:grid;grid-template-columns:56px 1fr 130px 100px 70px 70px 34px;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid #f3f3f3}
+.coll-line:last-child{border-bottom:none}
+.coll-titre{font-size:0.85rem;font-weight:700;cursor:pointer}
+.coll-titre:hover{color:var(--blue)}
+.badge-type{display:inline-block;background:#f0f8fc;color:var(--blue);border-radius:20px;padding:2px 9px;font-size:0.62rem;font-weight:700}
+.badge-type.occasion{background:#fdf4e8;color:#a15c00}
+.badge-univers{display:inline-block;background:#f3ecf0;color:var(--prune);border-radius:5px;padding:1px 7px;font-size:0.62rem;font-weight:800;letter-spacing:.3px}
+.coll-count{font-size:0.75rem;color:#888;font-weight:700;text-align:center}
+.coll-empty{text-align:center;padding:2rem 0;color:#bbb;font-size:.85rem}
+/* Picker de produits dans une collection */
+.prod-picker{position:relative;margin-top:4px}
+.prod-picker-input{border:1.5px solid #e0e0e0;border-radius:8px;padding:10px 13px;font-size:0.84rem;font-family:'Raleway',sans-serif;outline:none;width:100%}
+.prod-picker-input:focus{border-color:var(--blue)}
+.prod-picker-results{position:absolute;top:calc(100% + 4px);left:0;right:0;background:white;border:1px solid #e0e0e0;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:260px;overflow-y:auto;z-index:20;display:none}
+.prod-picker-results.open{display:block}
+.prod-picker-result{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer}
+.prod-picker-result:hover{background:#f0f8fc}
+.prod-picker-result img{width:32px;height:32px;object-fit:contain;background:#f5f8fa;border-radius:6px}
+.prod-picker-result-name{font-size:0.8rem;font-weight:600}
+.prod-picker-result-meta{font-size:0.68rem;color:#aaa}
+.prod-picker-empty{padding:10px 12px;font-size:0.78rem;color:#bbb}
+.prod-selected-list{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.prod-selected-item{display:flex;align-items:center;gap:10px;background:#f8f9fa;border-radius:10px;padding:6px 10px;cursor:grab}
+.prod-selected-item img{width:36px;height:36px;object-fit:contain;background:white;border-radius:6px}
+.prod-selected-item.drag-over{outline:2px solid var(--blue)}
+.prod-selected-name{font-size:0.8rem;font-weight:700;flex:1}
+.prod-selected-ref{font-size:0.68rem;color:#aaa}
+.prod-selected-del{background:none;border:none;color:#ccc;font-size:0.95rem;cursor:pointer;padding:4px}
+.prod-selected-del:hover{color:var(--prune)}
 /* BASCULE DE VUE */
 .view-toggle{display:flex;background:#f0f2f5;border-radius:8px;padding:3px;gap:2px}
 .view-btn{border:none;background:transparent;border-radius:6px;padding:7px 11px;font-size:0.75rem;font-weight:700;font-family:'Raleway',sans-serif;color:#999;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .15s}
@@ -200,6 +231,7 @@ textarea.form-input{resize:vertical;min-height:80px}
     <div class="topbar-actions">
       <a href="index.html" target="_blank"><button class="btn btn-ghost">👁 Voir le catalogue</button></a>
       <button class="btn btn-ghost" onclick="openCatsModal()">🏷 Catégories</button>
+      <button class="btn btn-ghost" onclick="openCollectionsModal()">🎁 Collections</button>
       <button class="btn btn-primary" onclick="openAddModal()">+ Nouveau produit</button>
       <button class="btn btn-ghost btn-sm" onclick="doLogout()">Déconnexion</button>
     </div>
@@ -348,6 +380,81 @@ textarea.form-input{resize:vertical;min-height:80px}
     <div class="edit-footer">
       <button class="btn btn-ghost" onclick="closeCatsModal()">Fermer</button>
       <button class="btn btn-success" onclick="saveCategories()">💾 Enregistrer les modifications</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL COLLECTIONS (liste) -->
+<div class="modal-bg" id="collections-modal" onclick="if(event.target===this)closeCollectionsModal()">
+  <div class="cats-modal" style="max-width:780px">
+    <div class="edit-header">
+      <div class="edit-title">🎁 Gérer les collections</div>
+      <button class="edit-close" onclick="closeCollectionsModal()">✕</button>
+    </div>
+    <div class="edit-body">
+      <div class="coll-head"><div>Ordre</div><div>Collection</div><div>Type</div><div>Univers</div><div>Produits</div><div>Actif</div><div></div></div>
+      <div id="collections-list"><div class="coll-empty">Chargement…</div></div>
+      <div style="display:flex;justify-content:flex-end;margin-top:14px">
+        <button class="btn btn-primary btn-sm" onclick="openCollectionAdd()">➕ Nouvelle collection</button>
+      </div>
+      <div class="cat-hint">
+        Une collection <strong>vedette</strong> apparaît dans le bandeau en haut du catalogue public. Une collection <strong>occasion</strong> forme un parcours thématique (ex. « Cadeaux d'entreprise &lt; 200 Dh »).<br>
+        Désactiver une collection la retire du catalogue public sans la supprimer ni toucher aux produits qu'elle contient.
+      </div>
+    </div>
+    <div class="edit-footer">
+      <button class="btn btn-ghost" onclick="closeCollectionsModal()">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL EDIT COLLECTION -->
+<div class="modal-bg" id="collection-edit-modal" onclick="if(event.target===this)closeCollectionEditModal()">
+  <div class="edit-modal">
+    <div class="edit-header">
+      <div class="edit-title" id="coll-edit-title">Nouvelle collection</div>
+      <button class="edit-close" onclick="closeCollectionEditModal()">✕</button>
+    </div>
+    <div class="edit-body">
+      <input type="hidden" id="coll-edit-cle">
+      <div class="toggle-row">
+        <div class="toggle-item">
+          <label class="toggle large">
+            <input type="checkbox" id="coll-edit-actif" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <div>
+            <div class="toggle-item-label">✅ Visible dans le catalogue</div>
+            <div class="toggle-item-sub">Décocher pour préparer une collection sans la publier</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row full">
+        <div class="form-group"><label class="form-label">Titre *</label><input class="form-input" id="coll-edit-titre" placeholder="ex : Cadeaux d'entreprise &lt; 200 Dh"></div>
+      </div>
+      <div class="form-row three">
+        <div class="form-group"><label class="form-label">Type</label>
+          <select class="form-input" id="coll-edit-type">
+            <option value="occasion">Occasion / thématique</option>
+            <option value="vedette">Vedette (bandeau en haut)</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Univers</label><select class="form-input" id="coll-edit-univers" onchange="renderProductSearchResults('')"></select></div>
+        <div class="form-group"><label class="form-label">Ordre d'affichage</label><input class="form-input" id="coll-edit-ordre" type="number" value="0" min="0"></div>
+      </div>
+      <div class="imgs-section">
+        <div class="imgs-label">Produits — glisser pour réordonner</div>
+        <div class="prod-picker">
+          <input class="prod-picker-input" id="prod-picker-search" placeholder="Rechercher un produit à ajouter…" autocomplete="off" oninput="renderProductSearchResults(this.value)" onfocus="renderProductSearchResults(this.value)">
+          <div class="prod-picker-results" id="prod-picker-results"></div>
+        </div>
+        <div class="prod-selected-list" id="prod-selected-list"></div>
+      </div>
+    </div>
+    <div class="edit-footer">
+      <button class="btn btn-ghost" onclick="closeCollectionEditModal()">Annuler</button>
+      <button class="btn btn-danger btn-sm" id="coll-delete-btn" onclick="deleteCollection()" style="display:none">🗑 Supprimer</button>
+      <button class="btn btn-success" onclick="saveCollection()">💾 Enregistrer</button>
     </div>
   </div>
 </div>
@@ -1037,6 +1144,192 @@ async function handleJsonImport(input){
   input.value='';
 }
 function showToast(msg,type=''){const t=document.getElementById('toast');t.textContent=msg;t.className=`toast ${type} show`;setTimeout(()=>t.classList.remove('show'),3000);}
+
+// ══════════════════════════════════════════════════════════════════
+//  COLLECTIONS — bandeau vedette / parcours occasion-budget
+//  Table "collections" : cle, titre, type ('vedette'|'occasion'), univers,
+//  produits (uuid[] -> produits.id, JAMAIS ref — voir PROCES~1.MD),
+//  actif, ordre. Chargee a la demande (a l'ouverture de la modale),
+//  pas au chargement de la page : ecran secondaire, peu consulte.
+//  Comme pour categories, si la table est absente/inaccessible, on
+//  echoue silencieusement plutot que de casser le reste de l'admin.
+// ══════════════════════════════════════════════════════════════════
+let dbCollections=[], dbUnivers=[], collEditProducts=[], collDragSrcIdx=null;
+
+async function loadUnivers(){
+  try{
+    const rows=await api('GET','univers?select=*&order=num');
+    dbUnivers=Array.isArray(rows)?rows:[];
+  }catch(e){dbUnivers=[];}
+  // Repli si la table univers n'existe pas encore / est vide
+  if(!dbUnivers.length)dbUnivers=[{cle:'goodies',label:'Goodies'},{cle:'textile',label:'Textile'},{cle:'print',label:'Print'}];
+}
+async function loadCollections(){
+  try{
+    const rows=await api('GET','collections?select=*&order=ordre,titre');
+    dbCollections=Array.isArray(rows)?rows:[];
+  }catch(e){dbCollections=[];}
+}
+function universLabel(cle){const u=dbUnivers.find(x=>x.cle===cle);return u?u.label:(cle||'—');}
+function universSelectOptions(selected){
+  return dbUnivers.map(u=>`<option value="${u.cle}" ${u.cle===selected?'selected':''}>${u.label}</option>`).join('');
+}
+
+async function openCollectionsModal(){
+  document.getElementById('collections-list').innerHTML='<div class="coll-empty">Chargement…</div>';
+  document.getElementById('collections-modal').classList.add('open');
+  await loadUnivers();
+  await loadCollections();
+  renderCollectionsList();
+}
+function closeCollectionsModal(){document.getElementById('collections-modal').classList.remove('open');}
+
+function renderCollectionsList(){
+  const el=document.getElementById('collections-list');
+  if(!dbCollections.length){el.innerHTML='<div class="coll-empty">Aucune collection pour l\'instant</div>';return;}
+  el.innerHTML=dbCollections.map(c=>{
+    const n=(c.produits||[]).length;
+    const typeLbl=c.type==='vedette'?'Vedette':'Occasion';
+    return `<div class="coll-line">
+      <div class="coll-count">${c.ordre||0}</div>
+      <div class="coll-titre" onclick="openCollectionEdit('${c.cle}')">${c.titre||'—'}</div>
+      <div><span class="badge-type ${c.type==='occasion'?'occasion':''}">${typeLbl}</span></div>
+      <div><span class="badge-univers">${universLabel(c.univers)}</span></div>
+      <div class="coll-count">${n}</div>
+      <div style="display:flex;justify-content:center">
+        <label class="toggle" title="${c.actif!==false?'Masquer':'Activer'}"><input type="checkbox" ${c.actif!==false?'checked':''} onchange="toggleCollectionActif('${c.cle}',this.checked)"><span class="toggle-slider"></span></label>
+      </div>
+      <button class="cat-del" onclick="openCollectionEdit('${c.cle}')" title="Modifier">✏️</button>
+    </div>`;
+  }).join('');
+}
+
+async function toggleCollectionActif(cle,value){
+  await api('PATCH',`collections?cle=eq.${encodeURIComponent(cle)}`,{actif:value});
+  const c=dbCollections.find(x=>x.cle===cle);
+  if(c)c.actif=value;
+  showToast(value?'Collection activée ✅':'Collection masquée','success');
+}
+
+function openCollectionAdd(){
+  document.getElementById('coll-edit-title').textContent='Nouvelle collection';
+  document.getElementById('coll-edit-cle').value='';
+  document.getElementById('coll-edit-titre').value='';
+  document.getElementById('coll-edit-type').value='occasion';
+  document.getElementById('coll-edit-univers').innerHTML=universSelectOptions('goodies');
+  document.getElementById('coll-edit-ordre').value=dbCollections.length?Math.max(...dbCollections.map(c=>c.ordre||0))+1:0;
+  document.getElementById('coll-edit-actif').checked=true;
+  document.getElementById('coll-delete-btn').style.display='none';
+  collEditProducts=[];
+  renderSelectedProducts();
+  document.getElementById('prod-picker-search').value='';
+  document.getElementById('prod-picker-results').classList.remove('open');
+  document.getElementById('collection-edit-modal').classList.add('open');
+}
+function openCollectionEdit(cle){
+  const c=dbCollections.find(x=>x.cle===cle);
+  if(!c)return;
+  document.getElementById('coll-edit-title').textContent='Modifier la collection';
+  document.getElementById('coll-edit-cle').value=c.cle;
+  document.getElementById('coll-edit-titre').value=c.titre||'';
+  document.getElementById('coll-edit-type').value=c.type||'occasion';
+  document.getElementById('coll-edit-univers').innerHTML=universSelectOptions(c.univers||'goodies');
+  document.getElementById('coll-edit-ordre').value=c.ordre||0;
+  document.getElementById('coll-edit-actif').checked=c.actif!==false;
+  document.getElementById('coll-delete-btn').style.display='inline-flex';
+  collEditProducts=[...(c.produits||[])];
+  renderSelectedProducts();
+  document.getElementById('prod-picker-search').value='';
+  document.getElementById('prod-picker-results').classList.remove('open');
+  document.getElementById('collection-edit-modal').classList.add('open');
+}
+function closeCollectionEditModal(){document.getElementById('collection-edit-modal').classList.remove('open');}
+
+// Recherche live parmi allProducts (deja charge par loadProducts), filtree par
+// l'univers choisi dans le formulaire et par ce qui n'est pas deja dans la collection.
+function renderProductSearchResults(q){
+  const box=document.getElementById('prod-picker-results');
+  const univers=document.getElementById('coll-edit-univers').value;
+  q=(q||'').toLowerCase().trim();
+  let matches=allProducts.filter(p=>!collEditProducts.includes(p.id));
+  if(univers)matches=matches.filter(p=>(p.univers||'goodies')===univers);
+  if(q)matches=matches.filter(p=>(p.nom||'').toLowerCase().includes(q)||(p.ref||'').toLowerCase().includes(q));
+  matches=matches.slice(0,20);
+  if(!matches.length){
+    box.innerHTML=`<div class="prod-picker-empty">${q?'Aucun produit trouvé':'Tapez pour rechercher un produit de cet univers'}</div>`;
+  }else{
+    box.innerHTML=matches.map(p=>{
+      const thumb=(p.photos||[])[0]?imgUrl(p.photos[0]):'';
+      return `<div class="prod-picker-result" onclick="addProductToCollection('${p.id}')">
+        ${thumb?`<img src="${thumb}" alt="">`:'<div style="width:32px;height:32px"></div>'}
+        <div><div class="prod-picker-result-name">${p.nom||'—'}</div><div class="prod-picker-result-meta">${p.ref||''}${p.fournisseur?' · '+fourCode(p.fournisseur):''}</div></div>
+      </div>`;
+    }).join('');
+  }
+  box.classList.add('open');
+}
+// Ferme le dropdown de resultats au clic ailleurs
+document.addEventListener('click',function(e){
+  const picker=document.getElementById('prod-picker-results');
+  if(!picker)return;
+  if(!e.target.closest('.prod-picker'))picker.classList.remove('open');
+});
+function addProductToCollection(id){
+  if(!collEditProducts.includes(id))collEditProducts.push(id);
+  document.getElementById('prod-picker-search').value='';
+  renderProductSearchResults('');
+  renderSelectedProducts();
+}
+function removeProductFromCollection(idx){collEditProducts.splice(idx,1);renderSelectedProducts();}
+function renderSelectedProducts(){
+  const el=document.getElementById('prod-selected-list');
+  if(!collEditProducts.length){el.innerHTML='<div class="coll-empty">Aucun produit dans cette collection</div>';return;}
+  el.innerHTML=collEditProducts.map((id,i)=>{
+    const p=allProducts.find(x=>String(x.id)===String(id));
+    const thumb=p&&(p.photos||[])[0]?imgUrl(p.photos[0]):'';
+    return `<div class="prod-selected-item" draggable="true" ondragstart="collDragStart(${i})" ondragover="collDragOver(event,${i})" ondragleave="collDragLeave(event)" ondrop="collDropItem(event,${i})" ondragend="collDragEnd()">
+      ${thumb?`<img src="${thumb}" alt="">`:'<div style="width:36px;height:36px"></div>'}
+      <div class="prod-selected-name">${p?p.nom:'⚠ Produit introuvable'}</div>
+      <div class="prod-selected-ref">${p?p.ref:id}</div>
+      <button class="prod-selected-del" onclick="removeProductFromCollection(${i})">✕</button>
+    </div>`;
+  }).join('');
+}
+function collDragStart(idx){collDragSrcIdx=idx;}
+function collDragEnd(){collDragSrcIdx=null;document.querySelectorAll('.prod-selected-item').forEach(el=>el.classList.remove('drag-over'));}
+function collDragOver(e,idx){e.preventDefault();if(collDragSrcIdx===null||collDragSrcIdx===idx)return;document.querySelectorAll('.prod-selected-item')[idx]?.classList.add('drag-over');}
+function collDragLeave(e){e.currentTarget.classList.remove('drag-over');}
+function collDropItem(e,idx){e.preventDefault();if(collDragSrcIdx===null||collDragSrcIdx===idx)return;const m=collEditProducts.splice(collDragSrcIdx,1)[0];collEditProducts.splice(idx,0,m);renderSelectedProducts();}
+
+async function saveCollection(){
+  const titre=document.getElementById('coll-edit-titre').value.trim();
+  if(!titre){showToast('Renseignez un titre','error');return;}
+  let cle=document.getElementById('coll-edit-cle').value;
+  const isNew=!cle;
+  if(isNew){
+    cle=slugify(titre);
+    if(!cle){showToast('Titre invalide','error');return;}
+    if(dbCollections.some(c=>c.cle===cle)){showToast('Une collection avec ce titre existe déjà','error');return;}
+  }
+  const data={titre,type:document.getElementById('coll-edit-type').value,univers:document.getElementById('coll-edit-univers').value,ordre:parseInt(document.getElementById('coll-edit-ordre').value)||0,actif:document.getElementById('coll-edit-actif').checked,produits:collEditProducts};
+  try{
+    if(isNew)await api('POST','collections',{cle,...data});
+    else await api('PATCH',`collections?cle=eq.${encodeURIComponent(cle)}`,data);
+    showToast('Collection enregistrée ✅','success');
+    closeCollectionEditModal();
+    await loadCollections();
+    renderCollectionsList();
+  }catch(e){showToast('Erreur lors de l\'enregistrement','error');}
+}
+async function deleteCollection(){
+  const cle=document.getElementById('coll-edit-cle').value;
+  if(!cle||!confirm('Supprimer cette collection ? Les produits eux-mêmes ne sont pas touchés.'))return;
+  await api('DELETE',`collections?cle=eq.${encodeURIComponent(cle)}`);
+  showToast('Collection supprimée','success');
+  closeCollectionEditModal();
+  await loadCollections();
+  renderCollectionsList();
+}
 </script>
 </body>
 </html>
