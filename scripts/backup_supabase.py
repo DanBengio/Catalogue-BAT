@@ -28,9 +28,13 @@ IMAGES_DIR = os.path.join(OUT_DIR, "images")
 
 HEADERS = {
     "apikey": SERVICE_KEY,
-    "Authorization": f"Bearer {SERVICE_KEY}",
     "Content-Type": "application/json",
 }
+# Important : avec le nouveau systeme de cles Supabase (sb_secret_...), la cle
+# se transmet UNIQUEMENT via l'en-tete "apikey". L'envoyer aussi dans
+# "Authorization: Bearer" fait que Supabase tente de la lire comme un JWT et
+# renvoie 401 Unauthorized (c'est l'ancien systeme service_role qui exigeait
+# les deux en-tetes).
 
 
 def http_request(url, method="GET", data=None, headers=None):
