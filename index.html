@@ -466,6 +466,32 @@ let modalIdx=0,modalPhotos=[],currentProduct=null;
 const cart={};
 let cartOpen=false;
 
+// Persistance du panier (localStorage) — demande de Dan du 4 septembre 2026 :
+// le panier ne doit plus se vider quand on actualise la page. On ne stocke que
+// {ref: qty} (pas les fiches produit completes, qui viennent de allProducts a
+// chaque chargement) pour rester leger et toujours a jour avec la base.
+const CART_STORAGE_KEY='bat-cart-v1';
+function saveCart(){
+  try{
+    const data={};
+    Object.entries(cart).forEach(([ref,item])=>{data[ref]=item.qty;});
+    localStorage.setItem(CART_STORAGE_KEY,JSON.stringify(data));
+  }catch(e){/* stockage indisponible (navigation privee, quota...) — le panier reste utilisable pour la session en cours */}
+}
+function restoreCart(){
+  try{
+    const raw=localStorage.getItem(CART_STORAGE_KEY);
+    if(!raw)return;
+    const data=JSON.parse(raw);
+    Object.entries(data).forEach(([ref,qty])=>{
+      const p=allProducts.find(x=>x.ref===ref);
+      if(!p)return; // produit desactive/supprime depuis — on l'ignore silencieusement
+      const min=minQtyFor(p);
+      cart[ref]={product:p,qty:Math.max(min,parseInt(qty)||min)};
+    });
+  }catch(e){}
+}
+
 async function init(){
   try{
     const res=await fetch(`${SUPABASE_URL}/rest/v1/produits?select=*&order=categorie_num,ordre,ref&actif=eq.true`,{headers:sbHeaders()});
@@ -474,6 +500,7 @@ async function init(){
     const hl=document.getElementById('home-loading');if(hl)hl.textContent='Erreur de chargement.';
     return;
   }
+  restoreCart();
   // Collections et univers : non bloquants — une panne ici degrade juste ces
   // sections (pas de selections mises en avant), l'accueil univers reste utilisable.
   try{
@@ -485,7 +512,7 @@ async function init(){
     dbUnivers=univRes.ok?await univRes.json():[];
   }catch(e){dbCollections=[];dbUnivers=[];}
   const hl=document.getElementById('home-loading');if(hl)hl.style.display='none';
-  renderUniversRow();renderTiles();
+  renderUniversRow();renderTiles();updateCartUI();
 }
 
 // Toutes les categories d'un produit (categories[] si presente, sinon categorie)
@@ -692,7 +719,7 @@ function renderTiles(){
     const tile=document.createElement('div');
     tile.className='tile';
     tile.style.background=pal.bg;tile.style.color=pal.fg;
-    tile.innerHTML=`<div class="tile-ic">${c.type==='vedette'?'⭐':'🎁'}</div><div class="tile-lb">${c.titre}</div>`;
+    tile.innerHTML=`<div class="tile-lb">${c.titre}</div>`;
     tile.onclick=()=>selectTile(c.cle);
     host.appendChild(tile);
   });
@@ -970,6 +997,7 @@ function toggleCart(){
 }
 
 function updateCartUI(){
+  saveCart();
   const total=Object.values(cart).reduce((s,i)=>s+i.qty,0);
   const count=Object.keys(cart).length;
   const fab=document.getElementById('cart-fab');
