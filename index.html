@@ -626,7 +626,11 @@ function selectUnivers(cle){
 function selectTile(cle){
   const coll=dbCollections.find(c=>c.cle===cle);
   if(!coll)return;
-  currentUnivers=coll.univers||'all';currentCollection=cle;
+  // Une collection n'est pas rattachee a un seul univers : elle doit pouvoir
+  // afficher des produits goodies/textile/print melanges — demande de Dan le
+  // 4 septembre 2026. On ne filtre donc plus par coll.univers ici, seule
+  // l'appartenance a coll.produits (dans visibleProducts) compte.
+  currentUnivers='all';currentCollection=cle;
   enterBrowse();
 }
 function goHome(){
