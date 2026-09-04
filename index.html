@@ -463,6 +463,15 @@ function catsOf(p){
   return (p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
 }
 
+// Quantite minimale pour la demande de devis — regle Dan du 4 septembre 2026 :
+// univers goodies demarre a 20, sauf categorie "coffrets" qui demarre a 10.
+// Textile/print restent a 1. On ne descend jamais sous ce minimum, on ne peut
+// que monter (voir cQty/changeModalQty).
+function minQtyFor(p){
+  if(!p||p.univers!=='goodies')return 1;
+  return catsOf(p).includes('coffrets')?10:20;
+}
+
 // Produits du seul univers actuellement selectionne (ou tous si 'all'), et de la
 // selection curatee active le cas echeant (currentCollection)
 function visibleProducts(){
@@ -713,10 +722,11 @@ function buildProductCard(p,uid,tagLabel){
   card.appendChild(body);
   const actions=document.createElement('div');actions.className='card-actions';
   const qtyId='cqty-'+uid,btnId='cbtn-'+uid;
+  const minQty=minQtyFor(p);
   actions.innerHTML=`
     <div class="qty-wrap">
       <button class="qty-btn" onclick="event.stopPropagation();cQty('${qtyId}',-1)">−</button>
-      <input class="qty-input" type="number" id="${qtyId}" value="1" min="1" onclick="event.stopPropagation()" onchange="validateQty(this)">
+      <input class="qty-input" type="number" id="${qtyId}" value="${minQty}" min="${minQty}" onclick="event.stopPropagation()" onchange="validateQty(this)">
       <button class="qty-btn" onclick="event.stopPropagation();cQty('${qtyId}',1)">+</button>
     </div>
     <button class="btn-add" id="${btnId}" onclick="event.stopPropagation();addCard('${p.ref}','${qtyId}','${btnId}')">+ Ajouter au devis</button>`;
@@ -844,12 +854,14 @@ function renderAll(){
   renderQuicknavUI(visibleSecs);
 }
 
-function validateQty(el){el.value=Math.max(1,parseInt(el.value)||1);}
-function validateModalQty(el){el.value=Math.max(1,parseInt(el.value)||1);}
-function cQty(id,dir){const el=document.getElementById(id);if(el){const v=Math.max(1,parseInt(el.value)||1);el.value=v+dir<1?1:v+dir;}}
+function validateQty(el){const min=parseInt(el.min)||1;el.value=Math.max(min,parseInt(el.value)||min);}
+function validateModalQty(el){const min=parseInt(el.min)||1;el.value=Math.max(min,parseInt(el.value)||min);}
+function cQty(id,dir){const el=document.getElementById(id);if(el){const min=parseInt(el.min)||1;const v=Math.max(min,parseInt(el.value)||min);const next=v+dir;el.value=next<min?min:next;}}
 
 function addCard(ref,qtyId,btnId){
-  const qty=Math.max(1,parseInt(document.getElementById(qtyId)?.value)||1);
+  const qtyEl=document.getElementById(qtyId);
+  const min=parseInt(qtyEl?.min)||1;
+  const qty=Math.max(min,parseInt(qtyEl?.value)||min);
   const p=allProducts.find(x=>x.ref===ref);
   if(p)addToCart(p,qty);
   const btn=document.getElementById(btnId);
@@ -858,7 +870,7 @@ function addCard(ref,qtyId,btnId){
 
 function openModal(p){
   currentProduct=p;
-  const qtyEl=document.getElementById('m-qty');qtyEl.value=1;
+  const qtyEl=document.getElementById('m-qty');const mMinQty=minQtyFor(p);qtyEl.min=mMinQty;qtyEl.value=mMinQty;
   const cta=document.getElementById('m-cta');cta.textContent='+ Ajouter au devis';cta.classList.remove('added');
   const photos=(p.photos||[]).map(f=>imgUrl(f));
   modalPhotos=photos;modalIdx=0;
@@ -897,10 +909,12 @@ function gotoModal(idx){
 }
 function slideModal(dir){gotoModal(modalIdx+dir);}
 function closeModal(){document.getElementById('modal').classList.remove('open');}
-function changeModalQty(dir){const el=document.getElementById('m-qty');el.value=Math.max(1,(parseInt(el.value)||1)+dir);}
+function changeModalQty(dir){const el=document.getElementById('m-qty');const min=parseInt(el.min)||1;const v=Math.max(min,parseInt(el.value)||min);const next=v+dir;el.value=next<min?min:next;}
 function addFromModal(){
   if(!currentProduct)return;
-  const qty=Math.max(1,parseInt(document.getElementById('m-qty').value)||1);
+  const mEl=document.getElementById('m-qty');
+  const min=parseInt(mEl.min)||1;
+  const qty=Math.max(min,parseInt(mEl.value)||min);
   addToCart(currentProduct,qty);
   const btn=document.getElementById('m-cta');btn.textContent='✓ Ajouté !';btn.classList.add('added');
   setTimeout(()=>{btn.textContent='+ Ajouter au devis';btn.classList.remove('added');},1500);
