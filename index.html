@@ -267,7 +267,7 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
   <div id="home-loading" class="loading"><div class="loading-spinner"></div>Chargement...</div>
   <div class="home-sec"><div class="eb">Univers</div><h2>Nos catalogues</h2></div>
   <div class="univers-row" id="univers-row"></div>
-  <div class="home-sec"><div class="eb">Nos sélections</div><h2>Envie de...</h2></div>
+  <div class="home-sec" id="selections-sec"><div class="eb">Nos sélections</div><h2>Envie de...</h2></div>
   <div class="tiles-grid" id="tiles-grid"></div>
 </div>
 
@@ -570,7 +570,7 @@ function renderUniversRow(){
     const card=document.createElement('div');
     card.className='univers-card'+(disabled?' disabled':'');
     card.innerHTML=`<div class="univers-icon">${universIcon(cle)}</div><div class="univers-label">${universLabel(cle)}</div>`+
-      (disabled?`<div class="univers-soon">Bientôt disponible</div>`:`<div class="univers-count">${count} produit${count>1?'s':''}</div>`);
+      (disabled?`<div class="univers-soon">Bientôt disponible</div>`:'');
     if(!disabled)card.onclick=()=>selectUnivers(cle);
     wrap.appendChild(card);
   });
@@ -633,10 +633,17 @@ function goHome(){
 const TILE_PALETTE=[{bg:'#e3f2f7',fg:'#00566f'},{bg:'#f6e8ec',fg:'#87223a'},{bg:'#fdf1dc',fg:'#8a6410'},{bg:'#e6f5ec',fg:'#12703a'}];
 function renderTiles(){
   const host=document.getElementById('tiles-grid');
+  const sec=document.getElementById('selections-sec');
   if(!host)return;
   host.innerHTML='';
   const withProducts=dbCollections.filter(c=>(c.produits||[]).length>0);
-  if(!withProducts.length){host.innerHTML='<div class="tiles-empty">Aucune sélection pour le moment.</div>';return;}
+  if(!withProducts.length){
+    if(sec)sec.style.display='none';
+    host.style.display='none';
+    return;
+  }
+  if(sec)sec.style.display='';
+  host.style.display='';
   withProducts.forEach((c,i)=>{
     const pal=TILE_PALETTE[i%TILE_PALETTE.length];
     const tile=document.createElement('div');
