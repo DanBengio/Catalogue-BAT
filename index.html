@@ -201,38 +201,55 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .modal-cta.added{background:var(--green)}
 
 /* ── PANIER FLOTTANT ── */
-.cart-fab{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+/* Aligne avec .fab-btn (bouton "Aller à", symetrique a gauche) : meme bottom,
+   meme distance au bord, meme gabarit — demande de Dan le 4 septembre 2026,
+   les deux boutons flottants etaient disproportionnes l'un par rapport a l'autre. */
+.cart-fab{position:fixed;bottom:22px;right:18px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .cart-fab.hidden{display:none}
 
-/* Bouton principal */
-.cart-main-btn{background:var(--blue);color:white;border:none;border-radius:50px;padding:13px 22px;font-size:0.78rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 6px 24px rgba(0,135,183,0.4);display:flex;align-items:center;gap:10px;transition:all 0.2s;white-space:nowrap}
-.cart-main-btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,135,183,0.5)}
-.cart-badge{background:var(--yellow);color:var(--dark);border-radius:50px;padding:3px 9px;font-size:0.72rem;font-weight:800;min-width:22px;text-align:center}
+/* Bouton principal — meme gabarit que .fab-btn (Aller à) */
+.cart-main-btn{background:var(--blue);color:white;border:none;border-radius:999px;padding:12px 18px 12px 15px;font-size:0.72rem;font-weight:800;font-family:'Raleway',sans-serif;cursor:pointer;box-shadow:0 10px 24px -6px rgba(0,135,183,0.55),0 2px 8px rgba(0,0,0,0.18);display:flex;align-items:center;gap:8px;transition:all 0.2s;white-space:nowrap}
+.cart-main-btn:hover{transform:translateY(-2px)}
+.cart-badge{background:var(--yellow);color:var(--dark);border-radius:50px;padding:2px 7px;font-size:0.66rem;font-weight:800;min-width:18px;text-align:center;line-height:1.3}
 
-/* Panel déplié */
-.cart-panel{background:white;border-radius:18px;box-shadow:0 8px 40px rgba(0,0,0,0.18);width:340px;overflow:hidden;transition:all 0.3s cubic-bezier(.4,0,.2,1);transform-origin:bottom right}
+/* Panel déplié — largeur plafonnee par rapport au viewport pour ne jamais
+   deborder a gauche sur mobile (panel coupe signale par Dan le 4 septembre
+   2026) : avec le cart-fab ancre a right:18px, ce plafond laisse toujours
+   une marge d'environ 22px a gauche, quelle que soit la largeur d'ecran. */
+.cart-panel{background:white;border-radius:18px;box-shadow:0 8px 40px rgba(0,0,0,0.18);width:340px;max-width:calc(100vw - 40px);overflow:hidden;transition:all 0.3s cubic-bezier(.4,0,.2,1);transform-origin:bottom right}
 .cart-panel.collapsed{display:none}
 .cart-panel-header{padding:1rem 1.25rem 0.75rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f0f0f0}
 .cart-panel-title{font-size:0.85rem;font-weight:800;color:var(--dark)}
 .cart-panel-close{background:none;border:none;font-size:1.1rem;cursor:pointer;color:#bbb;line-height:1}
 .cart-panel-items{max-height:260px;overflow-y:auto;padding:0.5rem 0}
 .cart-panel-empty{text-align:center;padding:1.5rem;color:#bbb;font-size:0.82rem}
-.cart-item{display:flex;align-items:center;gap:10px;padding:0.6rem 1.25rem;transition:background 0.15s}
+.cart-item{display:flex;align-items:center;gap:8px;padding:0.6rem 1.25rem;transition:background 0.15s}
 .cart-item:hover{background:#fafafa}
 .cart-item-thumb{width:40px;height:40px;border-radius:7px;background:#f5f8fa;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center}
 .cart-item-thumb img{width:100%;height:100%;object-fit:contain}
 .cart-item-info{flex:1;min-width:0}
 .cart-item-ref{font-size:0.6rem;color:var(--blue);font-weight:700;letter-spacing:1px;text-transform:uppercase}
 .cart-item-name{font-size:0.76rem;font-weight:700;color:var(--dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cart-item-qty{font-size:0.7rem;color:#888;margin-top:1px}
+/* Quantite modifiable directement dans le panier — demande de Dan le 4
+   septembre 2026 (en respectant le minimum de chaque produit, voir minQtyFor
+   et changeCartQty/setCartQty). Gabarit compact, adapte a la largeur reduite
+   d'une ligne de panier (par rapport a .qty-wrap utilise sur les cartes). */
+.cart-item-qty-wrap{display:flex;align-items:center;border:1.5px solid #e0e0e0;border-radius:7px;overflow:hidden;flex-shrink:0}
+.cart-item-qty-btn{background:none;border:none;width:20px;height:24px;font-size:0.8rem;cursor:pointer;color:#888;transition:background 0.15s;font-family:'Raleway',sans-serif;line-height:1;padding:0;flex-shrink:0}
+.cart-item-qty-btn:hover{background:#f0f0f0;color:var(--blue)}
+.cart-item-qty-input{width:28px;height:24px;text-align:center;font-size:0.68rem;font-weight:700;color:var(--dark);border:none;border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0;background:white;font-family:'Raleway',sans-serif;outline:none}
+.cart-item-qty-input::-webkit-inner-spin-button{-webkit-appearance:none}
 .cart-item-del{background:none;border:none;color:#ddd;cursor:pointer;font-size:0.85rem;flex-shrink:0;padding:3px;border-radius:4px;transition:color 0.15s;line-height:1}
 .cart-item-del:hover{color:var(--prune)}
 .cart-panel-footer{padding:0.75rem 1.25rem 1.25rem;border-top:1px solid #f0f0f0}
 .cart-total-line{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem}
 .cart-total-label{font-size:0.72rem;color:#888;font-weight:600}
 .cart-total-val{font-size:0.82rem;font-weight:800;color:var(--dark)}
+.cart-note{font-size:0.68rem;color:#888;line-height:1.5;margin-bottom:0.65rem;text-align:center}
 .btn-whatsapp{width:100%;background:#25D366;color:white;border:none;border-radius:10px;padding:13px;font-size:0.8rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background 0.2s}
 .btn-whatsapp:hover{background:#1ebe5a}
+.btn-continue{width:100%;background:none;border:1.5px solid var(--blue);color:var(--blue);border-radius:10px;padding:10px;font-size:0.76rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;margin-top:8px;transition:all 0.2s}
+.btn-continue:hover{background:rgba(0,135,183,0.08)}
 .btn-clear{width:100%;background:none;border:none;color:#ccc;font-size:0.7rem;cursor:pointer;margin-top:7px;font-family:'Raleway',sans-serif;padding:3px;transition:color 0.15s}
 .btn-clear:hover{color:var(--prune)}
 
@@ -371,10 +388,12 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
         <span class="cart-total-label" id="cart-refs-label">0 référence</span>
         <span class="cart-total-val" id="cart-units-label">0 unité</span>
       </div>
+      <div class="cart-note">📱 Dès l'envoi, on vous répond sur WhatsApp pour finaliser les détails avec vous (couleur, format, impression, etc...)</div>
       <button class="btn-whatsapp" onclick="sendWhatsApp()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Envoyer ma demande via WhatsApp
       </button>
+      <button class="btn-continue" onclick="toggleCart()">Continuer ma sélection</button>
       <button class="btn-clear" onclick="clearCart()">Vider la sélection</button>
     </div>
   </div>
@@ -954,17 +973,44 @@ function updateCartUI(){
   itemsEl.innerHTML='';
   Object.values(cart).forEach(({product:p,qty})=>{
     const photos=(p.photos||[]).map(f=>imgUrl(f));
+    const safeId=('cqi-'+(p.ref||'')).replace(/[^a-z0-9]/gi,'_');
+    const min=minQtyFor(p);
     const div=document.createElement('div');div.className='cart-item';
     div.innerHTML=`
       <div class="cart-item-thumb">${photos.length?`<img src="${photos[0]}" alt="">`:''}</div>
       <div class="cart-item-info">
         <div class="cart-item-ref">${p.ref}</div>
         <div class="cart-item-name">${p.nom}</div>
-        <div class="cart-item-qty">Qté : <strong>${qty}</strong></div>
+      </div>
+      <div class="cart-item-qty-wrap">
+        <button class="cart-item-qty-btn" onclick="changeCartQty('${p.ref}',-1)">−</button>
+        <input class="cart-item-qty-input" type="number" id="${safeId}" value="${qty}" min="${min}" onclick="event.stopPropagation()" onchange="setCartQty('${p.ref}',this)">
+        <button class="cart-item-qty-btn" onclick="changeCartQty('${p.ref}',1)">+</button>
       </div>
       <button class="cart-item-del" onclick="removeFromCart('${p.ref}')">✕</button>`;
     itemsEl.appendChild(div);
   });
+}
+
+// Modification de la quantite directement depuis le panier — demande de Dan
+// le 4 septembre 2026. On respecte toujours le minimum du produit (minQtyFor,
+// meme regle que sur la carte/la modale) : jamais en dessous, seulement en
+// hausse via le "-"/"+" ou en tapant une valeur (re-clampee au minimum).
+function changeCartQty(ref,dir){
+  const item=cart[ref];
+  if(!item)return;
+  const min=minQtyFor(item.product);
+  const current=Math.max(min,parseInt(item.qty)||min);
+  const next=current+dir;
+  item.qty=next<min?min:next;
+  updateCartUI();
+}
+function setCartQty(ref,el){
+  const item=cart[ref];
+  if(!item)return;
+  const min=minQtyFor(item.product);
+  item.qty=Math.max(min,parseInt(el.value)||min);
+  updateCartUI();
 }
 
 function sendWhatsApp(){
