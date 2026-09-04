@@ -23,22 +23,34 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .cat-label{font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;opacity:0.65;font-weight:600}
 .cat-year{font-size:1rem;font-weight:700;opacity:0.9}
 
-/* UNIVERS SELECTOR */
-.univers-row{display:flex;gap:1rem;padding:1.5rem 2rem 0.5rem;flex-wrap:wrap}
+/* ACCUEIL — UNIVERS + SELECTIONS */
+#home-loading{padding:3rem 2rem}
+.home-sec{padding:1.75rem 2rem 0.4rem}
+.home-sec .eb{font-size:0.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#999}
+.home-sec h2{font-size:1.35rem;font-weight:800;margin-top:0.25rem;color:var(--dark)}
+.univers-row{display:flex;gap:1rem;padding:1rem 2rem 0.5rem;flex-wrap:wrap}
 .univers-card{flex:1;min-width:180px;background:white;border:2px solid #ebebeb;border-radius:14px;padding:1.25rem 1.5rem;cursor:pointer;transition:all 0.2s;text-align:center}
 .univers-card:hover{border-color:var(--blue-light);transform:translateY(-2px)}
-.univers-card.active{border-color:var(--blue);background:#f0f9fc;box-shadow:0 8px 24px rgba(0,135,183,0.15)}
 .univers-card.disabled{opacity:0.45;cursor:not-allowed}
 .univers-card.disabled:hover{transform:none;border-color:#ebebeb}
 .univers-icon{font-size:2rem;margin-bottom:0.4rem}
 .univers-label{font-size:0.95rem;font-weight:800;color:var(--dark);letter-spacing:0.3px}
 .univers-count{font-size:0.66rem;color:#999;font-weight:600;margin-top:3px;text-transform:uppercase;letter-spacing:1px}
 .univers-soon{font-size:0.64rem;color:var(--prune);font-weight:700;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
-.univers-reset{text-align:center;padding:0.25rem 2rem 0}
-.univers-reset button{background:none;border:none;color:var(--blue);font-size:0.72rem;font-weight:700;cursor:pointer;text-decoration:underline;font-family:'Raleway',sans-serif}
 
-/* COLLECTIONS */
-.coll-badge-vedette{display:inline-block;background:var(--yellow);color:var(--dark);font-size:0.6rem;font-weight:800;padding:3px 10px;border-radius:20px;margin-left:10px;vertical-align:middle;letter-spacing:0.5px}
+/* TUILES DE SELECTIONS (icones couleur) */
+.tiles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;padding:1rem 2rem 2.5rem}
+.tile{border-radius:16px;padding:1.5rem 1rem;text-align:center;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.6rem;transition:transform 0.2s}
+.tile:hover{transform:translateY(-3px)}
+.tile-ic{font-size:1.8rem;line-height:1}
+.tile-lb{font-size:0.85rem;font-weight:800;line-height:1.25}
+.tiles-empty{color:#999;font-size:0.85rem;padding:0.5rem 0}
+
+/* RETOUR ACCUEIL + SORTIE DE SELECTION (dans la nav) */
+.nav-back{padding:1rem 1rem 1rem 0;margin-right:0.5rem;border-right:1.5px solid #e8e8e8;border-top:none;border-left:none;border-bottom:none;background:none;font-size:0.72rem;font-weight:700;color:var(--blue);cursor:pointer;font-family:'Raleway',sans-serif;white-space:nowrap;flex-shrink:0}
+.nav-back:hover{color:#006a92}
+.coll-chip{text-align:center;padding:0.6rem 2rem 0}
+.coll-chip button{background:none;border:none;color:var(--blue);font-size:0.72rem;font-weight:700;cursor:pointer;text-decoration:underline;font-family:'Raleway',sans-serif}
 
 /* NAV */
 .nav{background:white;border-bottom:1px solid #e8e8e8;display:flex;align-items:center;padding:0 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06);gap:0;overflow-x:auto}
@@ -192,21 +204,26 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
   </div>
 </div>
 
-<div class="univers-row" id="univers-row"></div>
-<div class="univers-reset" id="univers-reset" style="display:none"><button onclick="selectUnivers('all')">✕ Voir tous les univers</button></div>
-<div id="collections-host"></div>
-
-<nav class="nav" id="nav">
-  <button class="nav-btn active" id="nav-tous-btn" onclick="filterCat('all',this)">Tous</button>
-  <div class="search-wrap">
-    <input class="search" type="text" placeholder="Rechercher..." oninput="filterSearch(this.value)">
-  </div>
-</nav>
-
-<div id="catalogue">
-  <div class="loading"><div class="loading-spinner"></div>Chargement du catalogue...</div>
+<div id="home">
+  <div id="home-loading" class="loading"><div class="loading-spinner"></div>Chargement...</div>
+  <div class="home-sec"><div class="eb">Univers</div><h2>Nos catalogues</h2></div>
+  <div class="univers-row" id="univers-row"></div>
+  <div class="home-sec"><div class="eb">Nos sélections</div><h2>Envie de...</h2></div>
+  <div class="tiles-grid" id="tiles-grid"></div>
 </div>
-<div id="no-results">Aucun produit trouvé.</div>
+
+<div id="browse" style="display:none">
+  <nav class="nav" id="nav">
+    <button class="nav-back" onclick="goHome()">← Accueil</button>
+    <button class="nav-btn active" id="nav-tous-btn" onclick="filterCat('all',this)">Tous</button>
+    <div class="search-wrap">
+      <input class="search" type="text" placeholder="Rechercher..." oninput="filterSearch(this.value)">
+    </div>
+  </nav>
+  <div class="coll-chip" id="coll-chip" style="display:none"></div>
+  <div id="catalogue"></div>
+  <div id="no-results">Aucun produit trouvé.</div>
+</div>
 
 <!-- MODAL -->
 <div class="modal-bg" id="modal" onclick="if(event.target===this)closeModal()">
@@ -311,7 +328,7 @@ function imgPlaceholder(src){
 }
 
 let allProducts=[],currentCat='all',currentSearch='',catMeta={};
-let dbCollections=[],dbUnivers=[],currentUnivers='all';
+let dbCollections=[],dbUnivers=[],currentUnivers='all',currentCollection=null;
 let modalIdx=0,modalPhotos=[],currentProduct=null;
 const cart={};
 let cartOpen=false;
@@ -321,11 +338,11 @@ async function init(){
     const res=await fetch(`${SUPABASE_URL}/rest/v1/produits?select=*&order=categorie_num,ordre,ref&actif=eq.true`,{headers:sbHeaders()});
     allProducts=await res.json();
   }catch(e){
-    document.getElementById('catalogue').innerHTML='<div class="loading">Erreur de chargement.</div>';
+    const hl=document.getElementById('home-loading');if(hl)hl.textContent='Erreur de chargement.';
     return;
   }
   // Collections et univers : non bloquants — une panne ici degrade juste ces
-  // sections (pas de collections mises en avant), le catalogue principal reste utilisable.
+  // sections (pas de selections mises en avant), l'accueil univers reste utilisable.
   try{
     const [collRes,univRes]=await Promise.all([
       fetch(`${SUPABASE_URL}/rest/v1/collections?select=*&actif=eq.true&order=ordre`,{headers:sbHeaders()}),
@@ -334,7 +351,8 @@ async function init(){
     dbCollections=collRes.ok?await collRes.json():[];
     dbUnivers=univRes.ok?await univRes.json():[];
   }catch(e){dbCollections=[];dbUnivers=[];}
-  buildNav();renderUniversRow();renderCollections();renderAll();
+  const hl=document.getElementById('home-loading');if(hl)hl.style.display='none';
+  renderUniversRow();renderTiles();
 }
 
 // Toutes les categories d'un produit (categories[] si presente, sinon categorie)
@@ -342,9 +360,15 @@ function catsOf(p){
   return (p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
 }
 
-// Produits du seul univers actuellement selectionne (ou tous si 'all')
+// Produits du seul univers actuellement selectionne (ou tous si 'all'), et de la
+// selection curatee active le cas echeant (currentCollection)
 function visibleProducts(){
-  return currentUnivers==='all'?allProducts:allProducts.filter(p=>p.univers===currentUnivers);
+  let list=currentUnivers==='all'?allProducts:allProducts.filter(p=>p.univers===currentUnivers);
+  if(currentCollection){
+    const coll=dbCollections.find(c=>c.cle===currentCollection);
+    if(coll){const ids=new Set(coll.produits||[]);list=list.filter(p=>ids.has(p.id));}
+  }
+  return list;
 }
 
 function buildCatMeta(){
@@ -401,45 +425,88 @@ function renderUniversRow(){
     const count=counts[cle]||0;
     const disabled=count===0;
     const card=document.createElement('div');
-    card.className='univers-card'+(currentUnivers===cle?' active':'')+(disabled?' disabled':'');
+    card.className='univers-card'+(disabled?' disabled':'');
     card.innerHTML=`<div class="univers-icon">${universIcon(cle)}</div><div class="univers-label">${universLabel(cle)}</div>`+
       (disabled?`<div class="univers-soon">Bientôt disponible</div>`:`<div class="univers-count">${count} produit${count>1?'s':''}</div>`);
-    if(!disabled)card.onclick=()=>selectUnivers(cle===currentUnivers?'all':cle);
+    if(!disabled)card.onclick=()=>selectUnivers(cle);
     wrap.appendChild(card);
   });
-  const resetEl=document.getElementById('univers-reset');
-  if(resetEl)resetEl.style.display=currentUnivers==='all'?'none':'block';
-  const labelEl=document.getElementById('cat-label-el');
-  if(labelEl)labelEl.textContent=currentUnivers==='all'?'Catalogue complet':'Catalogue '+universLabel(currentUnivers).toLowerCase();
 }
-function selectUnivers(cle){
-  currentUnivers=cle;currentCat='all';currentSearch='';
+function updateHeaderLabel(){
+  const labelEl=document.getElementById('cat-label-el');
+  if(!labelEl)return;
+  if(currentCollection){
+    const coll=dbCollections.find(c=>c.cle===currentCollection);
+    labelEl.textContent=coll?('Sélection · '+coll.titre):'Sélection';
+  }else{
+    labelEl.textContent=currentUnivers==='all'?'Catalogue complet':'Catalogue '+universLabel(currentUnivers).toLowerCase();
+  }
+}
+function updateCollChip(){
+  const chip=document.getElementById('coll-chip');
+  if(!chip)return;
+  if(currentCollection){
+    const coll=dbCollections.find(c=>c.cle===currentCollection);
+    chip.style.display='block';
+    chip.innerHTML=`<button onclick="exitCollection()">✕ Quitter la sélection « ${coll?coll.titre:''} »</button>`;
+  }else{
+    chip.style.display='none';chip.innerHTML='';
+  }
+}
+function exitCollection(){
+  currentCollection=null;
+  buildNav();
+  document.querySelectorAll('#nav .nav-btn').forEach(b=>b.classList.remove('active'));
+  const tousBtn=document.getElementById('nav-tous-btn');if(tousBtn)tousBtn.classList.add('active');
+  currentCat='all';
+  updateHeaderLabel();updateCollChip();renderAll();
+}
+function enterBrowse(){
+  currentCat='all';currentSearch='';
   const s=document.querySelector('.search');if(s)s.value='';
   buildNav();
   document.querySelectorAll('#nav .nav-btn').forEach(b=>b.classList.remove('active'));
   const tousBtn=document.getElementById('nav-tous-btn');if(tousBtn)tousBtn.classList.add('active');
-  renderUniversRow();renderCollections();renderAll();
+  updateHeaderLabel();updateCollChip();
+  document.getElementById('home').style.display='none';
+  document.getElementById('browse').style.display='';
+  renderAll();
+}
+function selectUnivers(cle){
+  currentUnivers=cle;currentCollection=null;
+  enterBrowse();
+}
+function selectTile(cle){
+  const coll=dbCollections.find(c=>c.cle===cle);
+  if(!coll)return;
+  currentUnivers=coll.univers||'all';currentCollection=cle;
+  enterBrowse();
+}
+function goHome(){
+  currentUnivers='all';currentCollection=null;currentCat='all';currentSearch='';
+  const s=document.querySelector('.search');if(s)s.value='';
+  const labelEl=document.getElementById('cat-label-el');if(labelEl)labelEl.textContent='Catalogue';
+  document.getElementById('browse').style.display='none';
+  document.getElementById('home').style.display='';
+  renderUniversRow();
 }
 
-// ── COLLECTIONS CURATEES ──
-function collectionsForUnivers(){
-  return dbCollections.filter(c=>currentUnivers==='all'?true:c.univers===currentUnivers);
-}
-function renderCollections(){
-  const host=document.getElementById('collections-host');
+// ── SELECTIONS CURATEES (tuiles icones couleur sur l'accueil) ──
+const TILE_PALETTE=[{bg:'#e3f2f7',fg:'#00566f'},{bg:'#f6e8ec',fg:'#87223a'},{bg:'#fdf1dc',fg:'#8a6410'},{bg:'#e6f5ec',fg:'#12703a'}];
+function renderTiles(){
+  const host=document.getElementById('tiles-grid');
   if(!host)return;
   host.innerHTML='';
-  collectionsForUnivers().forEach(c=>{
-    const items=(c.produits||[]).map(id=>allProducts.find(p=>p.id===id)).filter(Boolean);
-    if(!items.length)return;
-    const sec=document.createElement('div');
-    sec.innerHTML=`<div class="sec-header"><div class="sec-num">🎁</div><div><div class="sec-name">${c.titre}${c.type==='vedette'?'<span class="coll-badge-vedette">⭐ En vedette</span>':''}</div><div class="sec-count">${items.length} produit${items.length>1?'s':''} · Sélection</div></div></div><div class="divider"></div>`;
-    const grid=document.createElement('div');grid.className='grid';
-    items.forEach(p=>{
-      const uid=('coll_'+c.cle+'_'+(p.ref||'')).replace(/[^a-z0-9]/gi,'_');
-      grid.appendChild(buildProductCard(p,uid,universLabel(p.univers)));
-    });
-    sec.appendChild(grid);host.appendChild(sec);
+  const withProducts=dbCollections.filter(c=>(c.produits||[]).length>0);
+  if(!withProducts.length){host.innerHTML='<div class="tiles-empty">Aucune sélection pour le moment.</div>';return;}
+  withProducts.forEach((c,i)=>{
+    const pal=TILE_PALETTE[i%TILE_PALETTE.length];
+    const tile=document.createElement('div');
+    tile.className='tile';
+    tile.style.background=pal.bg;tile.style.color=pal.fg;
+    tile.innerHTML=`<div class="tile-ic">${c.type==='vedette'?'⭐':'🎁'}</div><div class="tile-lb">${c.titre}</div>`;
+    tile.onclick=()=>selectTile(c.cle);
+    host.appendChild(tile);
   });
 }
 
