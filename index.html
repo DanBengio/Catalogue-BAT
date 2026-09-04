@@ -84,6 +84,33 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
   .search{width:100%}
 }
 
+/* ── ALLER A : barre laterale (ordinateur) + bouton flottant + tiroir (telephone) ──
+   Direction validee par Dan le 4 septembre 2026, sur maquette testee directement
+   sur telephone reel (pas de cadre simule ici, donc aucun probleme de zoom a
+   craindre : position:fixed s'applique directement a la vraie fenetre). */
+.browse-split{display:flex;align-items:flex-start}
+.browse-split .browse-main{flex:1;min-width:0}
+.quicknav-side{width:178px;flex-shrink:0;position:sticky;padding:1.1rem 0.5rem 1.1rem 1.5rem;display:flex;flex-direction:column;gap:1px}
+.quicknav-side.is-hidden{display:none}
+.quicknav-side-title{font-size:0.6rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#999;padding:0 10px 0.55rem 9px}
+.quicknav-link{display:flex;align-items:center;gap:9px;padding:8px 12px 8px 9px;border-radius:0 10px 10px 0;border:none;border-left:3px solid transparent;background:none;cursor:pointer;text-align:left;width:100%;font-family:'Raleway',sans-serif;color:var(--dark);transition:background 0.15s,color 0.15s,border-color 0.15s;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.quicknav-link:hover{background:#f7fafb}
+.quicknav-link.active{background:rgba(0,135,183,0.08);color:var(--blue);border-left-color:var(--blue)}
+.quicknav-link .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.quicknav-link .lb{flex:1;font-size:0.76rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fab-area.is-hidden{display:none}
+.fab-btn{position:fixed;left:18px;bottom:22px;z-index:220;display:flex;align-items:center;gap:8px;background:var(--blue);color:#fff;border:none;border-radius:999px;padding:12px 18px 12px 15px;box-shadow:0 10px 24px -6px rgba(0,135,183,0.55),0 2px 8px rgba(0,0,0,0.18);font-family:'Raleway',sans-serif;font-weight:800;font-size:0.72rem;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.fab-btn svg{width:16px;height:16px;flex-shrink:0}
+.sheet-backdrop{position:fixed;inset:0;background:rgba(20,20,19,0.45);opacity:0;pointer-events:none;transition:opacity 0.22s;z-index:245}
+.sheet-backdrop.open{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;background:#fff;border-radius:22px 22px 0 0;box-shadow:0 -14px 32px rgba(0,0,0,0.2);transform:translateY(106%);will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:transform 0.28s cubic-bezier(0.32,0.72,0,1);z-index:246;max-height:68%;display:flex;flex-direction:column;padding:0.7rem 0 1rem}
+.sheet.open{transform:translateY(0)}
+.sheet-handle{width:36px;height:4px;border-radius:3px;background:#e3e1dc;margin:0 auto 0.7rem}
+.sheet-title{font-size:0.6rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#999;padding:0 1.1rem 0.5rem}
+.sheet-list{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 0.6rem;display:flex;flex-direction:column;gap:1px}
+@media (min-width:641px){ .fab-area{display:none} }
+@media (max-width:640px){ .quicknav-side{display:none} }
+
 /* SECTION */
 .sec-header{padding:2rem 2rem 0.5rem;display:flex;align-items:flex-end;gap:1.5rem}
 .sec-num{font-size:4.5rem;font-weight:800;color:var(--blue);opacity:0.1;line-height:1;font-family:'Playfair Display',serif}
@@ -263,8 +290,28 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
     </div>
   </nav>
   <div class="coll-chip" id="coll-chip" style="display:none"></div>
-  <div id="catalogue"></div>
-  <div id="no-results">Aucun produit trouvé.</div>
+  <div class="browse-split">
+    <aside class="quicknav-side is-hidden" id="quicknav-side">
+      <div class="quicknav-side-title">Aller à</div>
+      <div id="quicknav-side-list"></div>
+    </aside>
+    <div class="browse-main">
+      <div id="catalogue"></div>
+      <div id="no-results">Aucun produit trouvé.</div>
+    </div>
+  </div>
+  <div class="fab-area is-hidden" id="fab-area">
+    <button class="fab-btn" type="button" id="fab-toggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="14" y2="18"></line></svg>
+      <span>Aller à</span>
+    </button>
+    <div class="sheet-backdrop" id="sheet-backdrop"></div>
+    <div class="sheet" id="quicknav-sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title">Aller à</div>
+      <div class="sheet-list" id="quicknav-sheet-list"></div>
+    </div>
+  </div>
 </div>
 
 <!-- MODAL -->
@@ -645,6 +692,74 @@ function buildProductCard(p,uid,tagLabel){
   return card;
 }
 
+// ── ALLER A (raccourci vers les categories affichees) ──
+const CAT_DOT_PALETTE=['#0087b7','#87223a','#22a05a','#f5be45','#38b0d0','#1a1a1a'];
+let quicknavSpy=null;
+function scrollToCatSection(id){
+  const target=document.getElementById(id);
+  if(target)target.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function buildQuicknavRow(s,onClick){
+  const row=document.createElement('button');
+  row.type='button';row.className='quicknav-link';row.dataset.secId=s.id;
+  row.innerHTML=`<span class="dot" style="background:${s.color}"></span><span class="lb">${s.label}</span>`;
+  row.addEventListener('click',()=>{scrollToCatSection(s.id);if(onClick)onClick();});
+  return row;
+}
+function renderQuicknavUI(visibleSecs){
+  const side=document.getElementById('quicknav-side');
+  const sideList=document.getElementById('quicknav-side-list');
+  const fabArea=document.getElementById('fab-area');
+  const sheetList=document.getElementById('quicknav-sheet-list');
+  const sheet=document.getElementById('quicknav-sheet');
+  const sheetBackdrop=document.getElementById('sheet-backdrop');
+  if(!side||!fabArea)return;
+  if(quicknavSpy){quicknavSpy.disconnect();quicknavSpy=null;}
+  sideList.innerHTML='';sheetList.innerHTML='';
+  const navEl=document.getElementById('nav');
+  const navHeight=navEl?Math.ceil(navEl.getBoundingClientRect().height):0;
+
+  // Ordinateur : barre laterale toujours visible des qu'il y a au moins un
+  // resultat, meme sans filtre actif — demande de Dan le 4 septembre 2026.
+  if(visibleSecs.length>0){
+    side.classList.remove('is-hidden');
+    side.style.top=navHeight+'px';
+    visibleSecs.forEach(s=>sideList.appendChild(buildQuicknavRow(s)));
+    quicknavSpy=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting)return;
+        sideList.querySelectorAll('.quicknav-link').forEach(l=>l.classList.toggle('active',l.dataset.secId===entry.target.id));
+      });
+    },{root:null,rootMargin:`-${navHeight+4}px 0px -70% 0px`,threshold:0});
+    visibleSecs.forEach(s=>{const el=document.getElementById(s.id);if(el)quicknavSpy.observe(el);});
+    const first=sideList.querySelector('.quicknav-link');if(first)first.classList.add('active');
+  }else{
+    side.classList.add('is-hidden');
+  }
+
+  // Telephone : le bouton ne se justifie qu'a partir de 2 blocs affiches en meme
+  // temps (sinon rien a "atteindre") — plus de quantites affichees dans la liste.
+  if(visibleSecs.length>1){
+    fabArea.classList.remove('is-hidden');
+    visibleSecs.forEach(s=>{
+      const row=buildQuicknavRow(s,()=>{sheet.classList.remove('open');sheetBackdrop.classList.remove('open');});
+      sheetList.appendChild(row);
+    });
+  }else{
+    fabArea.classList.add('is-hidden');
+    if(sheet)sheet.classList.remove('open');
+    if(sheetBackdrop)sheetBackdrop.classList.remove('open');
+  }
+}
+(function(){
+  const fabBtn=document.getElementById('fab-toggle');
+  const sheet=document.getElementById('quicknav-sheet');
+  const sheetBackdrop=document.getElementById('sheet-backdrop');
+  if(!fabBtn||!sheet||!sheetBackdrop)return;
+  fabBtn.addEventListener('click',e=>{e.stopPropagation();sheet.classList.add('open');sheetBackdrop.classList.add('open');});
+  sheetBackdrop.addEventListener('click',()=>{sheet.classList.remove('open');sheetBackdrop.classList.remove('open');});
+})();
+
 function renderAll(){
   let filtered=visibleProducts();
   if(selectedCats)filtered=filtered.filter(p=>catsOf(p).some(c=>selectedCats.has(c)));
@@ -661,6 +776,7 @@ function renderAll(){
       grid.appendChild(buildProductCard(p,uid,null));
     });
     catEl.appendChild(grid);
+    renderQuicknavUI([]);
     return;
   }
 
@@ -673,10 +789,15 @@ function renderAll(){
       groups[c].push(p);
     });
   });
-  sortedCats().filter(cat=>groups[cat]&&groups[cat].length).forEach(cat=>{
+  const navHeightForSecs=(()=>{const navEl=document.getElementById('nav');return navEl?Math.ceil(navEl.getBoundingClientRect().height):0;})();
+  const visibleSecs=[];
+  sortedCats().filter(cat=>groups[cat]&&groups[cat].length).forEach((cat,secIdx)=>{
     const items=groups[cat];
     const meta=catMeta[cat]||{label:cat,num:''};
+    const secId='cat-sec-'+cat.replace(/[^a-z0-9]/gi,'_');
     const sec=document.createElement('div');
+    sec.id=secId;
+    sec.style.scrollMarginTop=(navHeightForSecs+8)+'px';
     sec.innerHTML=`<div class="sec-header"><div class="sec-num">${meta.num||''}</div><div><div class="sec-name">${meta.label}</div><div class="sec-count">${items.length} produit${items.length>1?'s':''} · Personnalisation disponible</div></div></div><div class="divider"></div>`;
     const grid=document.createElement('div');grid.className='grid';
     items.forEach(p=>{
@@ -686,7 +807,9 @@ function renderAll(){
       grid.appendChild(buildProductCard(p,uid,null));
     });
     sec.appendChild(grid);catEl.appendChild(sec);
+    visibleSecs.push({id:secId,label:meta.label,color:CAT_DOT_PALETTE[secIdx%CAT_DOT_PALETTE.length]});
   });
+  renderQuicknavUI(visibleSecs);
 }
 
 function validateQty(el){el.value=Math.max(1,parseInt(el.value)||1);}
