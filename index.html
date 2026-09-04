@@ -574,6 +574,19 @@ function renderAll(){
   if(currentSearch)filtered=filtered.filter(p=>(p.nom||'').toLowerCase().includes(currentSearch)||(p.ref||'').toLowerCase().includes(currentSearch)||(p.description||'').toLowerCase().includes(currentSearch));
   const catEl=document.getElementById('catalogue');catEl.innerHTML='';
   document.getElementById('no-results').style.display=filtered.length?'none':'block';
+
+  // Selection curatee (tuile "Envie de..." cliquee) : tous les articles cote a cote,
+  // sans regroupement ni entete de categorie — demande de Dan le 4 septembre 2026.
+  if(currentCollection){
+    const grid=document.createElement('div');grid.className='grid';
+    filtered.forEach(p=>{
+      const uid=('sel_'+(p.ref||'')).replace(/[^a-z0-9]/gi,'_');
+      grid.appendChild(buildProductCard(p,uid,universLabel(p.univers)));
+    });
+    catEl.appendChild(grid);
+    return;
+  }
+
   // Un produit multi-categories apparait dans chaque section concernee
   const groups={};
   filtered.forEach(p=>{
