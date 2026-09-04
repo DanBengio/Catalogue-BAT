@@ -60,6 +60,8 @@ body{font-family:'Raleway',sans-serif;background:#f0f2f5;color:var(--dark)}
 .cat-line input{border:1.5px solid #e0e0e0;border-radius:8px;padding:8px 10px;font-size:0.82rem;font-family:'Raleway',sans-serif;outline:none;width:100%}
 .cat-line input:focus{border-color:var(--blue)}
 .cat-line input.locked{background:#f7f7f7;color:#999;border-style:dashed;cursor:not-allowed}
+.color-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;border:1px solid rgba(0,0,0,.15);display:inline-block}
+.cat-line input[type=color],.cat-newrow input[type=color]{padding:2px;cursor:pointer}
 .cat-count{font-size:0.7rem;color:#999;font-weight:700;text-align:center}
 .cat-del{background:none;border:none;color:#ccc;font-size:0.95rem;cursor:pointer;padding:4px}
 .cat-del:hover{color:var(--prune)}
@@ -327,6 +329,16 @@ textarea.form-input{resize:vertical;min-height:80px}
         <input type="hidden" id="edit-cat-num">
         <input type="hidden" id="edit-cat-select">
       </div>
+      <div class="form-group" style="margin:0 0 12px 0">
+        <label class="form-label">Couleurs disponibles <span style="font-weight:400;color:#aaa">(cocher les couleurs de ce produit)</span></label>
+        <div class="cats-checkboxes" id="colors-checkboxes"></div>
+      </div>
+      <div class="form-group" style="margin:0 0 12px 0">
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.85rem;font-weight:600;color:var(--dark)">
+          <input type="checkbox" id="edit-couleurs-autres-100" style="width:15px;height:15px;accent-color:var(--blue)">
+          Autres couleurs disponibles à partir de 100 pièces
+        </label>
+      </div>
       <div class="imgs-section">
         <div class="imgs-label">Photos — Glisser pour réordonner</div>
         <div class="imgs-grid" id="imgs-grid"></div>
@@ -380,6 +392,40 @@ textarea.form-input{resize:vertical;min-height:80px}
     <div class="edit-footer">
       <button class="btn btn-ghost" onclick="closeCatsModal()">Fermer</button>
       <button class="btn btn-success" onclick="saveCategories()">💾 Enregistrer les modifications</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL COULEURS -->
+<div class="modal-bg" id="colors-modal" onclick="if(event.target===this)closeColorsModal()">
+  <div class="cats-modal">
+    <div class="edit-header">
+      <div class="edit-title">🎨 Gérer les couleurs</div>
+      <button class="edit-close" onclick="closeColorsModal()">✕</button>
+    </div>
+    <div class="edit-body">
+      <div class="cat-head"><div>Couleur</div><div>Libellé affiché</div><div>Clé technique</div><div>Produits</div><div></div></div>
+      <div id="colors-list"></div>
+      <div class="cat-newbox">
+        <div class="cat-newbox-title">➕ Nouvelle couleur</div>
+        <div class="cat-newrow">
+          <input id="newcolor-hex" type="color" value="#CCCCCC">
+          <input id="newcolor-label" placeholder="Libellé — ex : Bleu marine" onkeydown="if(event.key==='Enter')createColor()">
+          <input id="newcolor-cle" placeholder="clé auto" readonly class="locked">
+        </div>
+        <div style="display:flex;justify-content:flex-end;margin-top:10px">
+          <button class="btn btn-primary btn-sm" onclick="createColor()">Créer la couleur</button>
+        </div>
+      </div>
+      <div class="cat-hint">
+        La <strong>clé technique</strong> est générée depuis le libellé et n'est plus modifiable ensuite : elle est stockée dans chaque fiche produit.<br>
+        Modifier le <strong>libellé</strong> ou la <strong>couleur</strong> répercute le changement sur tous les produits qui l'utilisent.<br>
+        Une couleur ne peut être supprimée que si aucun produit ne l'utilise.
+      </div>
+    </div>
+    <div class="edit-footer">
+      <button class="btn btn-ghost" onclick="closeColorsModal()">Fermer</button>
+      <button class="btn btn-success" onclick="saveColors()">💾 Enregistrer les modifications</button>
     </div>
   </div>
 </div>
@@ -488,6 +534,7 @@ function fourCode(cle){const f=fourMeta(cle);return f?f.code:'??';}
 let authToken=null,authEmail=null,authPwd=null,allProducts=[],editPhotos=[],dragSrcIdx=null;
 let currentView='rows',lastFiltered=null;
 let dbCats=[];   // lignes de la table "categories" (source de verite des categories)
+let dbColors=[]; // lignes de la table "couleurs" (source de verite des couleurs)
 
 async function doLogin(){
   const email=document.getElementById('login-email').value;
@@ -547,11 +594,19 @@ async function loadCategories(){
     dbCats=Array.isArray(rows)?rows:[];
   }catch(e){dbCats=[];}
 }
+async function loadColors(){
+  try{
+    const rows=await api('GET','couleurs?select=*&order=label');
+    dbColors=Array.isArray(rows)?rows:[];
+  }catch(e){dbColors=[];}
+}
 
 async function loadProducts(){
   await loadCategories();
+  await loadColors();
   allProducts=await api('GET','produits?select=*&order=categorie_num,ordre,ref')||[];
   buildFilters();          // construit catMeta : doit passer AVANT les stats et le rendu
+  buildColorMeta();
   buildFournFilter();
   updateStats();
   // Purge du cache de rendu : setView() repart de lastFiltered, qui contient les
@@ -645,6 +700,48 @@ function onCatCheckChange(){
 }
 function getCheckedCats(){
   return [...document.querySelectorAll('#cats-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  COULEURS — palette partagee (meme principe que les categories)
+// ══════════════════════════════════════════════════════════════════
+let colorMeta={};
+function buildColorMeta(){
+  colorMeta={};
+  dbColors.forEach(c=>{if(c.cle)colorMeta[c.cle]={label:c.label||c.cle,hex:c.hex||'#CCCCCC'};});
+  const keep=document.getElementById('edit-modal').classList.contains('open')?getCheckedColors():[];
+  buildColorCheckboxes(sortedColorKeys(),keep);
+}
+function sortedColorKeys(){
+  return Object.keys(colorMeta).sort((a,b)=>(colorMeta[a].label||a).localeCompare(colorMeta[b].label||b));
+}
+// Nombre de produits rattaches a une couleur
+function colorCount(cle){
+  return allProducts.filter(p=>(p.couleurs_cles||[]).includes(cle)).length;
+}
+function buildColorCheckboxes(colors,selected){
+  const el=document.getElementById('colors-checkboxes');
+  if(!el)return;
+  el.innerHTML=colors.map(c=>{
+    const dot=`<span class="color-dot" style="background:${colorMeta[c]?.hex||'#ccc'}"></span>`;
+    const label=colorMeta[c]?.label||c;
+    const isChecked=selected.includes(c);
+    return `<label class="cat-checkbox-item${isChecked?' checked':''}" id="cclabel-${c}">
+      <input type="checkbox" value="${c}" ${isChecked?'checked':''} onchange="onColorCheckChange()">
+      ${dot}${label}
+    </label>`;
+  }).join('')
+  +`<button type="button" class="cat-checkbox-item" style="border-style:dashed;border-color:#ccc;color:#888;background:white"
+      onclick="openColorsModal()" title="Créer ou renommer une couleur">➕ Nouvelle couleur</button>`;
+}
+function onColorCheckChange(){
+  document.querySelectorAll('#colors-checkboxes .cat-checkbox-item').forEach(lbl=>{
+    const cb=lbl.querySelector('input');
+    if(cb)lbl.classList.toggle('checked',cb.checked);
+  });
+}
+function getCheckedColors(){
+  return [...document.querySelectorAll('#colors-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -816,6 +913,101 @@ document.addEventListener('input',function(e){
     document.getElementById('newcat-cle').value=slugify(e.target.value);
   }
 });
+
+function openColorsModal(){
+  renderColorsList();
+  document.getElementById('newcolor-hex').value='#CCCCCC';
+  document.getElementById('newcolor-label').value='';
+  document.getElementById('newcolor-cle').value='';
+  document.getElementById('colors-modal').classList.add('open');
+  setTimeout(()=>document.getElementById('newcolor-label').focus(),80);
+}
+function closeColorsModal(){document.getElementById('colors-modal').classList.remove('open');}
+
+function renderColorsList(){
+  const el=document.getElementById('colors-list');
+  const keys=sortedColorKeys();
+  if(!keys.length){el.innerHTML='<div style="padding:1.5rem 0;color:#bbb;font-size:.85rem;text-align:center">Aucune couleur pour l\'instant</div>';return;}
+  el.innerHTML=keys.map(k=>{
+    const n=colorCount(k);
+    return `<div class="color-line" data-cle="${k}">
+      <input class="colorf-hex" type="color" value="${colorMeta[k].hex||'#CCCCCC'}">
+      <input class="colorf-label" value="${(colorMeta[k].label||'').replace(/"/g,'&quot;')}">
+      <input class="locked" value="${k}" readonly title="Clé technique — non modifiable">
+      <div class="cat-count">${n}</div>
+      <button class="cat-del" onclick="deleteColor('${k}')" ${n?'disabled title="Couleur utilisée par '+n+' produit(s)"':'title="Supprimer"'}>🗑</button>
+    </div>`;
+  }).join('');
+}
+
+async function createColor(){
+  const label=document.getElementById('newcolor-label').value.trim();
+  const hex=document.getElementById('newcolor-hex').value;
+  if(!label){showToast('Renseignez un libellé','error');return;}
+  const cle=slugify(label);
+  if(!cle){showToast('Libellé invalide','error');return;}
+  if(colorMeta[cle]){showToast('Cette couleur existe déjà','error');return;}
+  await api('POST','couleurs',{cle,label,hex});
+  await loadProducts();
+  renderColorsList();
+  if(!dbColors.some(c=>c.cle===cle)){
+    showToast('Échec — table "couleurs" absente ou RLS bloquant (voir console)','error');
+    return;
+  }
+  showToast('Couleur créée ✅','success');
+  document.getElementById('newcolor-label').value='';
+  document.getElementById('newcolor-cle').value='';
+  document.getElementById('newcolor-hex').value='#CCCCCC';
+}
+
+async function deleteColor(cle){
+  if(colorCount(cle)){showToast('Couleur utilisée par des produits','error');return;}
+  if(!confirm('Supprimer la couleur "'+(colorMeta[cle].label||cle)+'" ?'))return;
+  await api('DELETE',`couleurs?cle=eq.${encodeURIComponent(cle)}`);
+  showToast('Couleur supprimée','success');
+  await loadProducts();
+  renderColorsList();
+}
+
+// Enregistre les libelles/hex modifies, et repercute sur les produits qui utilisent
+// chaque couleur (couleurs / couleurs_hex sont denormalisees pour l'affichage public,
+// exactement comme categorie_label / categorie_num pour les categories).
+async function saveColors(){
+  const lines=[...document.querySelectorAll('#colors-list .color-line')];
+  let changed=0;
+  const touched=new Set();
+  for(const line of lines){
+    const cle=line.dataset.cle;
+    const label=line.querySelector('.colorf-label').value.trim();
+    const hex=line.querySelector('.colorf-hex').value;
+    if(!label){showToast('Un libellé est vide','error');return;}
+    const before=colorMeta[cle]||{};
+    const diff=(label!==before.label)||(hex!==(before.hex||''));
+    if(!diff)continue;
+    await api('PATCH',`couleurs?cle=eq.${encodeURIComponent(cle)}`,{label,hex});
+    changed++;
+    colorMeta[cle]={label,hex};
+    allProducts.filter(p=>(p.couleurs_cles||[]).includes(cle)).forEach(p=>touched.add(p.id));
+  }
+  for(const id of touched){
+    const p=allProducts.find(x=>x.id===id);
+    if(!p)continue;
+    const cles=p.couleurs_cles||[];
+    const couleurs=cles.map(c=>colorMeta[c]?.label||c);
+    const couleurs_hex=cles.map(c=>colorMeta[c]?.hex||'#ccc');
+    await api('PATCH',`produits?id=eq.${id}`,{couleurs,couleurs_hex});
+  }
+  await loadProducts();
+  renderColorsList();
+  showToast(changed?`${changed} couleur(s) mise(s) à jour ✅`:'Couleurs synchronisées ✅','success');
+}
+
+// Apercu de la cle en direct pendant la saisie du libelle (couleurs)
+document.addEventListener('input',function(e){
+  if(e.target&&e.target.id==='newcolor-label'){
+    document.getElementById('newcolor-cle').value=slugify(e.target.value);
+  }
+});
 function filterTable(search){
   const q=(typeof search==='string'?search:document.querySelector('.toolbar-search').value).toLowerCase();
   const cat=document.getElementById('cat-filter').value;
@@ -967,12 +1159,14 @@ function openAddModal(){
   document.getElementById('edit-title').textContent='Nouveau produit';
   ['edit-id','edit-ref','edit-nom','edit-desc','edit-dims','edit-cat','edit-cat-label','edit-cat-num'].forEach(id=>document.getElementById(id).value='');
   buildCatCheckboxes(sortedCatKeys(),[]);
+  buildColorCheckboxes(sortedColorKeys(),[]);
   // Pre-selection : si un fournisseur est filtre dans la toolbar, on le reprend
   buildFournSelect(document.getElementById('four-filter').value.replace('__none__',''));
   document.getElementById('ref-warning').classList.remove('show');
   document.getElementById('edit-ordre').value='0';
   document.getElementById('edit-actif').checked=true;
   document.getElementById('edit-bestseller').checked=false;
+  document.getElementById('edit-couleurs-autres-100').checked=false;
   document.getElementById('delete-btn').style.display='none';
   editPhotos=[];renderImgsGrid();
   document.getElementById('edit-modal').classList.add('open');
@@ -990,9 +1184,11 @@ function openEditModal(p){
   document.getElementById('edit-cat-label').value=catMeta[selCats[0]]?.label||p.categorie_label||'';
   document.getElementById('edit-cat-num').value=catMeta[selCats[0]]?.num||p.categorie_num||'';
   buildCatCheckboxes(sortedCatKeys(),selCats);
+  buildColorCheckboxes(sortedColorKeys(),p.couleurs_cles||[]);
   buildFournSelect(p.fournisseur||'');
   document.getElementById('edit-actif').checked=p.actif!==false;
   document.getElementById('edit-bestseller').checked=!!p.bestseller;
+  document.getElementById('edit-couleurs-autres-100').checked=!!p.couleurs_autres_100;
   document.getElementById('delete-btn').style.display='inline-flex';
   editPhotos=[...(p.photos||[])];renderImgsGrid();
   document.getElementById('edit-modal').classList.add('open');
@@ -1070,6 +1266,19 @@ async function saveProduct(){
   const primaryCat=checkedCats[0]||'';
   const four=document.getElementById('edit-fournisseur').value;
   const data={fournisseur:four,ref:document.getElementById('edit-ref').value.trim(),nom:document.getElementById('edit-nom').value.trim(),description:document.getElementById('edit-desc').value.trim(),dimensions:document.getElementById('edit-dims').value.trim(),ordre:parseInt(document.getElementById('edit-ordre').value)||0,categorie:primaryCat,categorie_label:catMeta[primaryCat]?.label||document.getElementById('edit-cat-label').value.trim(),categorie_num:catMeta[primaryCat]?.num||document.getElementById('edit-cat-num').value.trim(),categories:checkedCats,actif:document.getElementById('edit-actif').checked,bestseller:document.getElementById('edit-bestseller').checked,photos:editPhotos};
+  // Couleurs : on n'ecrase couleurs/couleurs_hex (affichees sur le catalogue public)
+  // que si ce produit est deja rattache au nouveau selecteur (couleurs_cles non vide),
+  // ou si au moins une couleur est cochee maintenant. Sinon on ne touche a rien, pour
+  // ne pas effacer les coloris importes en texte libre avant l'existence de ce menu.
+  const existingProduct=id?allProducts.find(x=>String(x.id)===String(id)):null;
+  const hadColorSystem=!!(existingProduct&&existingProduct.couleurs_cles&&existingProduct.couleurs_cles.length);
+  const checkedColors=getCheckedColors();
+  if(checkedColors.length||hadColorSystem){
+    data.couleurs_cles=checkedColors;
+    data.couleurs=checkedColors.map(c=>colorMeta[c]?.label||c);
+    data.couleurs_hex=checkedColors.map(c=>colorMeta[c]?.hex||'#ccc');
+  }
+  data.couleurs_autres_100=document.getElementById('edit-couleurs-autres-100').checked;
   if(!data.ref||!data.nom){showToast('Référence et nom requis','error');return;}
   if(!data.fournisseur){showToast('Sélectionnez un fournisseur','error');return;}
   try{
