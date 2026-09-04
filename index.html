@@ -148,6 +148,9 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .card-name{font-size:0.88rem;font-weight:800;color:var(--dark);margin-bottom:6px;line-height:1.3}
 .card-desc{font-size:0.74rem;color:#777;line-height:1.6;margin-bottom:7px}
 .card-size{display:inline-flex;align-items:center;gap:4px;font-size:0.66rem;color:#999;font-weight:600;background:#f5f5f5;padding:3px 9px;border-radius:20px}
+.card-colors{display:flex;align-items:center;gap:5px;margin-bottom:7px;flex-wrap:wrap}
+.color-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:1px solid rgba(0,0,0,0.12)}
+.card-colors .color-more{font-size:0.62rem;color:#999;font-weight:700}
 
 /* CARD ACTIONS */
 .card-actions{padding:0.8rem 1rem 1rem;display:flex;gap:8px;align-items:center}
@@ -181,6 +184,11 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .modal-bs{display:inline-block;background:var(--yellow);color:var(--dark);font-size:0.7rem;font-weight:800;padding:4px 12px;border-radius:20px;margin-bottom:0.75rem}
 .modal-desc{font-size:0.84rem;color:#555;line-height:1.75;margin-bottom:1rem}
 .modal-size{font-size:0.78rem;font-weight:700;padding:7px 13px;background:#f5f5f5;border-radius:8px;display:inline-block;margin-bottom:1.25rem}
+.modal-colors{margin-bottom:1.25rem}
+.modal-colors-label{font-size:0.68rem;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem}
+.modal-colors-list{display:flex;flex-wrap:wrap;gap:8px}
+.modal-color-chip{display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:700;color:var(--dark);padding:6px 12px 6px 8px;background:#f5f5f5;border-radius:20px}
+.modal-color-chip .color-dot{width:14px;height:14px}
 .modal-cta-row{display:flex;gap:10px;align-items:center}
 .modal-qty-wrap{display:flex;align-items:center;border:1.5px solid #e0e0e0;border-radius:10px;overflow:hidden;flex-shrink:0}
 .modal-qty-btn{background:none;border:none;width:38px;height:46px;font-size:1.2rem;cursor:pointer;color:#888;font-family:'Raleway',sans-serif;padding:0;transition:background 0.15s}
@@ -330,6 +338,10 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
       <div id="m-name" class="modal-name"></div>
       <div id="m-desc" class="modal-desc"></div>
       <div id="m-size" class="modal-size"></div>
+      <div id="m-colors" class="modal-colors" style="display:none">
+        <div class="modal-colors-label">Coloris disponibles</div>
+        <div class="modal-colors-list" id="m-colors-list"></div>
+      </div>
       <div class="modal-cta-row">
         <div class="modal-qty-wrap">
           <button class="modal-qty-btn" onclick="changeModalQty(-1)">−</button>
@@ -670,6 +682,17 @@ function gSlide(uid,idx){
   if(prev)prev.classList.toggle('hidden',idx===0);if(next)next.classList.toggle('hidden',idx===total-1);
 }
 
+// Petits ronds de couleur sur la carte produit (apercu rapide, coloris textile) —
+// demande de Dan le 4 septembre 2026 : les colonnes couleurs/couleurs_hex etaient
+// deja peuplees en base mais jamais affichees nulle part sur le site.
+function cardColorsHTML(p){
+  const cols=p.couleurs||[],hexes=p.couleurs_hex||[];
+  if(!cols.length)return '';
+  const CAP=6;
+  const shown=cols.slice(0,CAP).map((c,i)=>`<span class="color-dot" style="background:${hexes[i]||'#ccc'}" title="${c}"></span>`).join('');
+  const more=cols.length>CAP?`<span class="color-more">+${cols.length-CAP}</span>`:'';
+  return `<div class="card-colors">${shown}${more}</div>`;
+}
 // Construit une carte produit (reutilise pour le catalogue et pour les collections curatees)
 function buildProductCard(p,uid,tagLabel){
   const photos=(p.photos||[]).map(f=>imgUrl(f));
@@ -677,7 +700,7 @@ function buildProductCard(p,uid,tagLabel){
   card.appendChild(makeGallery(photos,tagLabel,uid,!!p.bestseller));
   const body=document.createElement('div');body.className='card-body';
   const desc=p.description||'';
-  body.innerHTML=`<div class="card-ref">${p.ref}</div><div class="card-name">${p.nom}</div><div class="card-desc">${desc.length>95?desc.substring(0,95)+'…':desc}</div>${p.dimensions?`<div class="card-size">📐 ${p.dimensions}</div>`:''}`;
+  body.innerHTML=`<div class="card-ref">${p.ref}</div><div class="card-name">${p.nom}</div><div class="card-desc">${desc.length>95?desc.substring(0,95)+'…':desc}</div>${cardColorsHTML(p)}${p.dimensions?`<div class="card-size">📐 ${p.dimensions}</div>`:''}`;
   card.appendChild(body);
   const actions=document.createElement('div');actions.className='card-actions';
   const qtyId='cqty-'+uid,btnId='cbtn-'+uid;
@@ -845,6 +868,16 @@ function openModal(p){
   document.getElementById('m-desc').textContent=p.description||'';
   const bs=document.getElementById('m-bs');bs.style.display=p.bestseller?'inline-block':'none';
   const sz=document.getElementById('m-size');sz.textContent=p.dimensions?'Dimensions : '+p.dimensions:'';sz.style.display=p.dimensions?'inline-block':'none';
+  const colorsWrap=document.getElementById('m-colors');
+  const colorsList=document.getElementById('m-colors-list');
+  const mCols=p.couleurs||[],mHexes=p.couleurs_hex||[];
+  if(mCols.length){
+    colorsList.innerHTML=mCols.map((c,i)=>`<span class="modal-color-chip"><span class="color-dot" style="background:${mHexes[i]||'#ccc'}"></span>${c}</span>`).join('');
+    colorsWrap.style.display='block';
+  }else{
+    colorsList.innerHTML='';
+    colorsWrap.style.display='none';
+  }
   document.getElementById('modal').classList.add('open');
   gotoModal(0);
 }
