@@ -461,7 +461,7 @@ function imgPlaceholder(src){
 }
 
 let allProducts=[],selectedCats=null,currentSearch='',catMeta={};
-let dbCollections=[],dbUnivers=[],currentUnivers='all',currentCollection=null;
+let dbCollections=[],dbUnivers=[],dbCategories=[],currentUnivers='all',currentCollection=null;
 let modalIdx=0,modalPhotos=[],currentProduct=null;
 const cart={};
 let cartOpen=false;
@@ -501,16 +501,20 @@ async function init(){
     return;
   }
   restoreCart();
-  // Collections et univers : non bloquants — une panne ici degrade juste ces
-  // sections (pas de selections mises en avant), l'accueil univers reste utilisable.
+  // Collections, univers et categories : non bloquants — une panne ici degrade
+  // juste ces sections (pas de selections mises en avant, ou repli sur l'ancien
+  // comportement de rattachement des categories a un seul univers), l'accueil
+  // univers reste utilisable.
   try{
-    const [collRes,univRes]=await Promise.all([
+    const [collRes,univRes,catRes]=await Promise.all([
       fetch(`${SUPABASE_URL}/rest/v1/collections?select=*&actif=eq.true&order=ordre`,{headers:sbHeaders()}),
-      fetch(`${SUPABASE_URL}/rest/v1/univers?select=*&order=num`,{headers:sbHeaders()})
+      fetch(`${SUPABASE_URL}/rest/v1/univers?select=*&order=num`,{headers:sbHeaders()}),
+      fetch(`${SUPABASE_URL}/rest/v1/categories?select=*&order=num`,{headers:sbHeaders()})
     ]);
     dbCollections=collRes.ok?await collRes.json():[];
     dbUnivers=univRes.ok?await univRes.json():[];
-  }catch(e){dbCollections=[];dbUnivers=[];}
+    dbCategories=catRes.ok?await catRes.json():[];
+  }catch(e){dbCollections=[];dbUnivers=[];dbCategories=[];}
   const hl=document.getElementById('home-loading');if(hl)hl.style.display='none';
   renderUniversRow();renderTiles();updateCartUI();
 }
@@ -518,6 +522,14 @@ async function init(){
 // Toutes les categories d'un produit (categories[] si presente, sinon categorie)
 function catsOf(p){
   return (p.categories&&p.categories.length)?p.categories:(p.categorie?[p.categorie]:[]);
+}
+
+// Univers auquel appartient une categorie, d'apres la table "categories" (source
+// de verite, alimentee par l'admin). undefined si la categorie est inconnue de
+// cette table (repli : on ne filtre alors rien sur cette categorie, comme avant).
+function categoryUnivers(cle){
+  const row=dbCategories.find(c=>c.cle===cle);
+  return row?row.univers:undefined;
 }
 
 // Quantite minimale pour la demande de devis — regle Dan du 4 septembre 2026 :
@@ -530,9 +542,16 @@ function minQtyFor(p){
 }
 
 // Produits du seul univers actuellement selectionne (ou tous si 'all'), et de la
-// selection curatee active le cas echeant (currentCollection)
+// selection curatee active le cas echeant (currentCollection).
+// Un produit peut appartenir a un univers (p.univers) tout en etant aussi
+// rattache a une categorie d'un AUTRE univers (ex: un tote bag "textile" coche
+// aussi dans la categorie goodies "Evenement / Loisirs") — demande de Dan le
+// 4 septembre 2026 : dans ce cas il doit apparaitre aussi dans le catalogue de
+// cette categorie-la, pas seulement dans celui de son univers d'origine.
 function visibleProducts(){
-  let list=currentUnivers==='all'?allProducts:allProducts.filter(p=>p.univers===currentUnivers);
+  let list=currentUnivers==='all'?allProducts:allProducts.filter(p=>
+    p.univers===currentUnivers||catsOf(p).some(c=>categoryUnivers(c)===currentUnivers)
+  );
   if(currentCollection){
     const coll=dbCollections.find(c=>c.cle===currentCollection);
     if(coll){const ids=new Set(coll.produits||[]);list=list.filter(p=>ids.has(p.id));}
@@ -540,16 +559,35 @@ function visibleProducts(){
   return list;
 }
 
+// Une categorie qui appartient a un AUTRE univers que celui affiche ne doit pas
+// polluer le catalogue courant (menu de filtre, sections) — seul le produit doit
+// "traverser" vers son univers de categorie, pas la categorie elle-meme vers
+// l'univers du produit. Une categorie absente de la table "categories" (repli)
+// reste toujours dans le perimetre, comme avant ce correctif.
+function catInScope(cle){
+  if(currentUnivers==='all')return true;
+  const cu=categoryUnivers(cle);
+  return !cu||cu===currentUnivers;
+}
+
 function buildCatMeta(){
   catMeta={};
   const list=visibleProducts();
   // 1er passage : le libelle fiable vient du produit dont c'est la categorie principale
   list.forEach(p=>{
-    if(p.categorie&&!catMeta[p.categorie])catMeta[p.categorie]={label:p.categorie_label||p.categorie,num:p.categorie_num||''};
+    if(p.categorie&&catInScope(p.categorie)&&!catMeta[p.categorie]){
+      const row=dbCategories.find(c=>c.cle===p.categorie);
+      catMeta[p.categorie]={label:(row&&row.label)||p.categorie_label||p.categorie,num:(row&&row.num)||p.categorie_num||''};
+    }
   });
-  // 2e passage : categories secondaires sans libelle connu
+  // 2e passage : categories secondaires sans libelle connu (repli sur la table
+  // "categories" si elle a l'info, sinon sur la clé technique brute)
   list.forEach(p=>{
-    catsOf(p).forEach(c=>{if(!catMeta[c])catMeta[c]={label:c,num:''};});
+    catsOf(p).forEach(c=>{
+      if(!catInScope(c)||catMeta[c])return;
+      const row=dbCategories.find(x=>x.cle===c);
+      catMeta[c]=row?{label:row.label||c,num:row.num||''}:{label:c,num:''};
+    });
   });
 }
 
@@ -883,10 +921,16 @@ function renderAll(){
     return;
   }
 
-  // Un produit multi-categories apparait dans chaque section concernee
+  // Un produit multi-categories apparait dans chaque section concernee — mais
+  // seulement pour les categories du meme univers que celui affiche : un produit
+  // "textile" coche aussi dans une categorie goodies traverse vers le catalogue
+  // goodies (voir visibleProducts), sans que sa section textile d'origine se
+  // retrouve dupliquee cote goodies, ni l'inverse (garde-fou en plus de
+  // selectedCats, qui exclut deja ces categories via buildCatMeta/catInScope).
   const groups={};
   filtered.forEach(p=>{
     catsOf(p).forEach(c=>{
+      if(!catInScope(c))return;
       if(selectedCats&&!selectedCats.has(c))return;
       if(!groups[c])groups[c]=[];
       groups[c].push(p);
