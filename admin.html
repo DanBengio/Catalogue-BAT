@@ -339,6 +339,10 @@ textarea.form-input{resize:vertical;min-height:80px}
           Autres couleurs disponibles à partir de 100 pièces
         </label>
       </div>
+      <div class="form-group" style="margin:0 0 12px 0">
+        <label class="form-label">Collections / thématiques <span style="font-weight:400;color:#aaa">(cocher pour faire apparaître ce produit dans "Envie de...")</span></label>
+        <div class="cats-checkboxes" id="colls-checkboxes"></div>
+      </div>
       <div class="imgs-section">
         <div class="imgs-label">Photos — Glisser pour réordonner</div>
         <div class="imgs-grid" id="imgs-grid"></div>
@@ -604,6 +608,10 @@ async function loadColors(){
 async function loadProducts(){
   await loadCategories();
   await loadColors();
+  // Chargees ici (et pas seulement a l'ouverture de la modale Collections) car la
+  // fiche produit a maintenant ses propres cases a cocher "Collections / thematiques".
+  await loadUnivers();
+  await loadCollections();
   allProducts=await api('GET','produits?select=*&order=categorie_num,ordre,ref')||[];
   buildFilters();          // construit catMeta : doit passer AVANT les stats et le rendu
   buildColorMeta();
@@ -742,6 +750,72 @@ function onColorCheckChange(){
 }
 function getCheckedColors(){
   return [...document.querySelectorAll('#colors-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
+}
+
+// ══════════════════════════════════════════════════════════════════
+//  COLLECTIONS depuis la fiche produit — demande de Dan du 4 septembre
+//  2026 : au lieu de chercher un produit dans la modale Collections,
+//  on coche directement sur la fiche les collections/thematiques ou ce
+//  produit doit apparaitre. dbCollections reste la source de verite
+//  (table "collections", colonne produits[] = uuid[] -> produits.id) ;
+//  ces cases n'en sont qu'une autre facon d'ecrire dedans (voir
+//  saveProduct : chaque case cochee/decochee patch la collection
+//  concernee). Le tri/reordonnancement fin dans une collection reste
+//  a faire via la modale Collections (glisser-deposer).
+// ══════════════════════════════════════════════════════════════════
+function sortedCollections(){
+  return [...dbCollections].sort((a,b)=>(a.ordre||0)-(b.ordre||0)||(a.titre||'').localeCompare(b.titre||''));
+}
+// Cles des collections auxquelles un produit (par id) appartient deja
+function collectionsOfProduct(id){
+  if(!id)return [];
+  return dbCollections.filter(c=>(c.produits||[]).map(String).includes(String(id))).map(c=>c.cle);
+}
+function buildCollCheckboxes(selected){
+  const el=document.getElementById('colls-checkboxes');
+  if(!el)return;
+  const list=sortedCollections();
+  const empty=list.length?'':'<div style="font-size:.78rem;color:#aaa">Aucune collection pour l\'instant —</div>';
+  el.innerHTML=empty+list.map(c=>{
+    const isChecked=selected.includes(c.cle);
+    return `<label class="cat-checkbox-item${isChecked?' checked':''}" id="collabel-${c.cle}">
+      <input type="checkbox" value="${c.cle}" ${isChecked?'checked':''} onchange="onCollCheckChange()">
+      ${c.titre||c.cle} <span style="color:#aaa;font-size:.7rem">(${universLabel(c.univers)})</span>
+    </label>`;
+  }).join('')
+  +`<button type="button" class="cat-checkbox-item" style="border-style:dashed;border-color:#ccc;color:#888;background:white"
+      onclick="openCollectionsModal()" title="Créer ou gérer les collections">➕ Nouvelle collection</button>`;
+}
+function onCollCheckChange(){
+  document.querySelectorAll('#colls-checkboxes .cat-checkbox-item').forEach(lbl=>{
+    const cb=lbl.querySelector('input');
+    if(cb)lbl.classList.toggle('checked',cb.checked);
+  });
+}
+function getCheckedColls(){
+  return [...document.querySelectorAll('#colls-checkboxes input[type=checkbox]:checked')].map(c=>c.value);
+}
+// Repercute les cases cochees/decochees sur la fiche produit dans la table
+// collections : ajoute/retire productId du tableau produits[] de chaque
+// collection concernee. Appelee par saveProduct apres l'enregistrement du
+// produit (une fois son id certain, y compris pour une creation).
+async function applyCollectionCheckboxes(productId,before,after){
+  const toAdd=after.filter(cle=>!before.includes(cle));
+  const toRemove=before.filter(cle=>!after.includes(cle));
+  for(const cle of toAdd){
+    const c=dbCollections.find(x=>x.cle===cle);
+    if(!c)continue;
+    const produits=[...(c.produits||[]).map(String),String(productId)];
+    await api('PATCH',`collections?cle=eq.${encodeURIComponent(cle)}`,{produits});
+    c.produits=produits;
+  }
+  for(const cle of toRemove){
+    const c=dbCollections.find(x=>x.cle===cle);
+    if(!c)continue;
+    const produits=(c.produits||[]).map(String).filter(x=>x!==String(productId));
+    await api('PATCH',`collections?cle=eq.${encodeURIComponent(cle)}`,{produits});
+    c.produits=produits;
+  }
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -1160,6 +1234,7 @@ function openAddModal(){
   ['edit-id','edit-ref','edit-nom','edit-desc','edit-dims','edit-cat','edit-cat-label','edit-cat-num'].forEach(id=>document.getElementById(id).value='');
   buildCatCheckboxes(sortedCatKeys(),[]);
   buildColorCheckboxes(sortedColorKeys(),[]);
+  buildCollCheckboxes([]);
   // Pre-selection : si un fournisseur est filtre dans la toolbar, on le reprend
   buildFournSelect(document.getElementById('four-filter').value.replace('__none__',''));
   document.getElementById('ref-warning').classList.remove('show');
@@ -1185,6 +1260,7 @@ function openEditModal(p){
   document.getElementById('edit-cat-num').value=catMeta[selCats[0]]?.num||p.categorie_num||'';
   buildCatCheckboxes(sortedCatKeys(),selCats);
   buildColorCheckboxes(sortedColorKeys(),p.couleurs_cles||[]);
+  buildCollCheckboxes(collectionsOfProduct(p.id));
   buildFournSelect(p.fournisseur||'');
   document.getElementById('edit-actif').checked=p.actif!==false;
   document.getElementById('edit-bestseller').checked=!!p.bestseller;
@@ -1281,9 +1357,19 @@ async function saveProduct(){
   data.couleurs_autres_100=document.getElementById('edit-couleurs-autres-100').checked;
   if(!data.ref||!data.nom){showToast('Référence et nom requis','error');return;}
   if(!data.fournisseur){showToast('Sélectionnez un fournisseur','error');return;}
+  // Collections cochees sur la fiche : compare a l'etat au moment de l'ouverture
+  // de la fiche pour ne patcher que les collections dont l'appartenance change.
+  const collsBefore=collectionsOfProduct(id);
+  const collsAfter=getCheckedColls();
   try{
-    if(id)await api('PATCH',`produits?id=eq.${id}`,data);
-    else await api('POST','produits',data);
+    let productId=id;
+    if(id){
+      await api('PATCH',`produits?id=eq.${id}`,data);
+    }else{
+      const created=await api('POST','produits',data);
+      productId=Array.isArray(created)&&created[0]&&created[0].id;
+    }
+    if(productId)await applyCollectionCheckboxes(productId,collsBefore,collsAfter);
     showToast('Produit enregistré ✅','success');closeEditModal();loadProducts();
   }catch(e){showToast('Erreur lors de l\'enregistrement','error');}
 }
