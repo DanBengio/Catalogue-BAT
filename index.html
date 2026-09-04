@@ -54,6 +54,7 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 
 /* NAV */
 .nav{background:white;border-bottom:1px solid #e8e8e8;display:flex;align-items:center;padding:0 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06);gap:0.6rem}
+.nav-left{display:flex;align-items:center;gap:0.6rem;flex-shrink:0}
 .cat-dd{position:relative;display:flex;align-items:center;flex-shrink:0}
 .cat-dd-btn{display:flex;align-items:center;gap:6px;background:none;border:1.5px solid #e0e0e0;border-radius:20px;padding:7px 12px;font-size:0.72rem;font-weight:700;color:var(--dark);cursor:pointer;font-family:'Raleway',sans-serif;white-space:nowrap;transition:border-color 0.15s}
 .cat-dd-btn:hover{border-color:var(--blue-light)}
@@ -82,6 +83,17 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
   .nav{flex-wrap:wrap;row-gap:0.5rem;padding:0.6rem 1rem}
   .search-wrap{flex:0 0 100%;margin-left:0;padding-top:0.5rem;border-top:1px solid #eee}
   .search{width:100%}
+}
+/* Barre de recherche centree sur ordinateur pour la rendre plus visible —
+   demande de Dan le 4 septembre 2026. Grille a 3 colonnes symetriques (1fr
+   de chaque cote) : la recherche (colonne du milieu, largeur auto) se
+   retrouve visuellement au centre de la nav, quelle que soit la largeur du
+   bloc "← Accueil / Toutes les categories" a gauche. */
+@media (min-width:641px){
+  .nav{display:grid;grid-template-columns:1fr auto 1fr}
+  .nav-left{grid-column:1;justify-self:start}
+  .search-wrap{grid-column:2;justify-self:center;margin-left:0}
+  .search{width:240px}
 }
 
 /* ── ALLER A : barre laterale (ordinateur) + bouton flottant + tiroir (telephone) ──
@@ -250,8 +262,6 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 .btn-whatsapp:hover{background:#1ebe5a}
 .btn-continue{width:100%;background:none;border:1.5px solid var(--blue);color:var(--blue);border-radius:10px;padding:10px;font-size:0.76rem;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;margin-top:8px;transition:all 0.2s}
 .btn-continue:hover{background:rgba(0,135,183,0.08)}
-.btn-clear{width:100%;background:none;border:none;color:#ccc;font-size:0.7rem;cursor:pointer;margin-top:7px;font-family:'Raleway',sans-serif;padding:3px;transition:color 0.15s}
-.btn-clear:hover{color:var(--prune)}
 
 /* LOADING */
 .loading{text-align:center;padding:5rem 2rem;color:#aaa}
@@ -290,19 +300,21 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
 
 <div id="browse" style="display:none">
   <nav class="nav" id="nav">
-    <button class="nav-back" onclick="goHome()">← Accueil</button>
-    <div class="cat-dd" id="cat-dd">
-      <button class="cat-dd-btn" type="button" onclick="toggleCatDd(event)">
-        <span id="cat-dd-label">Toutes les catégories</span><span class="chev">▾</span>
-      </button>
-      <div class="cat-dd-panel" onclick="event.stopPropagation()">
-        <div class="cat-dd-actions">
-          <button type="button" class="cat-dd-link" onclick="checkAllCats()">Tout cocher</button>
-          <button type="button" class="cat-dd-link" onclick="checkNoCats()">Tout décocher</button>
-        </div>
-        <div class="cat-dd-list" id="cat-dd-list"></div>
-        <div class="cat-dd-footer">
-          <button type="button" class="cat-dd-ok" onclick="applyCatFilter()">OK</button>
+    <div class="nav-left">
+      <button class="nav-back" onclick="goHome()">← Accueil</button>
+      <div class="cat-dd" id="cat-dd">
+        <button class="cat-dd-btn" type="button" onclick="toggleCatDd(event)">
+          <span id="cat-dd-label">Toutes les catégories</span><span class="chev">▾</span>
+        </button>
+        <div class="cat-dd-panel" onclick="event.stopPropagation()">
+          <div class="cat-dd-actions">
+            <button type="button" class="cat-dd-link" onclick="checkAllCats()">Tout cocher</button>
+            <button type="button" class="cat-dd-link" onclick="checkNoCats()">Tout décocher</button>
+          </div>
+          <div class="cat-dd-list" id="cat-dd-list"></div>
+          <div class="cat-dd-footer">
+            <button type="button" class="cat-dd-ok" onclick="applyCatFilter()">OK</button>
+          </div>
         </div>
       </div>
     </div>
@@ -394,7 +406,6 @@ body{font-family:'Raleway',sans-serif;background:#f5f5f5;color:var(--dark);paddi
         Envoyer ma demande via WhatsApp
       </button>
       <button class="btn-continue" onclick="toggleCart()">Continuer ma sélection</button>
-      <button class="btn-clear" onclick="clearCart()">Vider la sélection</button>
     </div>
   </div>
   <button class="cart-main-btn" onclick="toggleCart()">
@@ -952,7 +963,6 @@ function addToCart(p,qty){
   if(!cartOpen)toggleCart();
 }
 function removeFromCart(ref){delete cart[ref];updateCartUI();if(Object.keys(cart).length===0&&cartOpen)toggleCart();}
-function clearCart(){Object.keys(cart).forEach(k=>delete cart[k]);updateCartUI();if(cartOpen)toggleCart();}
 
 function toggleCart(){
   cartOpen=!cartOpen;
