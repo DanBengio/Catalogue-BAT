@@ -25,7 +25,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "005b4993-8cb9-4ce1-947e-84e5f0a225d0",
@@ -53,7 +55,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "006e5cda-f54d-49a5-ab54-86c8d1016e57",
@@ -82,7 +86,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "01019d9a-2674-4c12-b891-d9d41d02627e",
@@ -111,7 +117,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0123614f-2259-443c-aaa1-a87cd6d3badf",
@@ -140,7 +148,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0148b14a-88f3-4751-84c5-9ca74461e9d7",
@@ -168,7 +178,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "01923247-30e5-490f-a5ef-c8a8381eb07c",
@@ -196,7 +208,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "019756e3-0075-424a-b547-a3e6348eacd1",
@@ -224,7 +238,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "01bf6e6c-99ab-4cd8-9cd7-e0c22bf80770",
@@ -252,7 +268,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "01fc9da8-b510-4937-9d1c-f5fedab8ae51",
@@ -281,7 +299,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0204f04b-2c58-4a30-a848-e5bcae8ffb02",
@@ -316,7 +336,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "022a8643-3d0c-4473-a251-c3fdbbde6f79",
@@ -344,7 +366,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "02dcefb6-b72f-42b4-8cd7-d1ce73d23b23",
@@ -377,7 +401,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "03210101-bde0-47fa-803a-61ea165ad35b",
@@ -408,7 +434,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "041b4fe7-831b-4a01-9546-dfd62c52a4ba",
@@ -436,7 +464,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "042b9b53-a811-4527-9e8f-c28efc9c6705",
@@ -464,7 +494,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "050558a7-189f-4705-a415-11509e64f92c",
@@ -493,7 +525,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "052c55ce-08a0-454e-9947-238736a475e9",
@@ -522,7 +556,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "056b7257-ba15-4472-82ba-c0a643a5fad8",
@@ -550,7 +586,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "05793e0c-74fb-493e-8113-2d1d6e7dbc13",
@@ -578,7 +616,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "05a42015-b3e7-4323-b6d0-6abb299fe143",
@@ -607,7 +647,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0613cbe8-9013-4669-af18-643516d5f3ab",
@@ -635,7 +677,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "06763ece-e22e-43fa-a0f4-88ed422b8e12",
@@ -667,7 +711,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0699318c-b746-498d-b5e8-088a30385402",
@@ -696,7 +742,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "07c30ab2-2920-4d9c-b56a-e759cea8eb50",
@@ -724,7 +772,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0847c5a8-d97a-448a-a4a5-62fb1ca4f2f3",
@@ -752,7 +802,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "089ec62c-a094-411a-b031-f9e47f0d5d20",
@@ -781,7 +833,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "09c352b0-f2e1-486e-91c6-e6a4817d8ff9",
@@ -809,7 +863,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0a47683f-fd32-4a5a-bba7-79952acebf34",
@@ -837,7 +893,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0a76bae4-0687-4201-9246-a37856ae4123",
@@ -865,7 +923,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0ac9b055-ee01-46d0-8352-4de421430af3",
@@ -893,7 +953,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0baf97da-fadd-4740-850b-7b49187d61e2",
@@ -927,7 +989,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0bdbc7b7-f9a5-4f03-9aa7-a0cd1018651b",
@@ -955,13 +1019,15 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0be00a7e-cfd0-4372-9631-c2560201984d",
     "ref": "BT-004",
-    "nom": "T-Shirt Fruit Loom",
-    "description": "T-shirt basique à petit prix, jersey 100% coton, éco-responsable. Autres couleurs sur demande à partir de 100 pièces. Couleurs selon disponibilité.",
+    "nom": "T-Shirt basique",
+    "description": "T-shirt basique à petit prix, jersey 100% coton. Autres couleurs sur demande à partir de 100 pièces. Couleurs selon disponibilité.",
     "dimensions": "",
     "categorie": "hauts",
     "categorie_label": "Hauts",
@@ -990,7 +1056,7 @@
       "Noir"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
+      "#ffffff",
       "#000000"
     ],
     "matiere": "Jersey - 100% coton",
@@ -1000,7 +1066,12 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "0c1fd80f-fd2e-4f72-af68-4a0cd032f62c",
@@ -1028,7 +1099,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0c55c560-ef3c-4a51-834f-f6bfaf7ca7dc",
@@ -1056,7 +1129,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0c6fdad5-780d-4b6a-8728-cda77e0f44b3",
@@ -1084,7 +1159,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0c892bc1-cb5a-4136-8dcd-4a20b91989b8",
@@ -1113,7 +1190,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0d8511f8-08a1-4d33-a9e3-895a9c34e9fd",
@@ -1142,7 +1221,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0da77200-1f23-4e97-b6c8-2b197c6af1d9",
@@ -1170,7 +1251,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0db9f726-afe7-4e68-9034-99f6e7362ebd",
@@ -1198,7 +1281,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0ebd001d-52b5-4e87-b850-ca593db7e249",
@@ -1226,7 +1311,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0ebdd944-a760-488f-bf96-992617eca891",
@@ -1255,7 +1342,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "0fd59844-ae94-4738-82ed-00b9a5269ed6",
@@ -1283,7 +1372,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "10609f81-b704-452d-b5a9-9178fac240ac",
@@ -1312,7 +1403,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "106a1eb1-b458-4136-8a23-dd152baf829d",
@@ -1340,7 +1433,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "113596dd-3c3e-472c-b370-3f2280bf4dee",
@@ -1369,7 +1464,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "114b7d07-b6ea-4dbd-9941-d8f46b0db9b6",
@@ -1397,7 +1494,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "11881d8d-e6de-4482-be86-02bf5e35c4ae",
@@ -1425,7 +1524,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "11ba9497-bc39-44bb-9c37-d16869c0fb9a",
@@ -1453,7 +1554,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "11d2e6bb-702f-4981-8464-9fef63a167ee",
@@ -1465,7 +1568,9 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-008_1_vue_principale.jpg"
+      "BT_BT_008_1788530520036_1.jpg",
+      "BT_BT_008_1788530519582_0.jpg",
+      "BT_BT_008_1788530520307_2.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:03.587911",
@@ -1484,14 +1589,14 @@
       "XXL"
     ],
     "couleurs": [
-      "Crème",
-      "Noir",
-      "Gris"
+      "Blanc",
+      "Gris chiné",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#F5F0DC",
-      "#000000",
-      "#9B9B9B"
+      "#ffffff",
+      "#cccccc",
+      "#000000"
     ],
     "matiere": "Molleton - 100% coton",
     "grammage": "280 gr/m²",
@@ -1500,7 +1605,13 @@
       "Broderie",
       "Digitale",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris_chine",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "1263e212-a729-4001-82a1-7dabbcd71780",
@@ -1529,7 +1640,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1279c577-6710-4799-a318-f8976705d253",
@@ -1557,7 +1670,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "128490c7-4e28-4275-984b-89d420c755d5",
@@ -1585,7 +1700,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "130c85ea-910d-4976-a4d3-b5fae2cfca02",
@@ -1613,7 +1730,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "136d8410-b1db-4937-a327-4d9e7fa368b5",
@@ -1632,7 +1751,8 @@
     "actif": true,
     "bestseller": false,
     "categories": [
-      "accessoires"
+      "accessoires",
+      "sport"
     ],
     "fournisseur": "bar_a_textile",
     "univers": "textile",
@@ -1652,7 +1772,9 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "13c1f5be-e0c8-420e-a50a-1dbea2eb385e",
@@ -1680,7 +1802,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "14955cd2-3ac3-4fd8-8044-1fe29b9b72b8",
@@ -1712,7 +1836,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "14c0b22d-36ff-4f6c-b48a-50ed89a94e7e",
@@ -1740,7 +1866,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "15abcb31-53c1-4982-b9ea-02afe8cba42c",
@@ -1768,7 +1896,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "160aca1f-62b5-4ff1-9494-31a5deb6e371",
@@ -1800,7 +1930,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "162c6c63-f399-4595-b653-6e4ab13d9634",
@@ -1828,7 +1960,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "16621f45-6c64-4530-98a5-1fc4fde7c1ae",
@@ -1857,7 +1991,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "168abba6-9e55-400d-8e63-7a758d99e496",
@@ -1885,7 +2021,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "16ab3198-9dcb-4e64-8b8e-9a1bbd56c531",
@@ -1913,7 +2051,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "16feb3ac-1533-4972-a170-4cb1e8620a00",
@@ -1959,7 +2099,9 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "17d32622-3f6b-476e-9d57-8cc9c189fa48",
@@ -1987,7 +2129,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "18065a81-1039-4134-af1d-99ef16d0b3d1",
@@ -2015,7 +2159,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "18106396-4511-417d-911d-3b7ec8ce81d3",
@@ -2044,7 +2190,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1857ae15-cb64-4e0a-8bfa-705031564138",
@@ -2072,7 +2220,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1868a7d7-d231-47cc-b1da-18a40797ac2a",
@@ -2100,7 +2250,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "18bbf4e6-039c-4bb3-a0e3-74f133076873",
@@ -2129,7 +2281,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "18dadeb9-16a5-451f-a2e1-1d03abd62ce6",
@@ -2157,7 +2311,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "19e52521-f9a7-458a-8c1c-ac19963838fd",
@@ -2185,7 +2341,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "19ecaa88-04db-4408-b1dd-400d060f7ea8",
@@ -2213,7 +2371,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1a7bcc9e-013e-4b4c-b3d8-ac6e477887a7",
@@ -2241,7 +2401,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1b49f591-fcd1-4a5b-ab5f-e5fd932afc23",
@@ -2269,7 +2431,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1bcd79db-fef3-4e20-bcb6-5c34f037990d",
@@ -2297,7 +2461,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1bf13cfb-a182-41f9-a2be-c8268e1d571c",
@@ -2325,7 +2491,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1cae9eb1-d7b8-461b-b8a2-ca718dabcda4",
@@ -2353,7 +2521,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1cc6b847-b554-4970-ae7a-9850bd5df4d9",
@@ -2381,7 +2551,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1d1c8f4e-aa15-41a1-a318-2e61908e50e1",
@@ -2409,7 +2581,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1e1579c9-96a9-488e-b758-acb07d1f7521",
@@ -2437,7 +2611,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1e6448f2-64b2-41b4-8713-401c0124b94c",
@@ -2465,7 +2641,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1facbd31-3c7b-44e7-b101-9384a353dfc2",
@@ -2493,7 +2671,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "1ffb09ef-1a18-452a-8793-06c2d54ca6f5",
@@ -2521,7 +2701,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "200e7d71-8758-4729-bc86-43dbd90a4d90",
@@ -2549,7 +2731,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "204b6d5e-9ce0-49ee-b4d4-bf6eed3792aa",
@@ -2577,7 +2761,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "20c58b15-15de-41ab-ad39-c14f26958da1",
@@ -2605,7 +2791,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2157b2dd-e3f9-4856-b3c5-af863fd2e277",
@@ -2633,7 +2821,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "21b25255-7843-47a2-93bb-894ced8e889a",
@@ -2661,7 +2851,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "21b84b68-724d-4747-84a7-d7cad392a738",
@@ -2689,7 +2881,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "21d736e0-21ad-4d26-831d-92d8f09dff51",
@@ -2717,7 +2911,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "22aa3b5a-fe29-48fb-92d3-cc5f97ca0fea",
@@ -2749,7 +2945,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "22d62d94-fdb9-470a-9514-17063c1064ef",
@@ -2777,7 +2975,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "23d87bf1-ac0d-44a0-833e-b11b08e52c97",
@@ -2805,7 +3005,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "242f038c-39b8-4d4f-a5a8-d77275836cd2",
@@ -2834,7 +3036,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2452dfe2-fe90-417f-b76e-15f13a4711b2",
@@ -2862,7 +3066,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "24a58f0e-a205-440e-b1bd-3745d5584374",
@@ -2890,7 +3096,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "24f8a422-b4cd-4ae0-94ec-e9712d1d5aca",
@@ -2918,7 +3126,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2500355c-b5f5-4495-b9a4-50b460e6c92d",
@@ -2946,7 +3156,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "25237caf-9faa-40e0-b92c-b9e5f3e7e297",
@@ -2983,7 +3195,9 @@
       "Digitale",
       "Broderie",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "25b8f155-c5da-4f16-b8d0-ef807156540e",
@@ -3011,7 +3225,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2689626d-6e6a-4a04-90e7-1e1d0e5e382d",
@@ -3040,7 +3256,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "26a4c763-383a-46da-84fb-e24d6abd1b7c",
@@ -3068,7 +3286,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "26aeab85-62b7-49af-a2d1-ff9cd793fedd",
@@ -3099,14 +3319,12 @@
       "XXL"
     ],
     "couleurs": [
-      "Crème",
-      "Marron très foncé",
-      "Gris"
+      "Blanc",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#F5F0DC",
-      "#2B211C",
-      "#9B9B9B"
+      "#ffffff",
+      "#000000"
     ],
     "matiere": "Molleton – Polycoton",
     "grammage": "280 gr/m²",
@@ -3115,7 +3333,12 @@
       "Broderie",
       "Digitale",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "2746c0ba-bca7-4c9d-a7b1-f48cda08fe59",
@@ -3144,7 +3367,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "288bbca1-6910-4265-a4c1-204409dfbd0d",
@@ -3172,7 +3397,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "291647d7-e9a5-4aff-afa8-b7b6384c19d4",
@@ -3200,7 +3427,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2a1602c4-b879-41df-8f1a-405d7e9ba1b5",
@@ -3228,7 +3457,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2a8f460c-656f-443c-8c27-540215a9cfd7",
@@ -3256,7 +3487,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2acefb68-b6c2-4f2a-857b-b1fa085924fb",
@@ -3284,7 +3517,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2af0369e-48e6-4484-bc1b-effac71373eb",
@@ -3312,7 +3547,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2ba132ae-5252-4ed0-ae94-d63b1a239af6",
@@ -3340,7 +3577,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2bcdac3f-523c-475b-b2a6-2468b0138779",
@@ -3369,7 +3608,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2db1ff4d-63b2-4c8e-bd53-dbaf87e2098b",
@@ -3397,7 +3638,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2db502b6-40f6-4732-b857-5e4a2f21c5ce",
@@ -3425,7 +3668,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2dbb1505-35cb-4513-b411-6f786dfd13c7",
@@ -3453,7 +3698,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2e7b63dc-b87b-4b3d-8286-45c04732e53f",
@@ -3481,7 +3728,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2f885b62-5027-4a71-b469-33f1f95ddb77",
@@ -3509,7 +3758,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2fb9e9a5-83d0-431e-9d57-ff61c5cad4d7",
@@ -3538,7 +3789,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "2ffa2956-f4e2-462b-bfd7-061a6fc280e2",
@@ -3568,7 +3821,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "321490c0-f24e-4c4f-90e1-eb2606684328",
@@ -3596,7 +3851,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "330142f4-c5ae-4d5f-8a39-f2e5614449be",
@@ -3624,7 +3881,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "333b62e4-d3f5-4f10-83f2-d7d9a5ae39de",
@@ -3652,7 +3911,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "335304c2-afb7-4a60-8f98-c13816892b7c",
@@ -3680,7 +3941,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "33fa8410-2a62-4058-9bd1-589a35ebfffc",
@@ -3708,7 +3971,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3449d13a-fdde-4984-9797-c23022ec6334",
@@ -3737,7 +4002,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "34e05f6b-6575-4910-95f0-ab28fb7294c2",
@@ -3765,7 +4032,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "34ee0b91-d455-46b1-a9e8-6cdf0c5ca232",
@@ -3793,7 +4062,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "354a304d-c43d-479a-b1c4-4c24f36b0ad8",
@@ -3821,7 +4092,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3697661c-8f8e-4292-82fb-d4da3fbc7aba",
@@ -3849,7 +4122,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "369f3ee3-a604-451c-87bc-b5775528347e",
@@ -3877,7 +4152,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "374a3d73-53a6-4783-9ce0-58a1241ccad4",
@@ -3905,7 +4182,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3761d6bb-ed39-4950-becf-0879e92e6db3",
@@ -3933,7 +4212,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "37f8e35e-0b45-43a5-8639-342bb663d08f",
@@ -3961,7 +4242,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "386eaef7-9f38-46b4-8b8f-73b1c5d48f27",
@@ -3989,7 +4272,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3b779b47-6d3d-4318-86fe-363fd14809f9",
@@ -4018,7 +4303,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3b98f634-7c55-408b-bfdd-7d3517707d79",
@@ -4046,7 +4333,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3c361112-133b-46ba-8c6a-cec1e38b61d7",
@@ -4075,7 +4364,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3c3b62e6-e674-46ab-bb93-9c1554c1ebcc",
@@ -4104,7 +4395,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3c87c7ad-a7fa-4948-bd10-5aa1cd8bd51e",
@@ -4132,7 +4425,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3ced61dd-5136-4026-8bf3-fe547033e067",
@@ -4160,7 +4455,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3d6f6d83-90e4-4bac-b753-9ce21ed958a4",
@@ -4188,7 +4485,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3d9f205b-cf2c-40fd-bf18-1658e38b6337",
@@ -4216,7 +4515,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3df75877-2b3f-447f-b2dc-1b77b75e1882",
@@ -4244,7 +4545,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3f349587-998a-4dde-b981-2863a0aa1dae",
@@ -4272,7 +4575,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "3fba734e-f835-4cfc-a98d-7658913d1e22",
@@ -4300,7 +4605,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "40aa0901-e534-43e7-ad22-eddccdd1702b",
@@ -4328,7 +4635,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "40b6a472-0c0f-4f6f-b87e-63109e54476d",
@@ -4356,7 +4665,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4156ed96-d54b-46a4-8b8f-deb003b34c48",
@@ -4385,7 +4696,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4195654d-2170-4c10-a8e2-9c8f1fd1cc83",
@@ -4414,7 +4727,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "429024d2-4897-4708-a040-ff61424099a8",
@@ -4442,7 +4757,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "42ef4185-5b34-4895-88cf-cb39013f43bb",
@@ -4470,7 +4787,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "435c9066-fd37-45cb-8fc6-42786cea07d0",
@@ -4498,7 +4817,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "43fb86f4-5d7d-4bf2-9b79-0b1590d44626",
@@ -4526,7 +4847,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "44a2daf6-9033-441f-b679-da3d6b32e6bb",
@@ -4554,7 +4877,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "45fe5263-c147-4a57-b9f8-4d839f3cc943",
@@ -4582,7 +4907,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "467f9bac-effe-44ae-816d-a94cb3ff6430",
@@ -4610,7 +4937,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "47fd27b5-e160-43f6-9719-67f34d7f8a71",
@@ -4638,7 +4967,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "48330548-62fe-426c-bcf6-96b2dff3620d",
@@ -4666,7 +4997,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4872c9d1-6c5e-4226-ba80-4eb7fe91475f",
@@ -4694,7 +5027,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "48cdd311-339e-4905-8ade-822285960977",
@@ -4722,7 +5057,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "48cf34cb-8c40-4753-877f-7bad6970fe28",
@@ -4750,7 +5087,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "48fedae1-e4df-4b31-8810-69e27f9148dd",
@@ -4782,7 +5121,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "49087f55-aad5-40d0-af04-d8766fd9ffbe",
@@ -4810,7 +5151,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "49268e0e-d85b-4478-892c-0583f44d3ae5",
@@ -4838,7 +5181,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4929e8f7-1bd7-4452-ac2f-502e344e2e40",
@@ -4866,7 +5211,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "49350119-cf59-4a65-8ed6-501cd4c85c87",
@@ -4894,7 +5241,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "499d07b4-e12e-4e44-9e09-47e39f03c307",
@@ -4922,7 +5271,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "49cad5f6-5039-4f4a-9f64-d76126ac796c",
@@ -4955,7 +5306,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4a24daf5-20eb-4c7c-b6f2-b004a476a321",
@@ -4983,7 +5336,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4a7936c8-4f32-42a4-ab36-a1aaf36af461",
@@ -5017,7 +5372,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4ab62234-658a-4ca6-8ccf-05f5b8d9f3e7",
@@ -5048,7 +5405,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4ac79f51-f847-4403-9211-9fc755820929",
@@ -5076,7 +5435,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4b5e25fb-dc02-457e-bbef-b3cfee1c9c73",
@@ -5106,7 +5467,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4c6e5adc-20e2-412d-be69-4057296ec4c4",
@@ -5138,7 +5501,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4cbcc146-832a-4402-a368-52925f7df48f",
@@ -5166,7 +5531,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4ccee8a9-f98a-427b-9c8d-bbe86954c279",
@@ -5194,7 +5561,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4d3c3139-8fe0-4c86-83ae-87a266365f55",
@@ -5222,7 +5591,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4df54218-69b5-4547-9f36-5d38f5f217d9",
@@ -5250,7 +5621,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "4f184b44-49e6-424e-b5ed-8f2c562506d1",
@@ -5278,7 +5651,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "504f13f3-0efd-4dc8-becb-bb515c2aa5ff",
@@ -5306,7 +5681,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "50aaf7d2-7e6a-4b41-9b27-f21016b12b93",
@@ -5334,7 +5711,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "50ae521a-7c6b-48e5-a704-02c3ab0b18c3",
@@ -5362,7 +5741,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "50c64c9a-67d2-4cba-b6c2-27203be19122",
@@ -5390,7 +5771,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "514cf175-64cb-49be-97cb-916ab34f6d5c",
@@ -5418,7 +5801,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "51bb2c98-31f8-46bc-a92a-d20759920a27",
@@ -5446,7 +5831,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "52bfc260-d0a8-4020-995f-4d0da2a5803c",
@@ -5474,7 +5861,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "52c0b6d4-ad94-4b67-a3fd-c5c590a82311",
@@ -5505,7 +5894,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "53c02641-7893-4b00-9794-4ea12e0a1c2c",
@@ -5533,7 +5924,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "54424a6e-5c84-48a5-a077-98df184fef7e",
@@ -5562,7 +5955,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "549e8352-e09d-44fe-aa98-9a56d311b0ee",
@@ -5590,7 +5985,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "54b782db-3101-47db-93b0-89df92ef0572",
@@ -5627,7 +6024,9 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5568f325-0696-4602-b15e-0a695747f014",
@@ -5655,7 +6054,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5645a19c-061d-403b-bb14-a543f06adf00",
@@ -5683,7 +6084,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "567e6f2e-4407-4506-8bf3-38744a111118",
@@ -5695,7 +6098,9 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-007_1_vue_principale.jpg"
+      "BT_BT_007_1788528789227_0.jpg",
+      "BT_BT_007_1788528789517_1.jpg",
+      "BT_BT_007_1788528789753_2.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:03.467496",
@@ -5714,14 +6119,14 @@
       "XXL"
     ],
     "couleurs": [
-      "Crème",
-      "Noir",
-      "Gris"
+      "Blanc",
+      "Gris chiné",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#F5F0DC",
-      "#000000",
-      "#9B9B9B"
+      "#ffffff",
+      "#cccccc",
+      "#000000"
     ],
     "matiere": "Molleton - 100% coton",
     "grammage": "280 gr/m²",
@@ -5730,7 +6135,13 @@
       "Broderie",
       "Digitale",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris_chine",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "5701b6f6-fb06-4ba9-9bd6-5cbc236952a9",
@@ -5761,7 +6172,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "57f65cd5-0415-41f2-afc4-bed7af46b5fb",
@@ -5789,7 +6202,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "584b9c6b-010b-4a1a-b1e7-76e3732834df",
@@ -5817,7 +6232,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "58b23f17-6087-4ab2-9532-addd3cb756ba",
@@ -5845,7 +6262,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "59403db6-7a0f-46b5-b5b2-a2414856082f",
@@ -5853,9 +6272,9 @@
     "nom": "Tote Bag",
     "description": "Sac tote bag en toile de coton naturel, excellent rapport qualité prix, éco-responsable. Autres couleurs et dimensions sur demande à partir de 100 pièces. Couleurs selon disponibilité.",
     "dimensions": "40 × 38 cm",
-    "categorie": "accessoires",
-    "categorie_label": "Accessoires",
-    "categorie_num": "15",
+    "categorie": "evenements",
+    "categorie_label": "Événements, Été & Loisirs",
+    "categorie_num": "10",
     "photos": [
       "BT_BT-014_1_vue_principale.jpg"
     ],
@@ -5864,16 +6283,21 @@
     "actif": true,
     "bestseller": false,
     "categories": [
+      "evenements",
       "accessoires"
     ],
     "fournisseur": "bar_a_textile",
     "univers": "textile",
     "tailles": [],
     "couleurs": [
-      "Naturel"
+      "Blanc",
+      "Gris",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#E8DFC8"
+      "#ffffff",
+      "#a8a4a4",
+      "#000000"
     ],
     "matiere": "Toile de coton naturel",
     "grammage": "200 gr/m²",
@@ -5882,7 +6306,13 @@
       "Digitale",
       "Broderie",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "594a7a92-4f0f-43f2-8513-73c946511953",
@@ -5910,13 +6340,15 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "594d5161-dad0-4182-be74-05294ec205eb",
     "ref": "BT-019",
-    "nom": "Casquette Spéciale",
-    "description": "Casquette incontournable pour toute l'équipe, tissu technique respirant. Autres couleurs sur demande à partir de 100 pièces. Couleurs selon disponibilité.",
+    "nom": "Casquette américaine",
+    "description": "Casquette incontournable pour toute l'équipe. Autres couleurs sur demande à partir de 100 pièces. Couleurs selon disponibilité.",
     "dimensions": "",
     "categorie": "accessoires",
     "categorie_label": "Accessoires",
@@ -5929,7 +6361,8 @@
     "actif": true,
     "bestseller": false,
     "categories": [
-      "accessoires"
+      "accessoires",
+      "sport"
     ],
     "fournisseur": "bar_a_textile",
     "univers": "textile",
@@ -5969,7 +6402,9 @@
       "Flex",
       "Broderie",
       "Sérigraphie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "59a19bf2-d745-40bb-bae6-c0af4bbda503",
@@ -5997,7 +6432,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "59ff82e6-72ad-4f1c-87c1-bd09e87f21e8",
@@ -6025,12 +6462,14 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5a3c7867-3a34-45b5-beed-71e948db9cc2",
     "ref": "BT-022",
-    "nom": "Toge (Remise de Diplôme)",
+    "nom": "Toge et toque (Remise de Diplôme)",
     "description": "Toge de remise de diplôme, tissu 100% polyester effet mate, fermeture éclair sur le devant. Étoles assorties disponibles en jaune ou en rouge. Taille unique.",
     "dimensions": "",
     "categorie": "accessoires",
@@ -6040,8 +6479,7 @@
       "BT_BT-022_1_bordeaux.jpg",
       "BT_BT-022_2_bleu_roi.jpg",
       "BT_BT-022_3_noir.jpg",
-      "BT_BT-022_4_etole_jaune.jpg",
-      "BT_BT-022_5_etole_rouge.jpg"
+      "BT_BT_022_1788528105964_0.png"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:45:52.103318",
@@ -6065,7 +6503,9 @@
     ],
     "matiere": "100% polyester, effet mate, fermeture éclair sur le devant",
     "grammage": "",
-    "techniques_marquage": []
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5b0166a7-cc37-4f0d-b3f3-88452a8ea6d9",
@@ -6093,7 +6533,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5b1e48b1-4da4-4110-b1ed-06d7b75291eb",
@@ -6121,7 +6563,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5b4fe4a4-ec96-499c-a6a4-fc511cc759b1",
@@ -6149,7 +6593,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5c72c58e-164e-4d1a-9768-862a870134f6",
@@ -6177,7 +6623,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5cc337f5-8b23-4c6c-b806-656269c34171",
@@ -6205,7 +6653,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5d43b659-622f-4ea0-bdb0-f0dae6712758",
@@ -6233,7 +6683,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5d4dd9ac-1374-409e-8508-8022a9d678e9",
@@ -6262,7 +6714,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5f670a7b-19da-41d7-90d5-e4d9fda22191",
@@ -6290,7 +6744,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5f8271cf-9d54-481a-8ce9-786a446bb633",
@@ -6319,7 +6775,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "60854e28-5375-45a1-9504-8c1885a941ce",
@@ -6347,7 +6805,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "60dedaab-4dd1-4715-ac36-a78586784a8a",
@@ -6375,7 +6835,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "60f9afc3-069e-456c-b1c1-9b6afca72287",
@@ -6403,7 +6865,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "622b76e2-0248-4c5d-a773-8a0044e4c1a4",
@@ -6431,7 +6895,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "62667957-4e61-4f40-9fa0-13aa113ea548",
@@ -6459,7 +6925,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6312fc45-c2be-4dd6-b885-b35e3abe09f1",
@@ -6487,7 +6955,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "63222cbf-5b26-4b98-9931-ff1e250d8076",
@@ -6515,7 +6985,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6368ed80-d8dc-4145-b5c9-a5dda39a18a8",
@@ -6544,7 +7016,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6373c14e-e947-415c-9fdb-5afa1020006d",
@@ -6572,7 +7046,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "638e6dd4-4214-4655-90c9-5230f88c912b",
@@ -6602,7 +7078,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "63de0d2d-ca3f-4d55-941f-62dd7a02e96d",
@@ -6618,7 +7096,7 @@
     ],
     "ordre": 7,
     "created_at": "2026-08-12T20:54:39.777931",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cartables"
@@ -6630,7 +7108,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "64320095-cbe0-468d-b35f-6fa2b0f68349",
@@ -6659,7 +7139,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "64343da8-3ec9-4caf-9308-d895a9a4543e",
@@ -6687,7 +7169,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "655a77f5-2cf0-481d-9180-35e7345665bc",
@@ -6715,7 +7199,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "658b7251-77c8-4b99-b37e-4f7e8e8b0333",
@@ -6743,7 +7229,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "659bd82b-3f29-4b70-9261-3ba948d22128",
@@ -6772,7 +7260,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "660383c1-760b-42e2-8975-e682a49f719e",
@@ -6800,7 +7290,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "66090853-4266-4031-906b-1c3eab02baf3",
@@ -6828,7 +7320,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "664ac88a-4256-45b3-91ff-6e063a338733",
@@ -6856,7 +7350,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "666adb69-5348-420d-8cbd-7865cdd298ef",
@@ -6884,7 +7380,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "66955e0a-761c-4b8e-ad15-d174e43d53cd",
@@ -6912,7 +7410,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "66c596fe-79a1-4e01-b99a-e726183ec145",
@@ -6940,7 +7440,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "66dd03ad-90aa-405a-8995-63fe408c3a1d",
@@ -6968,7 +7470,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "677310d0-00a2-49a5-b2a8-e171f09aacbc",
@@ -6996,7 +7500,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "679ec661-2d6d-47ae-83d0-e5f71c1ddd68",
@@ -7025,7 +7531,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "67d80ca4-56b2-4086-9e6e-4b4e1923602e",
@@ -7053,7 +7561,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "685292a0-f809-4682-98bb-30e22f943ee1",
@@ -7081,7 +7591,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6867c390-0a47-440d-a73e-ddd4c9ee396a",
@@ -7114,7 +7626,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6879eb48-616f-4bd5-8ad6-a680a26b1913",
@@ -7143,7 +7657,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "68b3a8f1-f72a-4452-9c70-2861b86f63a7",
@@ -7174,7 +7690,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "68dd5514-a772-486b-a10f-38ffc8f32a93",
@@ -7203,7 +7721,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "69314ebb-e41d-4320-8c0e-eb73c53d8ee7",
@@ -7231,7 +7751,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6ac8e128-4bb2-4de1-9a25-4aaf4d4f7fc5",
@@ -7260,7 +7782,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6b2b3714-a67e-48fb-8fd7-0ef110c683ad",
@@ -7289,7 +7813,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6b96edfe-e08e-4b52-a8df-bfc44237ad72",
@@ -7317,7 +7843,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6bedc2a1-2694-461c-b2be-72cb348e500f",
@@ -7345,7 +7873,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6bf80cd8-43a9-4b5d-9506-8cce3db2f46d",
@@ -7373,7 +7903,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6c14e8df-78dc-495a-ac7e-70712d9c9a44",
@@ -7402,7 +7934,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6c7321af-47fc-42ca-bbbe-c6c9f121c5d9",
@@ -7430,7 +7964,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "6e01eba9-47b5-448a-a555-c5b69f772c9c",
@@ -7459,7 +7995,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "704c2ed7-6053-4ddf-94c3-fb36bda63322",
@@ -7487,7 +8025,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "70645c30-c9ef-40c6-9c16-8be867f8a2fe",
@@ -7518,7 +8058,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "719ff5af-cbbc-4675-a6f0-a8ee4f9ad05c",
@@ -7546,7 +8088,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "734dadcc-080c-41f3-8dde-a0afeea9da33",
@@ -7574,7 +8118,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7362f68a-b831-4124-aa02-7f2bbf949afb",
@@ -7602,7 +8148,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "73b9859e-a3eb-4067-876b-a0698f647ad0",
@@ -7619,7 +8167,7 @@
     "ordre": 0,
     "created_at": "2026-08-11T17:31:19.040403",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "autres_objets"
     ],
@@ -7630,7 +8178,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "73ba9248-fef2-4488-b145-5e4a153e2270",
@@ -7658,7 +8208,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "73d90f66-4671-482e-8ea6-8ff65e2e4218",
@@ -7687,7 +8239,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "73da5ec0-beb8-4c88-870b-7b35490a73cb",
@@ -7715,7 +8269,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "756c522e-69ec-4110-8c73-57cfd7825bc2",
@@ -7743,7 +8299,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "757fe72c-1abc-405c-a6c4-fd1361bd6ccf",
@@ -7771,7 +8329,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "75a6b133-b96c-4940-83d8-d6adb3f8412c",
@@ -7803,7 +8363,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "762e96bb-de08-43a7-9f78-0038abd02acc",
@@ -7831,7 +8393,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "76385e41-9069-4c2d-934f-02cca9affa38",
@@ -7859,7 +8423,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "76b0ad97-ed3c-469a-8925-82adfc62aa8c",
@@ -7893,7 +8459,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7786fa1d-9659-4122-b05b-8b2135f7ed05",
@@ -7921,7 +8489,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "778b83b8-bb4b-424b-b8df-b59cf09ecc2d",
@@ -7949,7 +8519,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "77c93cf1-0f86-44e3-800e-89c0bd9ff053",
@@ -7961,7 +8533,8 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-010_1_vue_principale.jpg"
+      "BT_BT_010_1788530183816_0.jpg",
+      "BT_BT_010_1788530184219_1.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:03.877611",
@@ -7982,11 +8555,11 @@
     ],
     "couleurs": [
       "Blanc",
-      "Gris"
+      "Gris chiné"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
-      "#9B9B9B"
+      "#ffffff",
+      "#cccccc"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "160 gr/m²",
@@ -7995,7 +8568,12 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris_chine"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "77cc7a97-306b-48e0-9728-dc346629cf8f",
@@ -8031,7 +8609,7 @@
       "Noir"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
+      "#ffffff",
       "#000000"
     ],
     "matiere": "100% coton piqué",
@@ -8041,7 +8619,12 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "784e16f1-07ae-42b2-8c7b-0173c0eaf705",
@@ -8078,7 +8661,9 @@
       "Digitale",
       "Broderie",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7855f56b-02da-4e40-9db0-a7371de20416",
@@ -8110,7 +8695,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "78a68106-36ee-4bc4-8fe7-161c11de1849",
@@ -8141,7 +8728,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "78c3d145-170f-4455-9295-ad693a7fc317",
@@ -8169,7 +8758,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "78c4e6b6-ba8b-4559-9c9e-aaaf29180a16",
@@ -8197,7 +8788,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "799431e4-7d66-4bce-8bd1-0fee9aaca43c",
@@ -8225,7 +8818,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "79bbb9f8-145c-4eb8-86af-47985a5a01e9",
@@ -8253,7 +8848,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7a0ab694-b415-4637-8109-04cc9a380dc7",
@@ -8282,7 +8879,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7a5b0c03-71e4-443d-ba55-4347873fdbed",
@@ -8310,7 +8909,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7aa4dc1e-f3ff-4f67-af2e-374dadad1cc3",
@@ -8338,7 +8939,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7b86395b-7ea1-42c3-8c74-c77399f51b2b",
@@ -8367,7 +8970,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7bcd6abf-7abf-48e2-aa55-d702985b6997",
@@ -8395,7 +9000,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7cf252f9-0f23-43e9-8d81-346e985367ba",
@@ -8425,7 +9032,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7cf9a70f-338a-42a9-a42b-695a251553d4",
@@ -8453,7 +9062,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7d9ec0b6-a3b1-4dea-9d10-e64f5c8b1e9a",
@@ -8481,7 +9092,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7dcc6161-3cd9-47aa-a9e6-8e72840b0120",
@@ -8509,7 +9122,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7eefe5d7-6590-4f5d-80c3-6c6e41821ed9",
@@ -8537,7 +9152,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7f10d9bb-474d-4128-8592-6b70e71f7243",
@@ -8565,7 +9182,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "7f805d43-836c-4b58-8222-d668b0c3bff6",
@@ -8593,7 +9212,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "803f02a8-f714-4804-ab66-acd1fa6a9d46",
@@ -8622,7 +9243,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "805497ea-8d5e-408f-8d0e-5477a4a94e1b",
@@ -8650,7 +9273,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8061236c-b5ff-485e-8559-b88b7d5ad388",
@@ -8678,7 +9303,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "81b2ab9b-8e01-4425-9407-3d6643f67738",
@@ -8706,7 +9333,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "821112bc-6c05-4bc4-b627-327208ec383b",
@@ -8736,7 +9365,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8283dc26-0e1d-4f10-a6ff-8d5b194c3092",
@@ -8764,7 +9395,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "82af721f-b114-4f80-b001-5c5102a295b1",
@@ -8792,7 +9425,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "82afce39-540b-44e6-a87c-607d561f2fbf",
@@ -8820,7 +9455,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "82b8c3c5-374d-4827-91f2-46ab6ce1e773",
@@ -8848,7 +9485,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "82cfcbf0-4840-4e49-a267-069702c6b692",
@@ -8876,7 +9515,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8438b3eb-f36d-42fc-b94d-01405e48bfb9",
@@ -8904,7 +9545,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8484e099-671b-4b69-b182-6ec83ea0db31",
@@ -8932,7 +9575,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "84b867de-8107-4a30-8ef4-0623a3975e7c",
@@ -8961,7 +9606,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "84cd9d94-1a20-4616-bfc1-86e510b185ec",
@@ -8989,7 +9636,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "84f096e6-545c-4c1d-b675-85f936b01b38",
@@ -9017,7 +9666,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8616aca2-fadc-4305-9d89-ead2bfbaa1c8",
@@ -9045,7 +9696,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "865a779b-0a63-4a03-bdb0-50b5f4fdf913",
@@ -9073,7 +9726,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "86a6e4d7-1663-43a0-b8ea-46572a64d02a",
@@ -9101,7 +9756,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "86b83cfd-7b8b-453c-a890-9f0e7b674ee9",
@@ -9129,7 +9786,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "87369e1b-0dcc-44d6-b67d-04baf866f932",
@@ -9158,7 +9817,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8775da41-3364-4234-af15-a934ffdd5307",
@@ -9186,7 +9847,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "87afe385-87f1-4892-a156-06ed7f3beb68",
@@ -9217,7 +9880,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8800235d-9051-4533-85ee-97815c0ad1c8",
@@ -9245,7 +9910,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "885d88c3-bbb0-4a9f-83c8-1b9f0ccce8af",
@@ -9274,7 +9941,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "88f0fe8c-9efb-47c2-95a6-60b67a30f545",
@@ -9302,7 +9971,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8983a3f5-a982-4fed-b78b-c40b087562f8",
@@ -9330,7 +10001,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "89913e3f-d3ce-4b8e-bd6b-92ba9cbe31b4",
@@ -9358,7 +10031,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8a388116-7a52-432b-bec3-51ebea45b643",
@@ -9386,7 +10061,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8a64cd17-f9a7-40aa-af55-b3ed52ede4aa",
@@ -9415,7 +10092,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8aa1a1f7-1665-44e4-a1ff-677dc9d786e0",
@@ -9444,7 +10123,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8c5a6869-4cb3-4207-9de1-cc244f2176a0",
@@ -9472,7 +10153,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8c6f355a-4b6b-4850-8bd9-1a0ad9927414",
@@ -9500,7 +10183,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8cde373f-59cf-4b98-8fca-af7fe22b66fa",
@@ -9529,7 +10214,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8d051e8a-5254-4039-8bee-f88f134a3fac",
@@ -9557,7 +10244,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8d0b92eb-7e2f-45c2-b704-86712969fff3",
@@ -9585,7 +10274,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8d4c9cae-ad9d-4861-b85a-326a203f8d8b",
@@ -9597,7 +10288,9 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-002_1_vue_principale.jpg"
+      "BT_BT_002_1788531413447_0.jpg",
+      "BT_BT_002_1788531413998_1.jpg",
+      "BT_BT_002_1788531414228_2.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:02.778045",
@@ -9618,15 +10311,13 @@
     ],
     "couleurs": [
       "Blanc",
-      "Bleu marine",
-      "Marron très foncé",
-      "Gris"
+      "Gris chiné",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
-      "#1F2A52",
-      "#2B1B16",
-      "#9B9B9B"
+      "#ffffff",
+      "#cccccc",
+      "#000000"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "160 gr/m²",
@@ -9635,7 +10326,13 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris_chine",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "8f5826f0-5156-4730-80b4-447a851fbb96",
@@ -9674,7 +10371,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8fb380a7-aa27-4642-a217-738a5aec9980",
@@ -9711,7 +10410,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8fe990f5-ec52-4b81-a608-a2350ff2066e",
@@ -9741,7 +10442,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "90225b4d-5004-4fca-bd1d-e7160a12eaa9",
@@ -9770,7 +10473,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "908d4b75-ed32-47b0-a814-83db077a63ca",
@@ -9799,7 +10504,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "90e37604-8681-4c46-b338-21187c35420d",
@@ -9827,7 +10534,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "91a82cbf-8b6b-4c33-93c5-91332f943f65",
@@ -9855,7 +10564,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "920b3b1b-95e9-4a82-9dff-b6cd906d2aa7",
@@ -9883,7 +10594,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9353cdb4-f4dc-4131-8706-d23d39ae2907",
@@ -9911,7 +10624,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "935dfb7b-28ed-4c51-b1a4-3080e2b4aea8",
@@ -9939,7 +10654,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "93c82740-1a2a-40ef-a7d3-877ca55d5c30",
@@ -9968,7 +10685,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "94c3eece-f2e2-4e9f-9f5e-7605e5344ec0",
@@ -9996,7 +10715,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "950c1747-fa98-4e51-94a4-1410d23a2bc6",
@@ -10025,7 +10746,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9519439a-2070-4eb5-a198-fd068ebc9ccc",
@@ -10053,7 +10776,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "954884d5-1aa5-4c42-99bd-63a1049746f4",
@@ -10081,7 +10806,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "95eb3ec1-9e4f-4dac-b3ea-2cdc5b2c2a63",
@@ -10109,7 +10836,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "961a036f-5b55-4566-bf26-33d04a1976be",
@@ -10137,7 +10866,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "96a3b68f-b6cb-4b39-b535-9e46733ece5b",
@@ -10167,7 +10898,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "96bb4580-1182-4db1-b8d1-d41f47d08d0c",
@@ -10196,7 +10929,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "96c9e21a-f881-4e0c-9ba0-ee933cc6c23d",
@@ -10226,7 +10961,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "97574938-b4c2-4b6d-922e-7e14e1071225",
@@ -10254,7 +10991,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9932ead6-17a7-4fcb-abde-fdeb7583e118",
@@ -10282,7 +11021,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "994e6b1a-350f-46b4-aa1b-aadfbc2b252b",
@@ -10310,7 +11051,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9a814b80-7674-4483-98ab-f631d471be1b",
@@ -10338,7 +11081,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9b65ca46-5d45-4166-9c4d-8fb5adb3bcf6",
@@ -10366,7 +11111,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9c2f52a4-5f29-4bed-8a25-0b7b20863170",
@@ -10399,7 +11146,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9c363a06-8232-461c-b86b-a4997e2904c0",
@@ -10427,7 +11176,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9d1c41e4-248c-4f58-93d4-6c52ff044efd",
@@ -10455,7 +11206,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9d5268c8-706e-45ac-8b15-ecfb5edf24b3",
@@ -10483,7 +11236,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9d79bbb5-59af-40f2-954f-bbd7926ee41e",
@@ -10511,7 +11266,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9dcc0c22-0791-4907-b51e-fc00e063e32c",
@@ -10539,7 +11296,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9dd64f50-fbd7-4b0c-af10-52796fd80e96",
@@ -10567,7 +11326,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9e0d7b37-6df5-4345-9bde-04ec321eb973",
@@ -10595,7 +11356,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9ed1739b-bd64-48f6-af99-e4bc771bcfbc",
@@ -10623,7 +11386,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9f6008ae-aad1-402a-852a-6de1de29eef6",
@@ -10651,7 +11416,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9f9475c3-9599-4074-b1af-32c17cdaae17",
@@ -10679,7 +11446,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "9fc90936-dc92-418f-a05d-e88dac61b740",
@@ -10707,7 +11476,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a0590174-eb30-4158-9b22-a2a7e9ca4487",
@@ -10737,7 +11508,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a0962819-7839-490b-a9ce-d2ed5b06cdc1",
@@ -10765,7 +11538,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a136e6df-1218-4f5e-b85d-c74a1bc37429",
@@ -10796,7 +11571,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a1965001-256e-4d94-87c0-5c839990551b",
@@ -10824,7 +11601,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a1979f6a-ea29-470d-b0db-7d8d7e8a726d",
@@ -10852,7 +11631,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a1b701fe-35b3-40be-af63-dfbc787ce2d4",
@@ -10880,7 +11661,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a2edd10d-4a1b-4504-8e6c-c48e614536e2",
@@ -10908,7 +11691,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a30c035d-6c9a-4294-9cfd-33e8bffdc239",
@@ -10936,7 +11721,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a32fa619-f7aa-4cdf-8d63-5f682aaa302d",
@@ -10964,7 +11751,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a33a3114-169b-41a3-9063-9acaee7fcd70",
@@ -10992,7 +11781,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a3513114-58f4-46fa-b23b-d377d68b07d0",
@@ -11020,7 +11811,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a3ead8d2-6b57-4f39-b7dc-9318e89e87b0",
@@ -11032,7 +11825,8 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-005_1_vue_principale.jpg"
+      "BT_BT_005_1788527912534_0.jpg",
+      "BT_BT_005_1788527912895_1.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:03.223669",
@@ -11051,10 +11845,12 @@
       "XXL"
     ],
     "couleurs": [
-      "Blanc cassé"
+      "Blanc",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#F2EFE9"
+      "#ffffff",
+      "#000000"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "220 gr/m²",
@@ -11063,7 +11859,12 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "a43d315f-7d28-4883-bf01-09f9587ed7cf",
@@ -11095,13 +11896,13 @@
     ],
     "couleurs": [
       "Blanc",
-      "Rouge",
-      "Gris"
+      "Corail",
+      "Gris chiné"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
-      "#C0392B",
-      "#9B9B9B"
+      "#ffffff",
+      "#ec4141",
+      "#cccccc"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "160 gr/m²",
@@ -11110,7 +11911,13 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "corail",
+      "gris_chine"
+    ],
+    "couleurs_autres_100": false
   },
   {
     "id": "a4816a7d-a7d1-4f43-9b61-8d5894f56874",
@@ -11138,7 +11945,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a4e41836-a173-463f-8c20-3ba9a01cafb4",
@@ -11167,7 +11976,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a626237b-6aa5-4e31-84ea-5049997ab73f",
@@ -11196,7 +12007,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a63c4596-4fb8-4d40-9488-1862350e9be9",
@@ -11224,7 +12037,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a6dc6aab-8ec3-4ab3-a7fa-8a2b3565fa87",
@@ -11252,7 +12067,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a75422f3-b96f-4286-87a2-e22b8f9c5555",
@@ -11280,7 +12097,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a7850d8f-8f99-4315-b7ef-c386971b9aa6",
@@ -11309,7 +12128,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a89bb62f-70ae-4f53-9f51-f1e6d4af3d6d",
@@ -11337,7 +12158,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a8a03b63-e138-4c35-9dc6-cf7deac1070b",
@@ -11369,7 +12192,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a8bb7289-f5a5-455a-8cbf-5f018be715ba",
@@ -11397,7 +12222,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a95e6699-12fe-4864-8bd9-db0d0dcf4e90",
@@ -11425,7 +12252,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a9b11611-1af7-4273-bf2f-0709909ad1b3",
@@ -11456,7 +12285,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "a9f6feaa-d477-4c14-9d91-ee3e1d5e72cf",
@@ -11485,7 +12316,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "aa6b4236-d5f7-42f1-8ceb-a93f382f8004",
@@ -11497,7 +12330,9 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-001_1_vue_principale.jpg"
+      "BT_BT_001_1788527866796_0.jpg",
+      "BT_BT_001_1788527867968_2.jpg",
+      "BT_BT_001_1788527867430_1.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:02.626347",
@@ -11519,14 +12354,14 @@
     "couleurs": [
       "Blanc",
       "Bleu marine",
-      "Marron très foncé",
-      "Gris"
+      "Gris chiné",
+      "Noir"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
-      "#14213D",
-      "#2B1B16",
-      "#9B9B9B"
+      "#ffffff",
+      "#203c74",
+      "#cccccc",
+      "#000000"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "160 gr/m²",
@@ -11535,7 +12370,14 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "bleu_marine",
+      "gris_chine",
+      "noir"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "aabeba4f-19c8-4eb2-9e47-88c5782c11bc",
@@ -11563,7 +12405,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ab28efe9-cfba-4677-b8f5-2f04df356dcd",
@@ -11591,7 +12435,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ab654a10-2231-49f0-8d9b-ad7c170b8dca",
@@ -11619,7 +12465,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ab69f400-7482-43e3-9792-cf3cd252055c",
@@ -11647,7 +12495,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "abbe3a68-bc63-4124-a76f-38afddc8bff9",
@@ -11678,7 +12528,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ac786442-3c7d-4b2c-a81d-cd55bfbb1dd5",
@@ -11708,7 +12560,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "acf4bcfe-778a-482c-b5a2-030699c90b6a",
@@ -11736,7 +12590,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ad06a795-8c20-4315-9dca-e56451b1f9aa",
@@ -11765,7 +12621,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ad282ee2-a5dc-4607-8df4-83069f58cbcb",
@@ -11793,7 +12651,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ad4c552b-b0ec-40ba-bef8-3a925563f36b",
@@ -11821,7 +12681,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "addf92a5-044a-4274-ad7e-fe4f20d2075b",
@@ -11849,7 +12711,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "af0e89f5-ded2-49d3-a49d-9c7329a21f04",
@@ -11877,7 +12741,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "af43482a-7599-4c28-9a3a-077c31b5252c",
@@ -11905,7 +12771,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b02a396c-75d3-46b3-9c5c-9f71a72540cb",
@@ -11934,7 +12802,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b096e492-5877-4476-b692-59ede49be86a",
@@ -11962,7 +12832,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b2384af7-b5b2-4fc4-bb53-ac95fff7cfd4",
@@ -11978,7 +12850,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:02.907347",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "hauts"
@@ -12011,7 +12883,9 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b258ea27-7ea1-4184-ba33-9a9a878f0ea4",
@@ -12039,7 +12913,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b296d314-223b-4014-a1a2-b0f173a4fac4",
@@ -12067,7 +12943,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b2d333dc-ec77-45f2-8cb2-13fa5e916943",
@@ -12096,7 +12974,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b32d963b-166f-41e7-8c6e-2f48ea9af3c6",
@@ -12126,7 +13006,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b50195fb-3091-4c0d-833d-d506d31d6f4f",
@@ -12154,7 +13036,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b6083b26-f78c-4f4e-aa40-03ce72f6266d",
@@ -12182,7 +13066,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b6427660-5cc8-43f5-a8ed-7864f92740b0",
@@ -12210,7 +13096,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b6742da1-0652-4776-9bcc-c4b867d729c2",
@@ -12238,7 +13126,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b6f46c91-ab63-4123-a007-2cf0528508dc",
@@ -12266,7 +13156,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b7172e82-59fd-4b7e-bfb7-a59c2642b763",
@@ -12294,7 +13186,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b71e7099-98c2-4ebe-8b72-640f373747dc",
@@ -12322,7 +13216,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b8665229-6b26-489f-adb9-0b066f7ce1a0",
@@ -12351,7 +13247,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "b9f24498-5e5d-4f66-8bb9-b85311368c35",
@@ -12380,7 +13278,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ba2e1f25-762e-4107-ad80-e0525aca0cd8",
@@ -12408,7 +13308,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "babd3856-7cb8-4d68-81cb-df6a1cc21e1e",
@@ -12436,7 +13338,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bbc6960f-32a5-4daf-828f-e1ebecf1aa75",
@@ -12465,7 +13369,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bc274bfb-744a-4832-92d8-f8d6467bdda6",
@@ -12493,7 +13399,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bc4770e1-813d-47bb-958a-2367f572d05b",
@@ -12522,7 +13430,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bc5024f9-a00e-40d2-bc50-10477cb5e1b6",
@@ -12552,7 +13462,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bd0dce8b-585d-489a-8851-f6a7e529c11b",
@@ -12580,7 +13492,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bd4555e1-dbb4-4094-ac48-172cfeaf5099",
@@ -12608,7 +13522,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bdd691fc-95e6-4cba-81c5-8d1a7ec54cb7",
@@ -12637,7 +13553,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "be2f7783-6ec9-4d46-b83f-c078b2e7579e",
@@ -12665,7 +13583,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "be4cf5c8-0fa8-4cd2-aa08-6f235650d8fc",
@@ -12693,7 +13613,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "be89f5c7-665e-4b49-93b3-5b90fff51d16",
@@ -12722,7 +13644,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "befa7ac3-dd99-4184-9a25-26866ec73fc8",
@@ -12750,7 +13674,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "bf42e062-2150-444b-b897-0cb1a11c8780",
@@ -12778,7 +13704,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c08208a3-f63a-4724-bc09-701e01ceca36",
@@ -12806,7 +13734,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c089b859-cfaf-4082-abd5-49671dfde55e",
@@ -12834,7 +13764,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c166b0aa-f7f8-4ff2-a487-2be034052b3f",
@@ -12862,7 +13794,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c1a278c1-cf6c-4384-b29f-03de9d5be967",
@@ -12890,7 +13824,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c1bc2016-1256-4dc9-8031-2dbac63d76de",
@@ -12919,7 +13855,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c28ad139-96a0-4dff-9ec8-f000955b900f",
@@ -12947,7 +13885,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c29bcc63-bb39-4b9b-baff-529be6dcd26a",
@@ -12975,7 +13915,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c2a6a2b2-a5ee-435b-b02d-2cabf40a6db1",
@@ -13003,7 +13945,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c2aa68e9-c8a4-4dfd-8f48-363c3a4d3390",
@@ -13032,7 +13976,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c3c00f18-7c78-48fb-a542-57c9a21777f7",
@@ -13060,7 +14006,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c3d9aa58-881a-426d-a840-1a7a63c9c20c",
@@ -13088,7 +14036,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c4a536af-73c3-46cf-9052-5b4e5d86c4b5",
@@ -13116,7 +14066,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c4cea921-c3d3-413c-94e0-e5370f907917",
@@ -13144,7 +14096,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c5927c90-41d3-42bd-9034-a86015c216fc",
@@ -13172,7 +14126,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c69eeabf-19e8-49bf-a1cd-d29b94ed0529",
@@ -13200,7 +14156,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c6ff4906-d080-4bb7-a213-1d8c87c31e67",
@@ -13231,7 +14189,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c7453f57-47ff-4670-80e1-889fbf3a704b",
@@ -13259,7 +14219,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c77643fa-b90b-48ab-8ce2-10e2d91b0b83",
@@ -13289,7 +14251,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c870c7f9-af44-4b4b-aaf6-ef4e7b57f056",
@@ -13317,7 +14281,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c89e50be-1850-4048-bfd1-b18a78977057",
@@ -13345,7 +14311,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c8fe2d8c-b5a2-41b2-8829-3139192088c8",
@@ -13373,7 +14341,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "c958fb9b-69b9-458b-8835-c7196b9f21fc",
@@ -13401,7 +14371,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ca1362c4-964d-4e15-960a-43798fd5ff2b",
@@ -13431,7 +14403,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "caa31c1f-b016-419b-998a-0ec539a245a1",
@@ -13459,7 +14433,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cb4656ce-8676-496c-a048-d736d92bf017",
@@ -13487,7 +14463,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cbb38352-4303-4c1e-a4a9-662f4dd81e7e",
@@ -13515,7 +14493,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cbfa085c-eaad-44e0-a7ac-1d9c4783bb21",
@@ -13543,7 +14523,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cc20c1b7-cf55-4c18-a89b-e45c2d7e356c",
@@ -13571,7 +14553,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cc50211c-5270-4dad-931f-fa10930db684",
@@ -13599,7 +14583,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cc655e88-d157-4db9-929b-63de015e14db",
@@ -13627,7 +14613,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cc736eef-fb8f-4123-a670-e4a61deaec67",
@@ -13655,7 +14643,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cc9fe36e-fc05-4628-a49c-07e935d4d607",
@@ -13683,7 +14673,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cce8b190-21f8-4462-9254-735d98e15e2d",
@@ -13711,7 +14703,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cd2e9786-7298-4fe3-9942-ca4e29a3f71a",
@@ -13739,7 +14733,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cd38db86-4e4e-4d90-bfc1-426bba60419e",
@@ -13771,7 +14767,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cd9c9d45-93ea-49f5-9a93-2f4d930b6b61",
@@ -13799,7 +14797,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cdd8e180-a7d5-4851-b285-0320b1aed19e",
@@ -13827,7 +14827,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ce338504-4f77-4391-a3b7-3259e8c8378c",
@@ -13855,7 +14857,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "cfaa8b0d-f6b1-4b31-a971-3e2b4f599254",
@@ -13884,7 +14888,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d06ee601-8789-40f6-b54e-d5557fa347e3",
@@ -13912,7 +14918,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d0d87711-aff3-4bb0-87a3-4f0239373ac9",
@@ -13940,7 +14948,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d0da15ad-0052-4bf7-a096-ff4fb8f9bff0",
@@ -13968,7 +14978,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d13d86f2-0098-4a45-b0a2-76c94efaa4cc",
@@ -13996,7 +15008,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d14d109d-fdf3-42fc-bef5-79fd0ca08e2e",
@@ -14024,7 +15038,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d17fff78-0243-4fcc-95a4-9953b8977585",
@@ -14053,7 +15069,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d19bdd18-0ce4-4c98-93b7-ff1d5b82a009",
@@ -14082,7 +15100,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d26cddc5-9a6e-4ea4-9645-c2cac63e3df0",
@@ -14112,7 +15132,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d2dd8fc2-aa45-458d-aa19-34abf5e78e95",
@@ -14141,7 +15163,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d446a0a4-d622-4d40-a275-3f1f0e12c5af",
@@ -14172,7 +15196,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d514d064-0e89-4d68-9c6a-d218b18e06f3",
@@ -14203,7 +15229,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d5185263-b2e8-49c7-ac79-8d65c94fffb3",
@@ -14232,7 +15260,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d5495be2-3e3d-4592-9617-d4f0bff75c1b",
@@ -14260,7 +15290,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d637c727-6664-4ec3-b35c-945635644f46",
@@ -14288,7 +15320,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d67d9927-b469-4580-bf72-50d2a3f9bd45",
@@ -14316,7 +15350,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d7c7f7d1-3436-4548-a458-6be1fdb122ef",
@@ -14330,7 +15366,7 @@
     "photos": [],
     "ordre": 0,
     "created_at": "2026-09-03T20:45:52.235627",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "accessoires"
@@ -14350,7 +15386,9 @@
     ],
     "matiere": "100% polyester, effet brillant, avec tassel",
     "grammage": "",
-    "techniques_marquage": []
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d85a6b67-b5bf-466b-85fb-272c29dfdcc9",
@@ -14378,7 +15416,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d85a9521-006d-4f5f-95f3-d291bd66d7fc",
@@ -14408,7 +15448,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d9438d54-2cf5-42d5-a9d1-592aafeac3ea",
@@ -14436,7 +15478,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "d9a57350-af94-4a2f-a23d-99bceb539fe9",
@@ -14464,7 +15508,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "da5b159a-987d-412b-8d7b-7e5ac265385a",
@@ -14495,7 +15541,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "db792c79-662f-43d2-acf6-e63d45588712",
@@ -14523,7 +15571,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "dc469fcf-0a0b-4c3b-afb6-befa412f9a57",
@@ -14554,7 +15604,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "dd182112-cd83-4e5a-80ff-ba9346efc5a7",
@@ -14582,7 +15634,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "de90dd97-060c-4ae5-8938-8fcd725f5cdc",
@@ -14610,7 +15664,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "deb4e4e9-c63d-4f6b-b214-40c965e0d57b",
@@ -14638,7 +15694,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "df01019a-c3c8-4d3c-aecc-715a981e1a9b",
@@ -14666,7 +15724,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "dfa15185-5e1a-4947-94ac-ccefff64aefb",
@@ -14694,7 +15754,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "dfc14a05-a140-40d9-8c00-9b66a81c88a6",
@@ -14722,7 +15784,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e0261538-1e8a-4b63-817a-b6b1fb6312d3",
@@ -14750,7 +15814,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e0e68fe7-1168-4f9c-a443-6e95d039c5e9",
@@ -14778,7 +15844,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e15d59ee-dc46-423e-900a-73898caba1de",
@@ -14806,7 +15874,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e22054e6-d354-4a36-b361-7f28fdcd8c3e",
@@ -14834,7 +15904,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e25495df-b806-43c6-a11f-8d39e0a5d090",
@@ -14862,7 +15934,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e26ed3b6-f7fe-4e9c-993a-470fa4b290bd",
@@ -14891,7 +15965,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e286a9de-43d4-4731-8071-09302ce161b5",
@@ -14919,7 +15995,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e2ed793f-2d4c-4db4-890e-ad8c9ed25602",
@@ -14947,7 +16025,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e3842699-8fde-4e3e-92dc-70804d0cf2f1",
@@ -14975,7 +16055,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e3aa7da6-3f3d-49c8-a79f-d79dc69fac00",
@@ -15003,7 +16085,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e3b1c12a-81e7-4ced-b095-678ffb57c605",
@@ -15031,7 +16115,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e5389449-4516-407c-9de2-827ab93a2d66",
@@ -15059,7 +16145,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e5790223-913d-4ddc-b618-c0f044f9898a",
@@ -15087,7 +16175,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e6409c7e-4e06-4974-bcb8-74516e32f5c7",
@@ -15115,7 +16205,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e652b55b-d2d6-45a6-aa7f-5604107c3d1d",
@@ -15143,7 +16235,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e660c1b0-6188-4634-901c-678c59cbef78",
@@ -15171,7 +16265,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e66fc320-98b8-4c9e-aa67-b03661064381",
@@ -15200,7 +16296,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e6ea81c4-247f-4109-835d-db809b4b14ac",
@@ -15228,7 +16326,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e71f6b12-50ff-47a4-b054-3249c7adc733",
@@ -15256,7 +16356,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e74473d9-7565-4602-af1b-d0ad428ab66d",
@@ -15285,7 +16387,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e784d6c8-ee7e-4e17-9d11-ad08cdf389e2",
@@ -15314,7 +16418,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e87439a6-31c0-407e-866f-1fddd7b049c7",
@@ -15342,7 +16448,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e8ccff53-9d53-4e22-b541-50e960a0d690",
@@ -15370,7 +16478,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e8eb208e-dd0d-4322-b7f8-a8d603106257",
@@ -15401,7 +16511,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "e92f6a76-e479-491f-9f14-9ebbd56becb3",
@@ -15429,7 +16541,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ea92e89c-3926-46ee-88b6-16ee1d099eb5",
@@ -15457,7 +16571,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "eaf9035f-3c5d-4439-a3ef-9918d71d647d",
@@ -15486,7 +16602,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ebd05719-61fe-4a2b-94e6-b89bae18620a",
@@ -15498,7 +16616,8 @@
     "categorie_label": "Hauts",
     "categorie_num": "14",
     "photos": [
-      "BT_BT-011_1_vue_principale.jpg"
+      "BT_BT_011_1788532172192_1.jpg",
+      "BT_BT_011_1788532171762_0.jpg"
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:03.999598",
@@ -15518,11 +16637,11 @@
     ],
     "couleurs": [
       "Blanc",
-      "Gris"
+      "Gris chiné"
     ],
     "couleurs_hex": [
-      "#FFFFFF",
-      "#9B9B9B"
+      "#ffffff",
+      "#cccccc"
     ],
     "matiere": "Jersey - 100% coton",
     "grammage": "160 gr/m²",
@@ -15531,7 +16650,12 @@
       "Digitale",
       "Flex",
       "Broderie"
-    ]
+    ],
+    "couleurs_cles": [
+      "blanc",
+      "gris_chine"
+    ],
+    "couleurs_autres_100": true
   },
   {
     "id": "ec17a619-1960-4007-8fdb-fdbfbca72da3",
@@ -15562,7 +16686,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ec68d140-83c1-472c-98ec-d1d8c7d7c105",
@@ -15590,7 +16716,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ecab8c82-dbb2-46aa-95d5-4eddabf2a6a2",
@@ -15618,7 +16746,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ecb90343-a410-4adc-9745-5a63479a1c48",
@@ -15634,7 +16764,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-09-03T20:46:04.14665",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "hauts"
@@ -15665,7 +16795,9 @@
       "Broderie",
       "Digitale",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ed56ecf6-3d58-4d9c-af98-7f587f8bd124",
@@ -15694,7 +16826,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ef18d3ba-b104-4bc4-8b27-c9e8742f4f73",
@@ -15722,7 +16856,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ef2ba44a-3476-440c-a8ee-ad4c88d89efc",
@@ -15750,7 +16886,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ef356aa9-c7a6-4fc9-9ba2-acb984c19499",
@@ -15778,7 +16916,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "efc4b235-e5e5-4ccf-acb7-6f3aa716f602",
@@ -15806,7 +16946,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "efcbea6a-5ef2-4433-a83a-4c475cb69369",
@@ -15834,7 +16976,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "efe9f88a-37f6-48ac-8556-05fb166ea667",
@@ -15863,7 +17007,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f006e9e0-7d0a-4a08-a0b0-85696532a72b",
@@ -15891,7 +17037,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f01f6ccf-6914-4f43-bd6e-501665ea4e68",
@@ -15919,7 +17067,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f058af64-aa75-43f9-8cb1-291140822bcf",
@@ -15947,7 +17097,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f0bd0475-47eb-450b-a573-f86106bec4ce",
@@ -15975,7 +17127,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f22c7233-856e-4f86-bd6c-b0a6aa8eb6fa",
@@ -16004,7 +17158,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f28ac92c-f098-4307-983c-f59cfad8f03c",
@@ -16034,7 +17190,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f372f2c1-3984-4f12-a6d6-6089e1fe5653",
@@ -16062,7 +17220,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f39a157c-193a-403f-a715-0259b502647b",
@@ -16091,7 +17251,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f3a623cf-54cc-4950-8c5a-a5a169b794db",
@@ -16119,7 +17281,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f48c415a-e632-42c4-9aa2-3f2300725735",
@@ -16150,7 +17314,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f4d35fa2-63c0-46da-b54d-39a7389ea094",
@@ -16178,7 +17344,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f4e3308c-34dd-4ed6-8d30-a00777fb4165",
@@ -16207,7 +17375,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f532f031-1255-41f3-9e29-f3c87f0354af",
@@ -16235,7 +17405,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f62d0731-653e-4c30-a760-95d78c8afb46",
@@ -16294,7 +17466,9 @@
       "Flex",
       "Broderie",
       "Sérigraphie"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f64712d4-b5ce-4c64-916c-580e5b89a191",
@@ -16322,7 +17496,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f68033ad-2417-457f-8831-4acbe77334b3",
@@ -16350,7 +17526,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f6a90225-9693-4d73-8feb-99f1597943c3",
@@ -16381,7 +17559,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f731082b-e6b6-4604-a7ed-077967d5c9d0",
@@ -16410,7 +17590,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f768e0b4-2ae2-442b-a39a-51a20a5b39aa",
@@ -16439,7 +17621,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f78e68af-6d32-4bbc-a0ea-e28edc2a9438",
@@ -16467,7 +17651,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f79f6787-526f-4678-a201-c6469501e0c4",
@@ -16495,7 +17681,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f823605d-5416-432b-8fad-fc0d6b63481b",
@@ -16524,7 +17712,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f8a71f00-3444-4007-8217-c156966c23e6",
@@ -16561,7 +17751,9 @@
       "Digitale",
       "Broderie",
       "Flex"
-    ]
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f8b25980-d55d-44b6-b5c9-c25fd6c35868",
@@ -16589,7 +17781,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f90432e0-55c4-4da8-954d-2fd07360482c",
@@ -16620,7 +17814,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f92ac5e4-bbb9-443e-833b-1f2a1a7930b1",
@@ -16649,7 +17845,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "f979ab2c-57a9-42a4-a5e5-c5bc1b2518b7",
@@ -16677,7 +17875,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fa797436-7cf6-4bad-a47d-cbc8400603c3",
@@ -16705,7 +17905,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fa8372b8-279b-4a67-a620-8e0e852b77d6",
@@ -16734,7 +17936,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fab27a05-1335-49e3-b087-b64cdeedcf7d",
@@ -16764,7 +17968,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fb3415fd-2954-4ca3-a668-7dcca55d9399",
@@ -16792,7 +17998,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fb65578f-f8d2-424e-a8f9-70b75e2b4a7d",
@@ -16820,7 +18028,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fbd18bdc-eb3d-49d9-a3c9-65e808a2f846",
@@ -16851,7 +18061,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fbe61292-87ec-491d-b328-00d7a648a41c",
@@ -16880,7 +18092,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fc9a0705-38f1-4803-8ecb-efa32d3deb41",
@@ -16908,7 +18122,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fd08216c-b58b-41ef-bd9a-eac48a963389",
@@ -16936,7 +18152,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fd2d8733-530a-4827-84b3-9e81a4f92192",
@@ -16964,7 +18182,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fd36560c-c89d-496e-a4e8-e7538e5affe1",
@@ -16992,7 +18212,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fd7c42e2-32a3-4bba-8e6b-d5106ae83b42",
@@ -17021,7 +18243,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "fdbd3a24-85dd-47d3-b9f9-1ee756a09ffb",
@@ -17049,7 +18273,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ff6c6506-491b-4e02-97a2-e1c13c8f356e",
@@ -17077,7 +18303,9 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "ffe9c508-8aa5-4bc5-bb5c-c81de6ba7a30",
@@ -17105,6 +18333,8 @@
     "couleurs_hex": null,
     "matiere": null,
     "grammage": null,
-    "techniques_marquage": null
+    "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   }
 ]
