@@ -1,7 +1,4 @@
-Derniere sauvegarde : 2026-09-09T07:29:45.910592+00:00
+Derniere sauvegarde : 2026-09-10T07:21:55.618522+00:00
 Produits : 586
 Categories : 16
-Photos : 1092 (1 erreur(s))
-
-Erreurs de telechargement :
-  - MI_PF-261_2_bracelet_multicolore.jpg: The read operation timed out
+Photos : 1092 (0 erreur(s))
