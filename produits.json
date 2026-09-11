@@ -439,6 +439,39 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "04140f64-d23f-424a-81d5-c0566c8a000a",
+    "ref": "PR-022",
+    "nom": "Chevalet de table",
+    "description": "Chevalet de table en papier contrecollé, portrait ou paysage. Pour présenter un menu, une formule ou une offre du jour.",
+    "dimensions": "9 × 15 × 10 cm (portrait)",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-022_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:15.294732",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Portrait 9 × 15 × 10 cm",
+      "Paysage 15 × 9 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash Premium White, Shiro Echo recyclé, Conqueror 100% coton ou Woodstock Bettulla",
+    "grammage": "285 à 300 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "041b4fe7-831b-4a01-9546-dfd62c52a4ba",
     "ref": "IMU-002",
     "nom": "Clé USB Bois Ronde Lanière Cuir et Logo LED",
@@ -803,6 +836,45 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "0888e54d-4227-4512-9091-aa698204d6f4",
+    "ref": "PR-012",
+    "nom": "Brochure piquée",
+    "description": "Brochure agrafée de 4 à 40 pages, qui s'ouvre à plat. Quatorze formats et six papiers intérieurs au choix.",
+    "dimensions": "Quatorze formats, de 10 × 15 à 60 × 21 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-012_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:14.117626",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "30 × 21 cm",
+      "10 × 15 cm",
+      "15 × 15 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Brillant ou Couché Mat",
+    "grammage": "115, 135 ou 170 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -1286,6 +1358,76 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "0e263169-af2e-4d58-ae70-918909cc1980",
+    "ref": "PR-014",
+    "nom": "Dépliant 1 pli",
+    "description": "Dépliant deux volets, imprimé recto verso. Seize formats et huit papiers au choix, à partir de 100 exemplaires.",
+    "dimensions": "Seize formats, de 10 × 15 à 60 × 21 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-014_1.webp"
+    ],
+    "ordre": 6,
+    "created_at": "2026-09-10T16:33:14.325754",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "10 × 15 cm",
+      "21 × 21 cm",
+      "30 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant, Classique Mat ou Recyclé",
+    "grammage": "135 à 300 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "0ea219aa-28c4-431b-8966-cd999233146a",
+    "ref": "PR-054",
+    "nom": "Porte-affiche",
+    "description": "Porte-affiche de comptoir en plexiglas ou en bois, aux formats A4, A5 et A6. À partir de 5 exemplaires.",
+    "dimensions": "A4, A5 ou A6",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-054_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:18.485082",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "A4 (21 × 30 cm)",
+      "A5 (15 × 21 cm)",
+      "A6 (10 × 15 cm)"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Plexiglas ou bois",
+    "grammage": null,
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "0ebd001d-52b5-4e87-b850-ca593db7e249",
     "ref": "T500",
     "nom": "Pack 2 pièces — Écouteurs Bluetooth et Montre connectée",
@@ -1373,6 +1515,45 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "0fd802a5-4be1-4f6e-9555-6b49949b8278",
+    "ref": "PR-020",
+    "nom": "Étiquette cartonnée",
+    "description": "Étiquette cartonnée perforée, six modèles au choix. Neuf papiers de création, du recyclé au Conqueror coton.",
+    "dimensions": "Six modèles",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-020_1.webp"
+    ],
+    "ordre": 12,
+    "created_at": "2026-09-10T16:33:15.030463",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Modèle 1",
+      "Modèle 2",
+      "Modèle 3",
+      "Modèle 4",
+      "Modèle 5",
+      "Modèle 6"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash, Shiro Echo recyclé, Sirio Pearl, Conqueror coton, Rives Tradition, Conqueror Bamboo, Twill ou Woodstock",
+    "grammage": "285 à 350 g/m²",
+    "techniques_marquage": [
+      "Vernis 3D recto"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -2402,6 +2583,74 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "1aa29757-7eea-4860-af52-51a300ab8bdc",
+    "ref": "PR-028",
+    "nom": "Porte-addition",
+    "description": "Porte-addition en carton couché mat 350 g, modèle simple ou collé. Cinq pelliculages au choix.",
+    "dimensions": "10 × 20 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-028_1.webp"
+    ],
+    "ordre": 7,
+    "created_at": "2026-09-10T16:33:15.901457",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "10 × 20 cm",
+      "20 × 20 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat",
+    "grammage": "350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "1ad7d97e-15b8-4c76-a720-a1e0eef9c6e4",
+    "ref": "PR-048",
+    "nom": "Ordonnance",
+    "description": "Bloc d'ordonnances à en-tête, format 15 × 21 cm, sur papier offset. Impression noir ou couleur, recto ou recto verso.",
+    "dimensions": "15 × 21 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-048_1.webp"
+    ],
+    "ordre": 11,
+    "created_at": "2026-09-10T16:33:17.872465",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Blanc Supérieur, Papier Crème, Biancoflash Premium White ou Shiro Echo recyclé",
+    "grammage": "80 ou 90 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -3552,6 +3801,48 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "2b1c85d4-d806-4aea-b91f-5d724890484e",
+    "ref": "PR-034",
+    "nom": "Boîte",
+    "description": "Boîte rigide personnalisée, huit tailles du 5 × 5 × 2,5 au 8 × 8 × 8 cm. Pour un coffret cadeau ou un kit promotionnel.",
+    "dimensions": "Huit tailles, de 5 × 5 × 2,5 à 8 × 8 × 8 cm",
+    "categorie": "packaging",
+    "categorie_label": "Packaging",
+    "categorie_num": "20",
+    "photos": [
+      "BT_PR-034_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:16.505507",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "packaging"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "5 × 5 × 2,5 cm",
+      "6,5 × 6,5 × 3 cm",
+      "7 × 7 × 3 cm",
+      "9,5 × 9,5 × 3,5 cm",
+      "5 × 5 × 5 cm",
+      "6 × 6 × 6 cm",
+      "7 × 7 × 7 cm",
+      "8 × 8 × 8 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Carton rigide",
+    "grammage": null,
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "2ba132ae-5252-4ed0-ae94-d63b1a239af6",
     "ref": "MG-003",
     "nom": "Tasse à Café en Céramique",
@@ -3609,6 +3900,84 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "2bceed71-89f6-4282-abca-c5f3ee821d61",
+    "ref": "PR-037",
+    "nom": "Sac papier de luxe",
+    "description": "Sac papier rigide en couché mat 250 g, poignées cordon blanc, bleu, rouge ou gris. Cinq formats au choix.",
+    "dimensions": "30 (H) × 22 (L) × 9 (P) cm",
+    "categorie": "packaging",
+    "categorie_label": "Packaging",
+    "categorie_num": "20",
+    "photos": [
+      "BT_PR-037_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:16.809454",
+    "actif": true,
+    "bestseller": true,
+    "categories": [
+      "packaging"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "30 × 22 × 9 cm",
+      "20 × 15 × 5 cm",
+      "23 × 16 × 8 cm",
+      "25 × 20 × 9 cm",
+      "20 × 30 × 8 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat",
+    "grammage": "250 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "2be59d3b-19a0-484d-9bfd-6c2b02461c6f",
+    "ref": "PR-021",
+    "nom": "Ticket",
+    "description": "Ticket d'entrée, coupon ou tombola, en carnet agrafé par 10, 25 ou 50. Numérotation et souche en option.",
+    "dimensions": "5 × 15 cm (standard)",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-021_1.webp"
+    ],
+    "ordre": 13,
+    "created_at": "2026-09-10T16:33:15.193431",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "5 × 10 cm",
+      "5 × 15 cm (standard)",
+      "10 × 21 cm (spectacle)",
+      "5 × 27 cm (vestiaire)"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat ou Blanc Offset",
+    "grammage": "80 à 250 g/m²",
+    "techniques_marquage": [
+      "Numérotation",
+      "Agrafage en carnet",
+      "Souche"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -3729,6 +4098,75 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "2e934ef3-f60b-4dde-9970-557ca824dddb",
+    "ref": "PR-055",
+    "nom": "Roll-up",
+    "description": "Roll-up avec enrouleur, en bâche ou film PVC, trois largeurs pour 200 cm de haut. Le visuel se réimprime sans changer la structure.",
+    "dimensions": "85 × 200 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-055_1.webp"
+    ],
+    "ordre": 6,
+    "created_at": "2026-09-10T16:33:18.578224",
+    "actif": true,
+    "bestseller": true,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "85 × 200 cm",
+      "100 × 200 cm",
+      "120 × 200 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Bâche ou film PVC",
+    "grammage": null,
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "2ebff595-b7ed-4707-9f15-9f493b2c6d40",
+    "ref": "PR-056",
+    "nom": "Stop-trottoir",
+    "description": "Stop-trottoir deux faces, format 60 × 84 cm, en cadre chevalet ou porte-affiche. Affiche en papier couché 150 g.",
+    "dimensions": "60 × 84 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-056_1.webp"
+    ],
+    "ordre": 7,
+    "created_at": "2026-09-10T16:33:18.675493",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "60 × 84 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Papier couché",
+    "grammage": "150 g/m²",
+    "techniques_marquage": [
+      "Cadre chevalet 2 faces",
+      "Porte-affiche 2 faces"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -4338,6 +4776,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "3bea3122-326c-49b2-8470-fde2cbb7fdb0",
+    "ref": "PR-030",
+    "nom": "Rond de serviette",
+    "description": "Rond de serviette imprimé recto, en couché mat 170 ou 250 g. Pelliculage recto en option.",
+    "dimensions": "5 × 20 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-030_1.webp"
+    ],
+    "ordre": 9,
+    "created_at": "2026-09-10T16:33:16.112473",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "5 × 20 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat",
+    "grammage": "170 ou 250 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "3c361112-133b-46ba-8c6a-cec1e38b61d7",
     "ref": "40212",
     "nom": "Porte-clés bois et métal",
@@ -4882,6 +5355,44 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "4521d5d7-14a5-413d-904c-e8013f2eb7ac",
+    "ref": "PR-018",
+    "nom": "Flyer",
+    "description": "Flyer imprimé recto ou recto verso, dix papiers au choix. Vernis 3D recto en option, à partir de 100 exemplaires.",
+    "dimensions": "Cinq formats, de 10 × 15 à 21 × 30 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-018_1.webp"
+    ],
+    "ordre": 10,
+    "created_at": "2026-09-10T16:33:14.825499",
+    "actif": true,
+    "bestseller": true,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "10 × 15 cm",
+      "10 × 21 cm",
+      "15 × 15 cm",
+      "15 × 21 cm",
+      "21 × 30 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant, Classique Mat ou Recyclé",
+    "grammage": "135 à 300 g/m²",
+    "techniques_marquage": [
+      "Vernis 3D recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "45fe5263-c147-4a57-b9f8-4d839f3cc943",
     "ref": "6021",
     "nom": "Pins en Métal Spécial Résine",
@@ -5028,6 +5539,43 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "4881a0ae-8bd3-4201-9ce6-1b4fe913f8da",
+    "ref": "PR-038",
+    "nom": "Calendrier chevalet simple",
+    "description": "Calendrier de bureau sur socle chevalet, trois formats. Personnalisable sur chaque face, pelliculage en option.",
+    "dimensions": "20 × 15 × 10 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-038_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:16.9086",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "20 × 15 × 10 cm",
+      "15 × 20 × 10 cm",
+      "15 × 15 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash Premium White ou Carton Blanc",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -5440,6 +5988,42 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "4b0c365b-2f1b-4942-961d-b2926ed6d4a1",
+    "ref": "PR-052",
+    "nom": "Beach flag",
+    "description": "Voile publicitaire imprimée en sublimation recto verso par transparence, trois hauteurs. Socle en option.",
+    "dimensions": "250 × 65 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-052_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:18.281887",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "250 × 65 cm",
+      "290 × 65 cm",
+      "450 × 65 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Textile backlight",
+    "grammage": null,
+    "techniques_marquage": [
+      "Sublimation recto verso par transparence"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "4b5e25fb-dc02-457e-bbef-b3cfee1c9c73",
     "ref": "IMG-1145",
     "nom": "Carte PVC imprimable recto-verso",
@@ -5596,6 +6180,39 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "4d68a074-e48f-4116-a3ad-c28cffd9356f",
+    "ref": "PR-049",
+    "nom": "Papier à en-tête",
+    "description": "Papier à en-tête A4 ou 15 × 21 cm sur papier offset, compatible imprimante. Impression noir ou couleur.",
+    "dimensions": "21 × 29,7 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-049_1.webp"
+    ],
+    "ordre": 12,
+    "created_at": "2026-09-10T16:33:17.966346",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "21 × 29,7 cm",
+      "15 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Blanc Supérieur, Papier Crème, Biancoflash Premium White ou Shiro Echo recyclé",
+    "grammage": "80 ou 90 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "4df54218-69b5-4547-9f36-5d38f5f217d9",
     "ref": "26000",
     "nom": "Pare-Soleil de Voiture en Aluminium Argenté",
@@ -5622,6 +6239,83 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "4e0d7bbe-49ec-47d0-8b05-16f1ed4dc8dd",
+    "ref": "PR-015",
+    "nom": "Dépliant 2 plis croisés",
+    "description": "Dépliant qui se déploie comme une affiche et se plie comme un flyer. Adapté aux plans et aux programmes détaillés.",
+    "dimensions": "Seize formats, de 10 × 15 à 60 × 42 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-015_1.webp"
+    ],
+    "ordre": 7,
+    "created_at": "2026-09-10T16:33:14.513264",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "30 × 20 cm",
+      "21 × 21 cm",
+      "42 × 30 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant, Classique Mat ou Recyclé",
+    "grammage": "135 à 300 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "4ee153c1-deaf-46ab-ada8-84b96b1d4e8d",
+    "ref": "PR-051",
+    "nom": "Bâche backlight",
+    "description": "Bâche rétroéclairée pour caisson lumineux ou enseigne, de 1 × 1 à 1,5 × 10 m. Œillets par 4 ou 6 en option.",
+    "dimensions": "De 1 × 1 à 1,5 × 10 m",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-051_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:18.170163",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "1 × 1 m",
+      "1 × 2 m",
+      "1 × 3 m",
+      "1 × 5 m",
+      "1,5 × 3 m",
+      "1,5 × 5 m",
+      "1,5 × 10 m"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Bâche backlight",
+    "grammage": null,
+    "techniques_marquage": [
+      "4 œillets",
+      "6 œillets"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -5682,6 +6376,43 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "508e4d9e-336a-4421-ace0-7eb4bc67867e",
+    "ref": "PR-058",
+    "nom": "X-banner",
+    "description": "Support en croix pour affichage vertical, trois formats. En bâche PVC ou papier couché plastifié, socle en option.",
+    "dimensions": "60 × 160 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-058_1.webp"
+    ],
+    "ordre": 9,
+    "created_at": "2026-09-10T16:33:18.867489",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "60 × 160 cm",
+      "80 × 180 cm",
+      "120 × 200 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Bâche PVC ou papier couché plastifié",
+    "grammage": null,
+    "techniques_marquage": [
+      "Plastification brillante",
+      "Plastification mate"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -5772,6 +6503,45 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "51135e48-5d14-4095-a41c-0ef14527a44a",
+    "ref": "PR-042",
+    "nom": "Calendrier rigide",
+    "description": "Calendrier sur support cartonné rigide, quatre formats jusqu'au 53 × 48 cm. Perforation 1 ou 2 trous en option.",
+    "dimensions": "21 × 30 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-042_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:17.30301",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "30 × 42 cm",
+      "53 × 48 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat contrecollé sur carton Gris Lourd",
+    "grammage": "170 g/m² + 1260 g/m²",
+    "techniques_marquage": [
+      "Pelliculage mat",
+      "Pelliculage brillant",
+      "Perforation 1 ou 2 trous"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -5925,6 +6695,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "53f82c0c-2368-4437-b36c-55c4fa2ab273",
+    "ref": "PR-017",
+    "nom": "Dépliant 3 plis roulés",
+    "description": "Dépliant six volets, imprimé recto verso. Pour un programme, une documentation commerciale ou une brochure d'entreprise.",
+    "dimensions": "Huit formats, de 10 × 15 à 60 × 21 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-017_1.webp"
+    ],
+    "ordre": 9,
+    "created_at": "2026-09-10T16:33:14.717166",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "60 × 21 cm",
+      "10 × 15 cm",
+      "15 × 15 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant, Classique Mat ou Recyclé",
+    "grammage": "135 à 300 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -6142,6 +6947,45 @@
       "noir"
     ],
     "couleurs_autres_100": true
+  },
+  {
+    "id": "56b1b40f-2d70-4115-aad2-fc218409037b",
+    "ref": "PR-025",
+    "nom": "Menu dépliant 2 plis",
+    "description": "Menu à pliage roulé, imprimé recto verso. Pelliculage mat ou brillant recto verso en option.",
+    "dimensions": "Douze formats, de 15 × 15 à 63 × 30 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-025_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:15.593723",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "21 × 21 cm",
+      "45 × 21 cm",
+      "10 × 30 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash Premium White ou Shiro White recyclé",
+    "grammage": "300 à 400 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "5701b6f6-fb06-4ba9-9bd6-5cbc236952a9",
@@ -6598,6 +7442,112 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "5bd5fe5e-8c79-4950-a1f1-069124184b1a",
+    "ref": "PR-023",
+    "nom": "Cravate accroche-porte",
+    "description": "Accroche-porte en papier couché 300 g avec découpe intégrée, simple ou double. Pour les consignes de chambre en hôtellerie.",
+    "dimensions": "Simple ou double",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-023_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:15.398939",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Simple",
+      "Double"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Brillant ou Couché Mat",
+    "grammage": "300 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "5be0804e-474d-4987-981e-4424a5013a28",
+    "ref": "PR-003",
+    "nom": "Carte postale",
+    "description": "Carte postale sur papier rigide, imprimée recto ou recto verso. Trois formats disponibles, à partir de 50 exemplaires.",
+    "dimensions": "10,5 × 14,8 cm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-003_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:13.221519",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "10,5 × 14,8 cm",
+      "10 × 10 cm",
+      "10 × 20 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Carton blanc, Extra lisse ou Recyclé",
+    "grammage": "270 à 300 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "5bfd635f-20ba-4264-9767-3c0006bff6cc",
+    "ref": "PR-024",
+    "nom": "Menu dépliant 1 pli",
+    "description": "Menu à deux volets, imprimé recto verso sur papier rigide. Quatorze formats, cinq papiers dont un recyclé.",
+    "dimensions": "Quatorze formats, de 15 × 15 à 60 × 21 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-024_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:15.49874",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "21 × 21 cm",
+      "30 × 21 cm",
+      "10 × 30 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash Premium White ou Shiro White recyclé",
+    "grammage": "300 à 400 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "5c72c58e-164e-4d1a-9768-862a870134f6",
     "ref": "30079",
     "nom": "Stylo en aluminium mat",
@@ -6986,6 +7936,42 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "63652590-de54-4225-b32f-b81bf4762a5e",
+    "ref": "PR-016",
+    "nom": "Dépliant 2 plis roulés",
+    "description": "Dépliant à pliage roulé, dont les volets se replient vers l'intérieur. Lecture séquentielle, imprimé recto verso.",
+    "dimensions": "Seize formats, de 10 × 15 à 63 × 30 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-016_1.webp"
+    ],
+    "ordre": 8,
+    "created_at": "2026-09-10T16:33:14.618954",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "10 × 15 cm",
+      "21 × 21 cm",
+      "45 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant, Classique Mat ou Recyclé",
+    "grammage": "135 à 300 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -8000,6 +8986,81 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "6f277233-829c-411d-a1b3-0e1b57530c3c",
+    "ref": "PR-057",
+    "nom": "Totem rigide",
+    "description": "Totem autoportant sur chevalet FOREX, habillage vinyle mat recto. Trois hauteurs, de 100 à 150 cm.",
+    "dimensions": "30 × 100 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-057_1.webp"
+    ],
+    "ordre": 8,
+    "created_at": "2026-09-10T16:33:18.766779",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "30 × 100 cm",
+      "30 × 120 cm",
+      "30 × 150 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Chevalet FOREX, habillage vinyle mat",
+    "grammage": null,
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "6f91c526-e844-4682-9ec5-238e117ec2d9",
+    "ref": "PR-050",
+    "nom": "Bâche",
+    "description": "Bâche PVC mat imprimée en haute définition, de 1 × 1 à 1,5 × 10 m. Œillets par 4 ou 6 en option.",
+    "dimensions": "De 1 × 1 à 1,5 × 10 m",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-050_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:18.067469",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "1 × 1 m",
+      "1 × 2 m",
+      "1 × 3 m",
+      "1 × 5 m",
+      "1,5 × 3 m",
+      "1,5 × 5 m",
+      "1,5 × 10 m"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Bâche PVC mate",
+    "grammage": null,
+    "techniques_marquage": [
+      "4 œillets",
+      "6 œillets"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "704c2ed7-6053-4ddf-94c3-fb36bda63322",
     "ref": "9011",
     "nom": "Raquette Colorée Unie en Bois",
@@ -8089,6 +9150,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "725dbacf-aa29-48ef-84a7-c961daca9813",
+    "ref": "PR-047",
+    "nom": "Enveloppe standard",
+    "description": "Enveloppe de correspondance imprimée recto, quatre formats jusqu'au 22,9 × 32,4 cm. À partir de 50 exemplaires.",
+    "dimensions": "11 × 22 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-047_1.webp"
+    ],
+    "ordre": 10,
+    "created_at": "2026-09-10T16:33:17.778231",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "11 × 22 cm",
+      "17 × 17 cm",
+      "16,2 × 22,9 cm",
+      "22,9 × 32,4 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": null,
+    "grammage": null,
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -9005,6 +10101,44 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "7c1df9e1-6c28-4f45-81a9-b82505b67915",
+    "ref": "PR-004",
+    "nom": "Carte de visite classique",
+    "description": "Carte de visite sur papier mat 350 g, en simple, double ou triple épaisseur. Coins carrés ou arrondis, quatre pelliculages au choix.",
+    "dimensions": "85 × 55 mm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-004_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:13.320606",
+    "actif": true,
+    "bestseller": true,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "85 × 55 mm",
+      "65 × 65 mm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Mat",
+    "grammage": "350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat",
+      "Pelliculage soft-touch",
+      "Coins arrondis"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "7cf252f9-0f23-43e9-8d81-346e985367ba",
     "ref": "6677",
     "nom": "Coffret d'Hiver 3 Pcs",
@@ -9520,6 +10654,46 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "83be5f6a-131b-4966-8f89-8d0e39f1faa7",
+    "ref": "PR-035",
+    "nom": "Étui",
+    "description": "Étui pliant personnalisé en quadri, onze tailles disponibles. Souple et résistant, adapté à la vente.",
+    "dimensions": "Onze tailles, de 1,7 × 1,7 × 12,5 à 8 × 8 × 12 cm",
+    "categorie": "packaging",
+    "categorie_label": "Packaging",
+    "categorie_num": "20",
+    "photos": [
+      "BT_PR-035_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:16.608385",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "packaging"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "1,7 × 1,7 × 12,5 cm",
+      "4 × 4 × 8 cm",
+      "4 × 4 × 10 cm",
+      "5 × 5 × 10 cm",
+      "6 × 6 × 12 cm",
+      "8 × 8 × 12 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Carton pliant",
+    "grammage": null,
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "8438b3eb-f36d-42fc-b94d-01405e48bfb9",
     "ref": "PF-196",
     "nom": "Stylo de comptoir avec support",
@@ -9818,6 +10992,43 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "8750cc7b-da0d-47db-8a3c-3674c6517fbd",
+    "ref": "PR-027",
+    "nom": "Menu page à page",
+    "description": "Pages de menu à insérer dans un porte-menu existant, de 1 à 6 pages. Treize papiers au choix, du couché mat au Conqueror coton.",
+    "dimensions": "Six formats, de 10,5 × 28 à 21 × 30 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-027_1.webp"
+    ],
+    "ordre": 6,
+    "created_at": "2026-09-10T16:33:15.791286",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "10,5 × 28 cm",
+      "14 × 30 cm",
+      "15 × 15 cm",
+      "21 × 30 cm",
+      "15 × 21 cm",
+      "20 × 20 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash, Conqueror coton, Shiro Echo, Oikos recyclé, Rives Tradition, Sirio Pearl, Twill, Woodstock ou Blanc Supérieur",
+    "grammage": "90 à 360 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -10128,6 +11339,42 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "8be7c7f7-0bf5-4876-b984-d6b8b5267638",
+    "ref": "PR-044",
+    "nom": "Chemise à double rabat",
+    "description": "Chemise à deux rabats, avec ou sans soufflet, fente porte-carte en option. Sept papiers au choix, dont trois recyclés.",
+    "dimensions": "Avec ou sans soufflet",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-044_1.webp"
+    ],
+    "ordre": 7,
+    "created_at": "2026-09-10T16:33:17.494066",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Sans soufflet",
+      "Avec soufflet"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash, Shiro Echo recyclé, Sirio Pearl, Conqueror coton ou Oikos recyclé",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [
+      "Fente porte-carte",
+      "Soufflet"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "8c5a6869-4cb3-4207-9de1-cc244f2176a0",
     "ref": "PF-773",
     "nom": "Porte-clés bois rond cerclé foncé",
@@ -10333,6 +11580,42 @@
       "noir"
     ],
     "couleurs_autres_100": true
+  },
+  {
+    "id": "8f3cadba-b177-4d8a-8950-d70aeae8eb66",
+    "ref": "PR-029",
+    "nom": "Porte-carte magnétique",
+    "description": "Étui à rabat pour carte d'accès, en couché mat 300 ou 350 g. Adapté à l'hôtellerie et aux séminaires.",
+    "dimensions": "7 × 12 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-029_1.webp"
+    ],
+    "ordre": 8,
+    "created_at": "2026-09-10T16:33:16.007359",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "7 × 12 cm",
+      "14 × 12 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat",
+    "grammage": "300 ou 350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
   },
   {
     "id": "8f5826f0-5156-4730-80b4-447a851fbb96",
@@ -10867,6 +12150,44 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "9626bed5-1245-4a3a-ad88-d69508d74d77",
+    "ref": "PR-039",
+    "nom": "Calendrier chevalet spirale",
+    "description": "Calendrier de bureau à reliure spirale, 7 ou 13 feuilles. Socle carton blanc 380 g, spirale blanche ou noire.",
+    "dimensions": "15 × 21 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-039_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:17.006411",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "20 × 20 cm",
+      "15 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Intérieur Couché Mat, socle Carton Blanc",
+    "grammage": "Intérieur 300 g/m², socle 380 g/m²",
+    "techniques_marquage": [
+      "Pelliculage mat",
+      "Pelliculage brillant",
+      "Spirale blanche ou noire"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -12133,6 +13454,44 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "a7cbef05-afc8-4f7b-b815-5b89c1f0b943",
+    "ref": "PR-019",
+    "nom": "Sticker",
+    "description": "Stickers présentés en planche, carrés, rectangulaires ou ronds. Adhésif PVC blanc, transparent ou papier, impression couleur, or ou argent.",
+    "dimensions": "Carré, rectangle ou rond",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-019_1.webp"
+    ],
+    "ordre": 11,
+    "created_at": "2026-09-10T16:33:14.933118",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Carré",
+      "Rectangle",
+      "Rond"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Adhésif PVC blanc, PVC transparent ou papier",
+    "grammage": null,
+    "techniques_marquage": [
+      "Impression couleur",
+      "Or",
+      "Argent"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "a89bb62f-70ae-4f53-9f51-f1e6d4af3d6d",
     "ref": "IMG-554",
     "nom": "Stylo plastique à clip transparent",
@@ -12227,6 +13586,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "a929be99-dd39-41ce-a13f-36bb8172809d",
+    "ref": "PR-005",
+    "nom": "Carte de visite luxe",
+    "description": "Carte de visite sur papier de création : recyclé, irisé, texturé, coton ou ultra texturé. Jusqu'à trois épaisseurs.",
+    "dimensions": "85 × 55 mm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-005_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:13.420291",
+    "actif": true,
+    "bestseller": true,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "85 × 55 mm",
+      "65 × 65 mm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Recyclé, Irisé, Texturé, Coton ou Ultra Texturé",
+    "grammage": "250 à 350 g/m²",
+    "techniques_marquage": [
+      "Coins arrondis"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "a95e6699-12fe-4864-8bd9-db0d0dcf4e90",
     "ref": "IMG-971",
     "nom": "Coupes métalliques",
@@ -12253,6 +13647,39 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "a980dc54-bab7-4a32-a80d-8ac8db3c4a76",
+    "ref": "PR-013",
+    "nom": "Chevalet",
+    "description": "Chevalet de comptoir en papier contrecollé, portrait ou paysage. Pour une offre, un QR code ou une consigne.",
+    "dimensions": "9 × 15 × 10 cm (portrait)",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-013_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:14.217624",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Portrait 9 × 15 × 10 cm",
+      "Paysage 15 × 9 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat, Biancoflash Premium White, Shiro Echo recyclé, Conqueror 100% coton ou Woodstock Bettulla",
+    "grammage": "285 à 300 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -12595,6 +14022,46 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "acf99d4f-fe69-4e91-824d-bd6bc45d198b",
+    "ref": "PR-011",
+    "nom": "Brochure dos carré collé",
+    "description": "Brochure reliée par collage, de 40 à 52 pages, pour un catalogue ou un rapport d'activité. Couverture pelliculée mate, brillante, soft-touch ou sablée.",
+    "dimensions": "21 × 30 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-011_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:14.018779",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "21 × 30 cm",
+      "42 × 30 cm",
+      "15 × 21 cm",
+      "30 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Intérieur Classique Mat, couverture Classique Mat",
+    "grammage": "Intérieur 135 ou 170 g/m², couverture 300 g/m²",
+    "techniques_marquage": [
+      "Pelliculage mat",
+      "Pelliculage brillant",
+      "Pelliculage soft-touch",
+      "Pelliculage sablé"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "ad06a795-8c20-4315-9dca-e56451b1f9aa",
     "ref": "0056",
     "nom": "Powerbank Wireless en Liège",
@@ -12712,6 +14179,43 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "aed8cb73-a896-42b1-a7f8-d2539a9d6475",
+    "ref": "PR-033",
+    "nom": "Berlingot",
+    "description": "Boîte berlingot en carton rigide, trois tailles. Pour un petit objet, une friandise ou un bijou.",
+    "dimensions": "8 × 5,5 × 2 cm",
+    "categorie": "packaging",
+    "categorie_label": "Packaging",
+    "categorie_num": "20",
+    "photos": [
+      "BT_PR-033_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:16.410276",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "packaging"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "8 × 5,5 × 2 cm",
+      "12,5 × 7,5 × 2 cm",
+      "18 × 10 × 3 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Carton rigide",
+    "grammage": null,
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -13011,6 +14515,42 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "b46f3efd-3a9e-4a77-9842-592d53d6e6bc",
+    "ref": "PR-032",
+    "nom": "Sous-verre",
+    "description": "Sous-verre en carte blanche 1 mm, carré ou rond, imprimé recto. Pelliculage en option.",
+    "dimensions": "Carré ou rond",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-032_1.webp"
+    ],
+    "ordre": 11,
+    "created_at": "2026-09-10T16:33:16.315822",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Carré",
+      "Rond"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Carte blanche",
+    "grammage": "1 mm d'épaisseur",
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "b50195fb-3091-4c0d-833d-d506d31d6f4f",
     "ref": "IMG-1200",
     "nom": "Stylo métallique à grip perforé",
@@ -13221,6 +14761,44 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "b76cadaf-09f1-4715-a5f2-a9ea88fdb0fd",
+    "ref": "PR-010",
+    "nom": "Affiche petit format",
+    "description": "Affiche A4, A3, B2 ou 20 × 60 cm, en papier brillant ou mat. Pelliculage recto en option.",
+    "dimensions": "A4, A3, B2 ou 20 × 60 cm",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-010_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:13.917661",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "A4 (21 × 29,7 cm)",
+      "A3 (30 × 42 cm)",
+      "B2 (50 × 70 cm)",
+      "20 × 60 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Brillant ou Classique Mat",
+    "grammage": "135 ou 170 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant recto",
+      "Pelliculage mat recto"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "b8665229-6b26-489f-adb9-0b066f7ce1a0",
     "ref": "40195",
     "nom": "Gourde en Aluminium avec Mousqueton",
@@ -13248,6 +14826,40 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "b9db6ccf-ce93-4f3b-bb9d-0fa38485a082",
+    "ref": "PR-046",
+    "nom": "Enveloppe luxe",
+    "description": "Enveloppe personnalisée imprimée recto, trois formats. Pour une invitation, une carte de vœux ou un document officiel.",
+    "dimensions": "11 × 22 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-046_1.webp"
+    ],
+    "ordre": 9,
+    "created_at": "2026-09-10T16:33:17.683761",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "11 × 22 cm",
+      "17 × 17 cm",
+      "16,2 × 22,9 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": null,
+    "grammage": null,
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -13860,6 +15472,70 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "c1d66752-d4d1-4cf6-adba-ce98c1de9056",
+    "ref": "PR-009",
+    "nom": "Affiche grand format",
+    "description": "Affiche A2, A1 ou A0 sur papier mat 150 g, imprimée en haute définition. Pour vitrine, stand ou affichage urbain.",
+    "dimensions": "A2, A1 ou A0",
+    "categorie": "communication",
+    "categorie_label": "Communication",
+    "categorie_num": "18",
+    "photos": [
+      "BT_PR-009_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:13.816096",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "communication"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "A2 (42 × 62 cm)",
+      "A1 (60 × 84 cm)",
+      "A0 (84 × 120 cm)"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Mat",
+    "grammage": "150 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "c2286c91-13c1-4f06-9561-037cc322bc2c",
+    "ref": "PR-007",
+    "nom": "Carton d'invitation",
+    "description": "Carton d'invitation simple ou avec un pli, pour un lancement, une inauguration ou une réception. Six papiers au choix.",
+    "dimensions": "Simple ou 1 pli",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-007_1.webp"
+    ],
+    "ordre": 7,
+    "created_at": "2026-09-10T16:33:13.616892",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Mat, Ultra Blanc, Recyclé, Irisé, Texturé ou Très Texturé",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "c28ad139-96a0-4dff-9ec8-f000955b900f",
     "ref": "P115",
     "nom": "Porte-Téléphone avec HUB USB",
@@ -14037,6 +15713,42 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "c4859e8d-81e5-4267-9b4f-7b3d456fd5d4",
+    "ref": "PR-045",
+    "nom": "Chemise à rabat simple",
+    "description": "Chemise à un rabat, avec ou sans soufflet, fente porte-carte en option. À partir de 50 exemplaires.",
+    "dimensions": "Avec ou sans soufflet",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-045_1.webp"
+    ],
+    "ordre": 8,
+    "created_at": "2026-09-10T16:33:17.590719",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "Sans soufflet",
+      "Avec soufflet"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Mat, Ultra Blanc, Recyclé ou Irisé",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [
+      "Fente porte-carte",
+      "Soufflet"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -14316,6 +16028,80 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "c8b3c2f5-e9b7-444e-b83c-d5a274de218c",
+    "ref": "PR-040",
+    "nom": "Calendrier de poche",
+    "description": "Calendrier de poche imprimé recto verso, pelliculé. En couché mat 350 g ou Biancoflash Premium White 300 g.",
+    "dimensions": "10 × 15 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-040_1.webp"
+    ],
+    "ordre": 3,
+    "created_at": "2026-09-10T16:33:17.102419",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "10 × 15 cm",
+      "15 × 15 cm",
+      "20 × 15 cm",
+      "30 × 10 cm",
+      "30 × 15 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat ou Biancoflash Premium White",
+    "grammage": "300 ou 350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat",
+      "Pelliculage soft-touch"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "c8c6e6b6-c587-4421-bce6-7ec7093533d2",
+    "ref": "PR-053",
+    "nom": "Photocall",
+    "description": "Mur d'image en bâche PVC pour photos officielles et interviews, trois formats jusqu'au 300 × 200 cm. Structure en option.",
+    "dimensions": "150 × 200 cm",
+    "categorie": "signaletique",
+    "categorie_label": "Signalétique",
+    "categorie_num": "22",
+    "photos": [
+      "BT_PR-053_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:18.389186",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "signaletique"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "150 × 200 cm",
+      "240 × 200 cm",
+      "300 × 200 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Bâche PVC",
+    "grammage": null,
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "c8fe2d8c-b5a2-41b2-8829-3139192088c8",
     "ref": "40301",
     "nom": "Bloc-notes Spirale avec Stylo",
@@ -14372,6 +16158,38 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "c9c9e439-f03c-428d-8a03-177240eb205d",
+    "ref": "PR-008",
+    "nom": "Marque-page",
+    "description": "Marque-page imprimé en quadri sur papier rigide, à partir de 10 exemplaires. Quatre papiers au choix.",
+    "dimensions": "5 × 21 cm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-008_1.webp"
+    ],
+    "ordre": 8,
+    "created_at": "2026-09-10T16:33:13.71397",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "5 × 21 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Classique Mat, Ultra Blanc, Recyclé ou Ultra Texturé",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -14768,6 +16586,46 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "cd3fbc96-ff67-41c5-92de-bcbf90051557",
+    "ref": "PR-036",
+    "nom": "Sac kraft",
+    "description": "Sac kraft recyclable, six formats. Impression une ou deux couleurs, ou sans impression.",
+    "dimensions": "22 × 10 × 29 cm",
+    "categorie": "packaging",
+    "categorie_label": "Packaging",
+    "categorie_num": "20",
+    "photos": [
+      "BT_PR-036_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:16.709928",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "packaging"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "22 × 10 × 29 cm",
+      "26 × 16 × 28 cm",
+      "28 × 12 × 40 cm",
+      "32 × 16 × 40 cm",
+      "28 × 17 × 29 cm",
+      "27 × 18 × 29 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Papier kraft recyclable",
+    "grammage": null,
+    "techniques_marquage": [
+      "Impression 1 couleur",
+      "Impression 2 couleurs"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -15546,6 +17404,39 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "db2b9e63-e130-4dba-bf79-d0506e51906d",
+    "ref": "PR-043",
+    "nom": "Calendrier sous-main",
+    "description": "Calendrier sous-main grand format sur socle couché mat 300 g. Bloc de feuilles en blanc offset 80 ou 90 g.",
+    "dimensions": "42 × 30 cm",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-043_1.webp"
+    ],
+    "ordre": 6,
+    "created_at": "2026-09-10T16:33:17.395659",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "42 × 30 cm",
+      "42 × 60 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Feuilles Blanc Offset, socle Couché Mat",
+    "grammage": "Feuilles 80 ou 90 g/m², socle 300 g/m²",
+    "techniques_marquage": [],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "db792c79-662f-43d2-acf6-e63d45588712",
     "ref": "PF-242B",
     "nom": "Coffret Premium Carnet, Stylo & Porte-cartes",
@@ -15695,6 +17586,43 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "dee1328f-b9ed-4541-9530-904dcbb85d16",
+    "ref": "PR-002",
+    "nom": "Carte de vœux",
+    "description": "Carte de vœux personnalisée pour la fin d'année ou une occasion particulière. Impression recto ou recto verso, tranche colorée au choix.",
+    "dimensions": "21 × 10 cm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-002_1.webp"
+    ],
+    "ordre": 2,
+    "created_at": "2026-09-10T16:33:13.012945",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "21 × 10 cm",
+      "42 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Ultra Blanc, Recyclé, Irisé, Texturé ou Naturel",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [
+      "Vernis 3D recto",
+      "Tranche colorée",
+      "Coins arrondis"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -16116,6 +18044,44 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "e3e23446-30e8-4f49-8d47-08c33855c9aa",
+    "ref": "PR-041",
+    "nom": "Calendrier mural",
+    "description": "Calendrier mural à spirale, 13 feuilles en couché mat 300 g. Trois formats, spirale blanche ou noire.",
+    "dimensions": "A4, A3 ou A5",
+    "categorie": "papeterie",
+    "categorie_label": "Papeterie",
+    "categorie_num": "21",
+    "photos": [
+      "BT_PR-041_1.webp"
+    ],
+    "ordre": 4,
+    "created_at": "2026-09-10T16:33:17.193824",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "papeterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "A4 (21 × 30 cm)",
+      "A3 (42 × 30 cm)",
+      "A5 (15 × 21 cm)"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Mat",
+    "grammage": "300 g/m²",
+    "techniques_marquage": [
+      "Pelliculage mat recto",
+      "Pelliculage brillant recto",
+      "Spirale blanche ou noire"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -16691,6 +18657,44 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "ec469886-f5b7-4dd8-8b36-6057b960650f",
+    "ref": "PR-006",
+    "nom": "Carte de visite ultra blanche",
+    "description": "Carte de visite sur papier Biancoflash Premium White 350 g. Le blanc soutenu rend les aplats et les typographies plus nets.",
+    "dimensions": "85 × 55 mm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-006_1.webp"
+    ],
+    "ordre": 6,
+    "created_at": "2026-09-10T16:33:13.518006",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "85 × 55 mm",
+      "65 × 65 mm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Ultra Blanc (Biancoflash Premium White)",
+    "grammage": "350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat",
+      "Pelliculage soft-touch",
+      "Coins arrondis"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "ec68d140-83c1-472c-98ec-d1d8c7d7c105",
     "ref": "25-53",
     "nom": "Cordon Porte-Badge avec Enrouleur",
@@ -17102,6 +19106,43 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "f07bd49a-f1d0-4ba1-a7ae-5ea03632350b",
+    "ref": "PR-001",
+    "nom": "Carte de correspondance",
+    "description": "Carte à glisser avec un devis, une facture ou un mot de remerciement. Cinq papiers au choix, tranche colorée et vernis 3D en option.",
+    "dimensions": "21 × 10 cm",
+    "categorie": "carterie",
+    "categorie_label": "Carterie",
+    "categorie_num": "17",
+    "photos": [
+      "BT_PR-001_1.webp"
+    ],
+    "ordre": 1,
+    "created_at": "2026-09-10T16:33:12.776825",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "carterie"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "21 × 10 cm",
+      "42 × 10 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Ultra Blanc, Recyclé, Irisé, Texturé ou Naturel",
+    "grammage": "300 à 350 g/m²",
+    "techniques_marquage": [
+      "Vernis 3D recto",
+      "Tranche colorée",
+      "Coins arrondis"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "f0bd0475-47eb-450b-a573-f86106bec4ce",
     "ref": "IMG-1325",
     "nom": "Coffret 2 stylos élégants, garniture dorée",
@@ -17191,6 +19232,38 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "f2ce157b-22b6-4c33-b25c-2f7cb5c4d4b6",
+    "ref": "PR-031",
+    "nom": "Set de table",
+    "description": "Set de table 30 × 42 cm imprimé en quadri recto. Six papiers au choix, dont un recyclé Shiro Echo.",
+    "dimensions": "30 × 42 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-031_1.webp"
+    ],
+    "ordre": 10,
+    "created_at": "2026-09-10T16:33:16.213455",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "30 × 42 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Couché Brillant, Couché Mat, Blanc supérieur ou Shiro Echo recyclé",
+    "grammage": "90 à 135 g/m²",
+    "techniques_marquage": [],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -18093,6 +20166,46 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "fc559579-210e-4945-a7f8-f564cb2bd2f3",
+    "ref": "PR-026",
+    "nom": "Menu piqué",
+    "description": "Menu agrafé de 4 à 20 pages, qui s'ouvre à plat. Couverture couché mat 300 ou 350 g, vernis 3D en option.",
+    "dimensions": "Quatorze formats, de 10 × 30 à 60 × 21 cm",
+    "categorie": "hotellerie_restauration",
+    "categorie_label": "Hôtellerie & Restauration",
+    "categorie_num": "19",
+    "photos": [
+      "BT_PR-026_1.webp"
+    ],
+    "ordre": 5,
+    "created_at": "2026-09-10T16:33:15.687816",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "hotellerie_restauration"
+    ],
+    "fournisseur": "bar_a_textile",
+    "univers": "print",
+    "tailles": [
+      "15 × 21 cm",
+      "21 × 30 cm",
+      "21 × 15 cm",
+      "30 × 21 cm",
+      "10 × 30 cm"
+    ],
+    "couleurs": null,
+    "couleurs_hex": null,
+    "matiere": "Intérieur et couverture Couché Mat",
+    "grammage": "Intérieur 170 ou 300 g/m², couverture 300 ou 350 g/m²",
+    "techniques_marquage": [
+      "Pelliculage brillant",
+      "Pelliculage mat",
+      "Vernis 3D recto"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },

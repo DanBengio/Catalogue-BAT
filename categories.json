@@ -24,6 +24,14 @@
     "univers": "goodies"
   },
   {
+    "id": "37115718-8fd9-4331-90d4-a4bdaf9c6319",
+    "cle": "carterie",
+    "label": "Carterie",
+    "num": "17",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
+  },
+  {
     "id": "58c8eba2-2b05-4211-8f2a-17ab6862d88c",
     "cle": "coffrets",
     "label": "Coffrets",
@@ -38,6 +46,14 @@
     "num": "05",
     "created_at": "2026-08-11T13:00:24.235022+00:00",
     "univers": "goodies"
+  },
+  {
+    "id": "5e6e1e29-c43e-4f7f-8d41-6dd8c26ed6e3",
+    "cle": "hotellerie_restauration",
+    "label": "Hôtellerie & Restauration",
+    "num": "19",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
   },
   {
     "id": "7189e495-8256-49e2-9ef2-f9868d57a53e",
@@ -56,12 +72,36 @@
     "univers": "textile"
   },
   {
+    "id": "784ed771-1ab5-430b-a7f0-b7bd36044864",
+    "cle": "packaging",
+    "label": "Packaging",
+    "num": "20",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
+  },
+  {
     "id": "7925dacf-b24a-4c58-9571-6af4c1c8efa3",
     "cle": "trophees_medailles",
     "label": "Trophées & Médailles",
     "num": "11",
     "created_at": "2026-08-11T13:00:24.235022+00:00",
     "univers": "goodies"
+  },
+  {
+    "id": "9adf163a-49a4-48c5-86af-6d6d05fbff08",
+    "cle": "signaletique",
+    "label": "Signalétique",
+    "num": "22",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
+  },
+  {
+    "id": "9dea2fb8-c4ec-4831-9f8d-efce6fcd82dd",
+    "cle": "papeterie",
+    "label": "Papeterie",
+    "num": "21",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
   },
   {
     "id": "a6b3a587-9748-4fb5-b3a6-52e1408bf75e",
@@ -102,6 +142,14 @@
     "num": "10",
     "created_at": "2026-08-11T13:00:24.235022+00:00",
     "univers": "goodies"
+  },
+  {
+    "id": "cc479a24-870b-4f37-b02e-5834b5786ab0",
+    "cle": "communication",
+    "label": "Communication",
+    "num": "18",
+    "created_at": "2026-09-10T16:16:31.274411+00:00",
+    "univers": "print"
   },
   {
     "id": "e854e99a-740d-4f1b-8bce-f9321399913e",
