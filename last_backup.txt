@@ -1,7 +1,4 @@
-Derniere sauvegarde : 2026-09-13T07:40:09.439160+00:00
+Derniere sauvegarde : 2026-09-14T08:02:15.643301+00:00
 Produits : 644
 Categories : 22
-Photos : 1150 (1 erreur(s))
-
-Erreurs de telechargement :
-  - MI_HT-001_1_vue_principale.jpg: The read operation timed out
+Photos : 1150 (0 erreur(s))
