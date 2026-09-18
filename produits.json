@@ -273,6 +273,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "01cc072d-6db4-4c98-8a69-e90d7894bd54",
+    "ref": "PX-007",
+    "nom": "Ensemble basket sublimé",
+    "description": "Maillot sans manches à col V et short de basket, en 100% polyester sublimable. Noms, numéros et motif sont imprimés d'un seul tenant sur le tissu — vous donnez le visuel, la tenue sort à vos couleurs.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-007_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.860219",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "01fc9da8-b510-4937-9d1c-f5fedab8ae51",
     "ref": "25-25&25-03",
     "nom": "Bloc-notes A5 Élastique avec Stylo",
@@ -1921,9 +1956,9 @@
     "nom": "Écharpe",
     "description": "Écharpe supporter entièrement personnalisable, thème équipe/sport. Modèle illustré aux couleurs du Maroc.",
     "dimensions": "",
-    "categorie": "accessoires",
-    "categorie_label": "Accessoires",
-    "categorie_num": "15",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
     "photos": [
       "BT_BT-021_1_vue_principale.jpg"
     ],
@@ -1932,7 +1967,6 @@
     "actif": true,
     "bestseller": false,
     "categories": [
-      "accessoires",
       "sport"
     ],
     "fournisseur": "bar_a_textile",
@@ -1984,6 +2018,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "1476e853-ae2d-43a3-af63-bf1138283232",
+    "ref": "PX-012",
+    "nom": "T-shirt padel sublimé",
+    "description": "T-shirt de padel en 100% polyester sublimable, imprimé sur toute la pièce — devant, dos et manches. Motif d'ensemble, couleurs de club, logos de partenaires : tout se dessine avant impression.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-012_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:40.303937",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -2830,6 +2899,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "1d4834be-ac3d-4ee8-b8ff-f197d097b50a",
+    "ref": "PX-004",
+    "nom": "Ensemble jogging sublimé",
+    "description": "Veste zippée à col montant et pantalon assorti, en 100% polyester sublimable, bords-côtes aux poignets et à la taille. L'ensemble est imprimé à vos couleurs, du motif de fond au logo du club : 100% personnalisable, pièce par pièce.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-004_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.576834",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -4684,6 +4788,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "38076cc7-cf91-48ca-8ecd-ad4e4cf70f64",
+    "ref": "PX-002",
+    "nom": "Coupe-vent sublimé",
+    "description": "Coupe-vent léger zippé à capuche, en 100% polyester sublimable. L'impression couvre le vêtement entier — devant, dos et manches — et se dessine intégralement à votre main : aucun coloris imposé, aucune zone de marquage à choisir.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-002_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.382149",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "386eaef7-9f38-46b4-8b8f-73b1c5d48f27",
     "ref": "PF-709",
     "nom": "Antistress balle ronde",
@@ -5350,6 +5489,38 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "44a53b08-44c9-45ff-b851-958c74689dea",
+    "ref": "PX-009",
+    "nom": "Sac de sport sublimé",
+    "description": "Sac de sport polochon en 100% polyester sublimable, anses renforcées. L'impression couvre le sac entier, côtés compris : motif, couleurs et logo sont les vôtres du premier au dernier exemplaire.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-009_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:40.040841",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -7221,8 +7392,7 @@
     "actif": true,
     "bestseller": false,
     "categories": [
-      "accessoires",
-      "sport"
+      "accessoires"
     ],
     "fournisseur": "bar_a_textile",
     "univers": "textile",
@@ -9557,6 +9727,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "7686f5ca-9840-42c3-8988-a83ff650673e",
+    "ref": "PX-008",
+    "nom": "Polo sport sublimé",
+    "description": "Polo de sport en 100% polyester sublimable, col boutonné et poignets contrastés. Devant et dos s'impriment entièrement : un logo discret sur le cœur ou un motif sur toute la pièce, c'est votre visuel qui décide.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-008_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.947798",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "76b0ad97-ed3c-469a-8925-82adfc62aa8c",
     "ref": "25-28",
     "nom": "Coffret Éco Chic 3 Pcs",
@@ -9589,6 +9794,38 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "76d1a70b-f9fd-4064-92fd-c04b2fbe45e8",
+    "ref": "PX-010",
+    "nom": "Sac à cordon sublimé",
+    "description": "Sac à dos à cordon en 100% polyester sublimable, œillets renforcés aux angles. Toute la face s'imprime : 100% personnalisable, du fond de couleur au logo. Le compagnon des tournois et des remises de dossards.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-010_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:40.128898",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -10130,6 +10367,42 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "7be4823b-1a57-4ba2-88a2-a06d5e959ad0",
+    "ref": "PX-011",
+    "nom": "T-shirt sport sublimé",
+    "description": "T-shirt de sport à col rond en 100% polyester sublimable, col et poignets contrastés. Le visuel se pose où vous voulez et sur toute la surface si vous le souhaitez : 100% personnalisable, sans nombre de coloris à compter.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-011_1_face_dos.webp",
+      "PX_PX-011_2_variante.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:40.215462",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -11619,6 +11892,38 @@
     "couleurs_autres_100": true
   },
   {
+    "id": "8e49847d-9977-4220-ad5b-7fb8634c78c8",
+    "ref": "PX-013",
+    "nom": "Tote bag sublimé",
+    "description": "Tote bag en 100% polyester sublimable, anses contrastées, imprimé sur toute sa surface. 100% personnalisable : le visuel couvre le sac d'un bord à l'autre, sans zone réservée.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-013_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:40.391475",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "8f3cadba-b177-4d8a-8950-d70aeae8eb66",
     "ref": "PR-029",
     "nom": "Porte-carte magnétique",
@@ -12684,6 +12989,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "9dd6544b-c41d-44be-9ba1-96104934d879",
+    "ref": "PX-006",
+    "nom": "Hoodie zippé sublimé",
+    "description": "Sweat à capuche zippé en 100% polyester sublimable, cordon de serrage, bords-côtes aux poignets et à la taille. L'impression court sur le devant, le dos et les manches : 100% personnalisable, motif compris.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-006_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.765416",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -15170,6 +15510,38 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "bd86870a-065b-4eea-84be-20533c3f16fd",
+    "ref": "PX-003",
+    "nom": "Coussin sublimé",
+    "description": "Coussin carré en 100% polyester sublimable, imprimé sur toute la face. Motif, couleurs, photo ou logo : le visuel est entièrement le vôtre. Complète une tenue d'équipe ou une boutique de club.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-003_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.47956",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
@@ -18964,6 +19336,41 @@
     "couleurs_autres_100": false
   },
   {
+    "id": "ef4873a1-aad4-49d2-8d69-ddd45ee852ef",
+    "ref": "PX-005",
+    "nom": "Ensemble foot sublimé",
+    "description": "Maillot et short de football en 100% polyester sublimable, col et poignets contrastés. Motif, couleurs, noms et numéros de joueurs sont imprimés dans la matière : chaque tenue est dessinée pour votre équipe, sans limite de coloris.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-005_1_face_dos.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.671303",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
     "id": "efc4b235-e5e5-4ccf-acb7-6f3aa716f602",
     "ref": "PF-703",
     "nom": "Stylo métallique Rubber, bandes dorées",
@@ -19703,6 +20110,41 @@
     "matiere": null,
     "grammage": null,
     "techniques_marquage": null,
+    "couleurs_cles": null,
+    "couleurs_autres_100": false
+  },
+  {
+    "id": "f75db529-c733-42fd-b456-728d256c9c9d",
+    "ref": "PX-001",
+    "nom": "Chasuble de sport sublimée",
+    "description": "Chasuble d'équipe en 100% polyester sublimable, imprimée sur toute sa surface : motif, couleurs et logos sont entièrement définis par vous. Dos ouvert et enfilage rapide par-dessus la tenue, pour distinguer les équipes à l'entraînement.",
+    "dimensions": "",
+    "categorie": "sport",
+    "categorie_label": "Sport",
+    "categorie_num": "16",
+    "photos": [
+      "PX_PX-001_1_vue_principale.webp"
+    ],
+    "ordre": 0,
+    "created_at": "2026-09-17T16:39:39.167682",
+    "actif": true,
+    "bestseller": false,
+    "categories": [
+      "sport"
+    ],
+    "fournisseur": "pex",
+    "univers": "textile",
+    "tailles": [
+      "Taille adulte",
+      "Taille enfant"
+    ],
+    "couleurs": [],
+    "couleurs_hex": [],
+    "matiere": "100% polyester sublimable",
+    "grammage": "",
+    "techniques_marquage": [
+      "Sublimation"
+    ],
     "couleurs_cles": null,
     "couleurs_autres_100": false
   },
