@@ -17478,7 +17478,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-11T17:45:20.322175",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cles_usb"
@@ -20121,7 +20121,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-11T17:45:20.197947",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cles_usb"
@@ -20477,7 +20477,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-11T17:45:20.431344",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cles_usb"
