@@ -1,4 +1,7 @@
-Derniere sauvegarde : 2026-10-18T07:11:27.093296+00:00
+Derniere sauvegarde : 2026-10-19T08:00:41.856179+00:00
 Produits : 658
 Categories : 22
-Photos : 1166 (0 erreur(s))
+Photos : 1166 (1 erreur(s))
+
+Erreurs de telechargement :
+  - MI_IMG-680-P_1_coffret_ouvert.jpg: The read operation timed out
