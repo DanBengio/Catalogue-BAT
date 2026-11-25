@@ -490,8 +490,8 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-08T12:26:44.824515",
-    "actif": true,
-    "bestseller": false,
+    "actif": false,
+    "bestseller": true,
     "categories": [
       "coffrets",
       "ecologique"
@@ -1802,7 +1802,7 @@
     "ordre": 0,
     "created_at": "2026-08-12T15:51:12.354685",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -4160,7 +4160,7 @@
   {
     "id": "2acefb68-b6c2-4f2a-857b-b1fa085924fb",
     "ref": "2303-28",
-    "nom": "Bloc-notes Tissu Effet Jean",
+    "nom": "Bloc-notes Tissu Effet Jean GRIS",
     "description": "Couverture en tissu avec coins et étiquette en jean, style moderne. Disponible en gris, marron et beige.",
     "dimensions": "",
     "categorie": "bloc-notes",
@@ -4790,7 +4790,7 @@
     ],
     "ordre": 10,
     "created_at": "2026-08-12T20:54:40.470794",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cartables"
@@ -4984,7 +4984,7 @@
     "ordre": 0,
     "created_at": "2026-08-12T15:51:12.9075",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -7561,7 +7561,7 @@
     ],
     "ordre": 1,
     "created_at": "2026-08-12T19:58:12.948673",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "bloc-notes"
@@ -8658,7 +8658,7 @@
     ],
     "ordre": 3,
     "created_at": "2026-08-12T20:54:39.257421",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "cartables"
@@ -8830,8 +8830,8 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-08T13:02:07.456905",
-    "actif": false,
-    "bestseller": false,
+    "actif": true,
+    "bestseller": true,
     "categories": [
       "bloc-notes"
     ],
@@ -9345,7 +9345,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-08-12T15:51:12.173911",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "mugs_gourdes"
@@ -12947,7 +12947,7 @@
     "ordre": 1,
     "created_at": "2026-08-10T21:23:17.319627",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -13735,7 +13735,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-05-11T17:12:57.130731",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "bureau"
@@ -14424,7 +14424,7 @@
     "ordre": 0,
     "created_at": "2026-08-12T15:51:13.639348",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -15402,7 +15402,7 @@
     "ordre": 4,
     "created_at": "2026-08-10T21:23:17.839602",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -16851,7 +16851,7 @@
     ],
     "ordre": 20,
     "created_at": "2026-08-12T19:58:15.822934",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "bloc-notes"
@@ -17819,7 +17819,7 @@
     "ordre": 0,
     "created_at": "2026-08-12T15:51:13.200225",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -18074,7 +18074,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-08-12T15:51:12.266031",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "mugs_gourdes"
@@ -19341,7 +19341,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-08-12T15:51:11.862216",
-    "actif": true,
+    "actif": false,
     "bestseller": true,
     "categories": [
       "mugs_gourdes"
@@ -20221,7 +20221,7 @@
     "ordre": 11,
     "created_at": "2026-08-10T21:23:18.780325",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
@@ -21294,7 +21294,7 @@
     ],
     "ordre": 0,
     "created_at": "2026-08-12T16:44:49.104927",
-    "actif": true,
+    "actif": false,
     "bestseller": false,
     "categories": [
       "hightech"
@@ -21825,7 +21825,7 @@
     "ordre": 0,
     "created_at": "2026-08-12T15:51:13.464207",
     "actif": true,
-    "bestseller": false,
+    "bestseller": true,
     "categories": [
       "mugs_gourdes"
     ],
